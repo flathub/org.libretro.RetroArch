@@ -51,52 +51,52 @@
     {
       "name": "retroarch-assets",
       "make-install-args": [
-        "DESTDIR=/app/share/libretro/assets"
+        "INSTALLDIR=/app/share/libretro/assets"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-assets.git",
-          "commit": "3dc9395b362f5316918b2fb95f4642a2940147b8"
+          "commit": "6fecba0b4a63789d6dd27b1a581ca45d2ea94c15"
         }
       ]
     },
     {
       "name": "libretro-database",
       "make-install-args": [
-        "DESTDIR=/app/share/libretro/database"
+        "INSTALLDIR=/app/share/libretro/database"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "4b3aa272d50ea123f58cbff899b0825cb32c6c51"
+          "commit": "1ee2aaedc23ae35e403c7f1f55ea0396794bd17a"
         }
       ]
     },
     {
       "name": "libretro-core-info",
       "make-install-args": [
-        "DESTDIR=/app/share/libretro/info"
+        "INSTALLDIR=/app/share/libretro/info"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "92b0077e641503f29609d60eda1a961fe256a2e6"
+          "commit": "b97c7bf4918240229b795f9d8eeba000cf328ecc"
         }
       ]
     },
     {
       "name": "retroarch-joypad-autoconfig",
       "make-install-args": [
-        "DESTDIR=/app/share/libretro/autoconfig"
+        "INSTALLDIR=/app/share/libretro/autoconfig"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "3dfe09433dffe7a1a6fbc30b65f41c87cb098f2f"
+          "commit": "873744408c340053e2ce21fd0fbe2e3fc7520fbe"
         }
       ]
     }
