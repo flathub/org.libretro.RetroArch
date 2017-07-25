@@ -9,8 +9,8 @@ Go to https://flathub.org/builds/ to see Flathub in action.
 
 To install RetroArch through Flathub, use the following:
 ```
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak --user install flathub org.libretro.RetroArch
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install --user flathub org.libretro.RetroArch
 ```
 
 ## Usage
