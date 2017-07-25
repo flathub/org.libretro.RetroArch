@@ -99,6 +99,45 @@
           "commit": "873744408c340053e2ce21fd0fbe2e3fc7520fbe"
         }
       ]
+    },
+    {
+      "name": "common-shaders",
+      "make-install-args": [
+        "INSTALLDIR=/app/share/libretro/shaders/shaders_cg"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/common-shaders.git",
+          "commit": "a7878e50a1e554c5d1d7fc53469be707737cec2f"
+        }
+      ]
+    },
+    {
+      "name": "slang-shaders",
+      "make-install-args": [
+        "INSTALLDIR=/app/share/libretro/shaders/shaders_slang"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/slang-shaders.git",
+          "commit": "243944bfcd6ab42829e3cbd6ee1b4b2f86bdf1b1"
+        }
+      ]
+    },
+    {
+      "name": "glsl-shaders",
+      "make-install-args": [
+        "INSTALLDIR=/app/share/libretro/shaders/shaders_glsl"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/glsl-shaders.git",
+          "commit": "1bdbe395b4fbb0eae644fd23a41fe2e9b679d9d9"
+        }
+      ]
     }
   ]
 }
