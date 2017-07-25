@@ -30,3 +30,13 @@ Allow Flatpak access to different mounted drives through using the `--filesystem
 ```
 flatpak run --filesystem=host --filesystem=/media/NAS/roms org.libretro.RetroArch
 ```
+
+## Development
+
+To test the application locally, use [flatpak-builder](http://docs.flatpak.org/en/latest/flatpak-builder.html) with:
+```
+flatpak-builder --repo=libretro --force-clean retroarch org.libretro.RetroArch.json
+flatpak remote-add --user libretro libretro --no-gpg-verify
+flatpak install --user libretro org.libretro.RetroArch
+flatpak run org.libretro.RetroArch --verbose
+```
