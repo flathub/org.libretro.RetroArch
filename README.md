@@ -9,7 +9,7 @@ Go to https://flathub.org/builds/ to see Flathub in action.
 
 To install RetroArch through Flathub, use the following:
 ```
-flatpak remote-add flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak --user install flathub org.libretro.RetroArch
 ```
 
@@ -28,5 +28,5 @@ Through the [Flatpak command line arguments](http://flatpak.org/flatpak/flatpak-
 
 Allow Flatpak access to different mounted drives through using the `--filesystem` option:
 ```
-flatpak run --filesystem=home --filesystem=/media/NAS/roms org.libretro.RetroArch
+flatpak run --filesystem=host --filesystem=/media/NAS/roms org.libretro.RetroArch
 ```
