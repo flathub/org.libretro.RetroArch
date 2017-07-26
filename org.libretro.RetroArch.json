@@ -61,29 +61,29 @@
             }
           ]
         },
-	{
-	  "name": "nvidia-cg-tookit",
-	  "sources": [
-	    {
-	      "type": "archive",
-	      "url": "http://developer.download.nvidia.com/cg/Cg_3.1/Cg-3.1_April2012_x86_64.tgz",
-	      "sha256": "e8ff01e6cc38d1b3fd56a083f5860737dbd2f319a39037528fb1a74a89ae9878"
-	    },
+        {
+          "name": "nvidia-cg-tookit",
+          "sources": [
+          {
+              "type": "archive",
+              "url": "http://developer.download.nvidia.com/cg/Cg_3.1/Cg-3.1_April2012_x86_64.tgz",
+              "sha256": "e8ff01e6cc38d1b3fd56a083f5860737dbd2f319a39037528fb1a74a89ae9878"
+          },
             {
-	      "type": "script",
-	      "dest-filename": "configure",
+              "type": "script",
+              "dest-filename": "configure",
               "commands": [
-	        "echo '.PHONY: install' >> Makefile",
-	        "echo '.PHONY: build' >> Makefile",
-	        "echo 'build:' >> Makefile",
-	        "echo '	:' >> Makefile",
-	        "echo 'install:' >> Makefile",
-	        "echo '	install -m 0644 usr/lib64/libCg.so /app/lib/' >> Makefile",
-	        "echo '	install -m 0644 usr/lib64/libCgGL.so /app/lib/' >> Makefile"
-	      ]
-	    }
-	  ]
-	}
+                "echo '.PHONY: build' >> Makefile",
+                "echo '.PHONY: install' >> Makefile",
+                "echo 'build:' >> Makefile",
+                "echo '\t:' >> Makefile",
+                "echo 'install:' >> Makefile",
+                "echo '\tinstall -m 0644 usr/lib64/libCg.so /app/lib/' >> Makefile",
+                "echo '\tinstall -m 0644 usr/lib64/libCgGL.so /app/lib/' >> Makefile"
+              ]
+            }
+          ]
+        }
       ]
     },
     {
