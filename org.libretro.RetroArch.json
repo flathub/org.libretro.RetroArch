@@ -51,91 +51,91 @@
     {
       "name": "retroarch-assets",
       "make-install-args": [
-        "DESTDIR=/app/share/libretro/assets"
+        "PREFIX=/app"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-assets.git",
-          "commit": "3dc9395b362f5316918b2fb95f4642a2940147b8"
+          "commit": "0b83970e413e946cf1d1878191889c11e7d344f3"
         }
       ]
     },
     {
       "name": "libretro-database",
       "make-install-args": [
-        "DESTDIR=/app/share/libretro/database"
+        "PREFIX=/app"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "4b3aa272d50ea123f58cbff899b0825cb32c6c51"
+          "commit": "507722ac15b6f54ae3d11e0fcdfc5738544886e4"
         }
       ]
     },
     {
       "name": "libretro-core-info",
       "make-install-args": [
-        "DESTDIR=/app/share/libretro/info"
+        "PREFIX=/app"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "92b0077e641503f29609d60eda1a961fe256a2e6"
+          "commit": "de4608ca6206698bbb152e49dad16cbfe490c0d3"
         }
       ]
     },
     {
       "name": "retroarch-joypad-autoconfig",
       "make-install-args": [
-        "DESTDIR=/app/share/libretro/autoconfig"
+        "PREFIX=/app"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "3dfe09433dffe7a1a6fbc30b65f41c87cb098f2f"
+          "commit": "47ef1799577c5c57eb8890dc05d3981e7c0b215d"
         }
       ]
     },
     {
       "name": "common-shaders",
       "make-install-args": [
-        "INSTALLDIR=/app/share/libretro/shaders/shaders_cg"
+        "PREFIX=/app"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/common-shaders.git",
-          "commit": "a7878e50a1e554c5d1d7fc53469be707737cec2f"
+          "commit": "12eedf894d6116db26bb4cf042db4e8fb24cd640"
         }
       ]
     },
     {
       "name": "slang-shaders",
       "make-install-args": [
-        "INSTALLDIR=/app/share/libretro/shaders/shaders_slang"
+        "PREFIX=/app"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/slang-shaders.git",
-          "commit": "243944bfcd6ab42829e3cbd6ee1b4b2f86bdf1b1"
+          "commit": "f0c714a42081f4a70e18d0c8e9832a22e89f693e"
         }
       ]
     },
     {
       "name": "glsl-shaders",
       "make-install-args": [
-        "INSTALLDIR=/app/share/libretro/shaders/shaders_glsl"
+        "PREFIX=/app"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/glsl-shaders.git",
-          "commit": "1bdbe395b4fbb0eae644fd23a41fe2e9b679d9d9"
+          "commit": "eacbd76e9e48300a1720d2799f1f1a57c0f051ee"
         }
       ]
     }
