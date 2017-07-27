@@ -19,6 +19,7 @@
   "modules": [
     {
       "name": "retroarch",
+      "config-opts": ["--enable-cg"],
       "make-args": [
         "GLOBAL_CONFIG_DIR=/app/etc"
       ],
@@ -57,6 +58,29 @@
               "type": "archive",
               "url": "https://ftp-osl.osuosl.org/pub/libpng/src/libpng12/libpng-1.2.57.tar.xz",
               "sha256": "0f4620e11fa283fedafb474427c8e96bf149511a1804bdc47350963ae5cf54d8"
+            }
+          ]
+        },
+        {
+          "name": "nvidia-cg-tookit",
+          "sources": [
+          {
+              "type": "archive",
+              "url": "http://developer.download.nvidia.com/cg/Cg_3.1/Cg-3.1_April2012_x86_64.tgz",
+              "sha256": "e8ff01e6cc38d1b3fd56a083f5860737dbd2f319a39037528fb1a74a89ae9878"
+          },
+            {
+              "type": "script",
+              "dest-filename": "configure",
+              "commands": [
+                "echo '.PHONY: build' >> Makefile",
+                "echo '.PHONY: install' >> Makefile",
+                "echo 'build:' >> Makefile",
+                "echo '\t:' >> Makefile",
+                "echo 'install:' >> Makefile",
+                "echo '\tinstall -m 0644 usr/lib64/libCg.so /app/lib/' >> Makefile",
+                "echo '\tinstall -m 0644 usr/lib64/libCgGL.so /app/lib/' >> Makefile"
+              ]
             }
           ]
         }
