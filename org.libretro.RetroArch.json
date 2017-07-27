@@ -64,11 +64,11 @@
         {
           "name": "nvidia-cg-tookit",
           "buildsystem": "simple",
-          "build-commands": {
+          "build-commands": [
             "mkdir -p /app/lib",
             "install -m 0644 usr/lib64/libCg.so /app/lib",
             "install -m 0644 usr/lib64/libCgGL.so /app/lib"
-          },
+          ],
           "sources": [
             {
               "type": "archive",
