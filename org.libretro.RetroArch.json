@@ -19,7 +19,6 @@
   "modules": [
     {
       "name": "retroarch",
-      "config-opts": ["--enable-cg"],
       "make-args": [
         "GLOBAL_CONFIG_DIR=/app/etc"
       ],
