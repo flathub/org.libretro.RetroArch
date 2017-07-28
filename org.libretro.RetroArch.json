@@ -179,31 +179,29 @@
     },
     {
       "name": "retroarch-filers-video",
-      "buildsystem": "simple",
-      "build-commands": [
-        "make --directory=gfx/video_filters",
-        "make install --directory=gfx/video_filters PREFIX=/app"
+      "subdir": "gfx/video_filters",
+      "make-install-args": [
+        "PREFIX=/app"
       ],
       "sources": [
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "668ab0f0c48a09fe711183e779e464fcda7cead4"
+          "commit": "266f7a3ad90d84e0fb0ae825b3072c6d519f94d8"
         }
       ]
     },
     {
       "name": "retroarch-filers-audio",
-      "buildsystem": "simple",
-      "build-commands": [
-        "make --directory=audio/dsp_filters",
-        "make install --directory=audio/dsp_filters PREFIX=/app"
+      "subdir": "libretro-common/audio/dsp_filters",
+      "make-install-args": [
+        "PREFIX=/app"
       ],
       "sources": [
         {
           "type": "git",
-          "url": "https://github.com/libretro/libretro-common.git",
-          "commit": "0b9f2202c032619381845f56dc8b3a199b5aef1a"
+          "url": "https://github.com/libretro/RetroArch.git",
+          "commit": "266f7a3ad90d84e0fb0ae825b3072c6d519f94d8"
         }
       ]
     }
