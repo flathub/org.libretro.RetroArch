@@ -169,6 +169,34 @@
           "commit": "eacbd76e9e48300a1720d2799f1f1a57c0f051ee"
         }
       ]
+    },
+    {
+      "name": "retroarch-filers-video",
+      "subdir": "gfx/video_filters",
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/RetroArch.git",
+          "commit": "266f7a3ad90d84e0fb0ae825b3072c6d519f94d8"
+        }
+      ]
+    },
+    {
+      "name": "retroarch-filers-audio",
+      "subdir": "libretro-common/audio/dsp_filters",
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/RetroArch.git",
+          "commit": "266f7a3ad90d84e0fb0ae825b3072c6d519f94d8"
+        }
+      ]
     }
   ]
 }
