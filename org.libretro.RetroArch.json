@@ -55,8 +55,8 @@
           "sources": [
             {
               "type": "archive",
-              "url": "https://ftp-osl.osuosl.org/pub/libpng/src/libpng12/libpng-1.2.57.tar.xz",
-              "sha256": "0f4620e11fa283fedafb474427c8e96bf149511a1804bdc47350963ae5cf54d8"
+              "url": "https://github.com/glennrp/libpng/archive/v1.2.59.tar.gz",
+              "sha256": "d5bc743ac338bd454e330279f70534f5a31ea4c2cd3ee3ce76fd6e7f17fd3950"
             }
           ]
         },
