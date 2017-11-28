@@ -87,7 +87,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-assets.git",
-          "commit": "668aa1e7503f1eac33ccf033e040b05cebea2fb4"
+          "commit": "cf73d970ca6ff7ef0494d0a81d05acf33363f3f6"
         }
       ]
     },
