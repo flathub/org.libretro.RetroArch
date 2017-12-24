@@ -13,7 +13,7 @@
     "--share=ipc",
     "--share=network",
     "--device=all",
-    "--filesystem=home",
+    "--filesystem=host",
     "--allow=multiarch"
   ],
   "modules": [
