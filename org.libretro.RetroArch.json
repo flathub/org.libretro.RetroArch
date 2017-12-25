@@ -26,8 +26,8 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "branch": "v1.6.9",
-          "commit": "e8b10d342a7c5723bd8ad6a8d5eac830d1259ab4"
+          "branch": "v1.7.0",
+          "commit": "0a2b44273da17d1b2372cd16469bb74791f7ac95"
         },
         {
           "type": "file",
@@ -87,7 +87,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-assets.git",
-          "commit": "cf73d970ca6ff7ef0494d0a81d05acf33363f3f6"
+          "commit": "ce9be3ce1e33bae2745b9dd86054d2c7197168aa"
         }
       ]
     },
@@ -100,7 +100,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "aec20a956db9a08c409f24314102ee50979cb8bc"
+          "commit": "4478312e69fafff15101edfebf08c82078a0d009"
         }
       ]
     },
@@ -113,7 +113,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "500790e09cd9f38cef04a5eb6516fc52e708fb7a"
+          "commit": "de1bb6011b59d32f4610e34d5f14a49e4e2ed361"
         }
       ]
     },
@@ -126,7 +126,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "465cfecd43b37abe288d07f5e3e064709763f401"
+          "commit": "442f91d9a0fa885942f1d37aae76746cc3662c1b"
         }
       ]
     },
@@ -152,7 +152,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/slang-shaders.git",
-          "commit": "44c0a731de28cdd4addf0c01f11a28a0fce4b2ef"
+          "commit": "202d0c7684bcb2824774972e9922a3b686cb940c"
         }
       ]
     },
@@ -165,7 +165,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/glsl-shaders.git",
-          "commit": "f842d68eeba556d45bcf08d7a77de46f364efdd2"
+          "commit": "79351afd9b069c778b477307dd3368582ddb0c29"
         }
       ]
     },
@@ -179,7 +179,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "e8b10d342a7c5723bd8ad6a8d5eac830d1259ab4"
+          "commit": "0a2b44273da17d1b2372cd16469bb74791f7ac95"
         }
       ]
     },
@@ -193,7 +193,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "e8b10d342a7c5723bd8ad6a8d5eac830d1259ab4"
+          "commit": "0a2b44273da17d1b2372cd16469bb74791f7ac95"
         }
       ]
     }
