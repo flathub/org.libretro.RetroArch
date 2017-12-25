@@ -13,11 +13,18 @@ flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flath
 flatpak install --user flathub org.libretro.RetroArch
 ```
 
-## Usage
+## Run
 
 To run RetroArch through Flatpak, execute:
 ```
 flatpak run org.libretro.RetroArch
+```
+
+## Update
+
+To update RetroArch through Flathub, use the follow command:
+```
+flatpak update --user org.libretro.RetroArch
 ```
 
 ### Options
