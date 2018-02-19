@@ -3,6 +3,12 @@
   <id type="desktop">org.libretro.RetroArch.desktop</id>
   <name>RetroArch</name>
   <summary>Frontend for emulators, game engines and media players.</summary>
+  <screenshots>
+    <screenshot type="default">
+      <caption>The RetroArch main menu.</caption>
+      <image type="source" width="1280" height="720">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot.png</image>
+    </screenshot>
+  </screenshots>
   <description>
     <p>
       RetroArch enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all.
