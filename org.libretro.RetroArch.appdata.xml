@@ -17,4 +17,139 @@
   <url type="homepage">http://retroarch.com</url>
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
+  <releases>
+    <release version="1.7.1" date="2018-02-19" urgency="medium">
+      <description>
+        <ul>
+          <_li>3DS: Now correctly reports amount of CPU cores.</_li>
+          <_li>3DS: Frontend rating is now correctly implemented for both New 3DS/2DS and Old 3DS/2DS.</_li>
+          <_li>3DS: Initial networking support, HTTP requests won't work yet.</_li>
+          <_li>3DS: Now reports memory and battery state.</_li>
+          <_li>AUDIO: Added 'Audio Resampler Quality' setting to Audio Settings. Setting this higher will increase sound quality at the expense of sound latency and/or performance. Setting this value lower will improve sound latency/performance at the expense of sound quality. Only has an effect if the Sinc resampler is used, and you have to restart the game for changes to take effect.</_li>
+          <_li>CHEEVOS: Fix unofficial achievements not being loaded.</_li>
+          <_li>CHEEVOS: Show savestate menu entries when no achievements are found even if hardcore mode is enabled.</_li>
+          <_li>CHEEVOS: Support Neo Geo Pocket.</_li>
+          <_li>COMMON: Bugfix for issue related to 'Windows mouse pointer visible when running MESS or MAME cores'.</_li>
+          <_li>COMMON: Fix bug 'Last item in a Playlist is ignored'.</_li>
+          <_li>COMMON: New LED API. Driver implemented for Raspberry Pi, proof of concept implemented for core MAME 2003.</_li>
+          <_li>COMMON: Add quick menu option to watch shader files for changes and recompile them automatically (Linux only for now).</_li>
+          <_li>D3D8: Direct3D 8 can now work on systems that have Direct3D 8 installed.</_li>
+          <_li>D3D9: Add menu support for MaterialUI/XMB.</_li>
+          <_li>D3D10: Initial video driver implementation.</_li>
+          <_li>D3D11: Initial video driver implementation.</_li>
+          <_li>D3D11: SPIRV-Cross/slang shader support for D3D11.</_li>
+          <_li>D3D12: Initial video driver implementation.</_li>
+          <_li>DINPUT: don't reinitialize input driver on network events / media insertion / network drive connection</_li>
+          <_li>INPUT: show friendly names when available under input binds and system information</_li>
+          <_li>INPUT: show the config name when available under system information</_li>
+          <_li>GUI: Allow changing menu font color.</_li>
+          <_li>GUI: Menu visibility options for RGUI and MaterialUI.</_li>
+          <_li>GUI/MaterialUI: Works now with D3D8, D3D9 Cg, D3D11 and D3D12 drivers.</_li>
+          <_li>GUI/XMB: Add Monochrome Inverted icon theme.</_li>
+          <_li>GUI/XMB: Allow changing menu scale to 200%.</_li>
+          <_li>GUI/XMB: Works now with D3D8, D3D9 Cg, D3D11 and D3D12 drivers. Menu shader effects currently don't work on D3D8/D3D9 Cg.</_li>
+          <_li>HAIKU: Restored port.</_li>
+          <_li>KEYMAPPER: prevent a condition that caused input_menu_toggle to stop working when a RETRO_DEVICE_KEYBOARD type device is enabled</_li>
+          <_li>GL: ignore hard gpu sync when fast-forwarding</_li>
+          <_li>IOS10/11: Handle hardware keyboards and iCade controllers</_li>
+          <_li>LOCALIZATION: Update Italian translation.</_li>
+          <_li>LOCALIZATION: Update Japanese translation.</_li>
+          <_li>LOCALIZATION: Update Portuguese-Brazilian translation.</_li>
+          <_li>LOCALIZATION: Update Spanish translation.</_li>
+          <_li>NETPLAY: Add menu option to select different MITM (relay) server locations.</_li>
+          <_li>OSX: Modify HID buttons detection algorithm.</_li>
+          <_li>QB: Added --datarootdir.</_li>
+          <_li>QB: Added --bindir and --mandir and deprecated --with-bin_dir and --with-man_dir.</_li>
+          <_li>QB: Added --docdir.</_li>
+          <_li>SHADERS: Allow saving of shader presets based on the parent directory (Saving one for /foo/bar/mario.sfc would result in shaders/presets/corename/bar.ext). We decided it's safer to still isolate the presets to a single core because different cores may treat video output differently.</_li>
+          <_li>SHADERS: Don't save the path to the current preset to the main config. This was causing weird behavior, instead it will try to load currentconfig.ext and it will save a preset with that name when select apply shader preset. The resulting shader will restore properly after restarting and even after core/parent/game specific presets are loaded</_li>
+          <_li>SOLARIS: Initial port.</_li>
+          <_li>SWITCH: Initial Nintendo Switch port, based on libtransistor SDK.</_li>
+          <_li>PS3: Enable Cheevos.</_li>
+          <_li>PSP: Enable threading support through pthreads.</_li>
+          <_li>SHADERS: SPIRV-Cross/slang shader support for D3D11.</_li>
+          <_li>SHIELD ATV: Allow the remote / gamepad takeover hack to work with the 2017 gamepad</_li>
+          <_li>SUBSYSTEM: Subsystem saves now respect the save directory</_li>
+          <_li>SUBSYSTEM: You can now load subsystem games from the menu (see https://github.com/libretro/RetroArch/pull/6282 for caveats)</_li>
+          <_li>VULKAN: Fix swapchain recreation bug on Nvidia GPUs with Windows 10 (resolved in Windows Nvidia driver version 390.77).</_li>
+          <_li>WINDOWS: Improved Unicode support (for cores/directory creation and 7zip archives).</_li>
+          <_li>WINDOWS: Show progress meter on taskbar for downloads (Windows 7 and up).</_li>
+          <_li>WINDOWS: WS_EX_LAYERED drastically decreases performance, so only set it when needed (transparency in windowed mode).</_li>
+          <_li>WIIU: Overlay support.</_li>
+          <_li>WIIU: Transparency support in menu + overlays.</_li>
+          <_li>WIIU: Increased stability during core switching.</_li>
+          <_li>WIIU: Shader support.</_li>
+          <_li>WIIU: Menu shader effects added (shaders).</_li>
+          <_li>WIIU: Add missing time/clock support. (also fixes RTC [Real Time Clock] in Gambatte)</_li>
+          <_li>XBOX OG: Restored port.</_li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.7.0" date="2017-12-25" urgency="medium">
+      <description>
+        <ul>
+          <_li>CHEEVOS: Add badges for achievements, shows thumbnail images of achievements.</_li>
+          <_li>CHEEVOS: Leaderboard support.</_li>
+          <_li>CHEEVOS: Only disable savestates on hardcore mode if achievements are not available.</_li>
+          <_li>COMMANDLINE: Fix fullscreen toggle switch.</_li>
+          <_li>COMMON: Add 'Automatically Load Content To Playlist' feature, enabled by default.</_li>
+          <_li>COMMON: Fix slowmotion ratio always being reset back to 1.</_li>
+          <_li>COMMON: Optimized NBIO implementations now for Apple, Windows, and Linux. Uses mmap for Linux/Windows/BSD if/when available. File I/O should now be much faster for loading images inside the menu.</_li>
+          <_li>COMMON: Native Blissbox support now for latest firmware as of writing (2.0). Implementation through libusb and/or native Windows HID.</_li>
+          <_li>COMMON: New lightgun API.</_li>
+          <_li>COMMON: New VFS (Virtual File System) API.</_li>
+          <_li>COMMON: Fixed some playlist bugs.</_li>
+          <_li>COMMON: New snow shader.</_li>
+          <_li>COMMON: Fix Quick Menu title, no longer shows 'Select File'.</_li>
+          <_li>COMMON: Fix loading cores that require no content one after another.</_li>
+          <_li>COMMON: Map Delete key to Y button for non-unified menu keyboard controls.</_li>
+          <_li>COMMON: Fix for relative paths being normalised and generating a duplicate history entry.</_li>
+          <_li>EMSCRIPTEN: Fix references to browserfs.</_li>
+          <_li>FREEBSD: Support libusb HID input driver.</_li>
+          <_li>HAIKU: Buildfix.</_li>
+          <_li>INPUT: Map clear button to DEL key.</_li>
+          <_li>LINUX/X11: Add RetroArch logo to window title bar.</_li>
+          <_li>LINUX/X11: Input driver now supports new lightgun code.</_li>
+          <_li>LINUX/X11: Support window transparency (requires a compositing window manager).</_li>
+          <_li>LOBBIES: Fix for crash on join netplay rooms via touch / glui.</_li>
+          <_li>LOCALIZATION: Update Italian translation.</_li>
+          <_li>LOCALIZATION: Update Japanese translation.</_li>
+          <_li>LOCALIZATION: Update Portuguese-Brazilian translation.</_li>
+          <_li>LOCALIZATION: Update Polish translation.</_li>
+          <_li>LOCALIZATION: Update Russian translation.</_li>
+          <_li>MENU: Snowflake menu shader effect.</_li>
+          <_li>OSX/PPC: Fix the GL2 renderchain, had to use EXT versions of framebuffer/renderbuffer functions.</_li>
+          <_li>PS3: HTTP requests / downloads should now work.</_li>
+          <_li>PS3: Core Updater now works.</_li>
+          <_li>PS3: Improved font rendering, enable STB Unicode font renderer.</_li>
+          <_li>PSP: Make it work with Vita's Adrenaline.</_li>
+          <_li>PSP: Fix audio sync.</_li>
+          <_li>PSP: Fix content loading, port should be functional again.</_li>
+          <_li>PSP: Use 64MB when available.</_li>
+          <_li>SCANNER: Fix crash from Windows-incompatible format string.</_li>
+          <_li>VITA: Improve packaging, installation times.</_li>
+          <_li>WIIU: Disabled the controller patcher for now since it was the source of many stability issues.</_li>
+          <_li>VULKAN: Various stability fixes for WSI.</_li>
+          <_li>WINDOWS: Add MSVC 2017 solution.</_li>
+          <_li>WINDOWS: Get rid of the empty console window in MSVC 2010 builds.</_li>
+          <_li>WINDOWS: Raw input driver now supports new lightgun code.</_li>
+          <_li>WINDOWS: Use configured OSD/text message color on GDI driver.</_li>
+          <_li>WINDOWS/XINPUT: Populate XInput VID/PID from DInput so autoconfig doesn't rely solely on joypad names</_li>
+          <_li>WINDOWS/XINPUT: Fix crash that occurs in some situations with Steam running and a Steam Controller plugged in.</_li>
+          <_li>WINDOWS: Improve version reporting under System Information.</_li>
+          <_li>WINDOWS: Support window transparency.</_li>
+          <_li>WINDOWS: Correct usage of GetWindowPlacement per MS docs, fixes game window position on Win95/98.</_li>
+          <_li>WINDOWS: Added Visual Studio 2017 support.</_li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.6.9" date="2017-11-21" urgency="medium">
+      <description>
+        <ul>
+          <_li>COMMON: Small memory leak.</_li>
+          <_li>NETPLAY: Fix network command only working once.</_li>
+        </ul>
+      </description>
+    </release>
+  </releases>
 </application>
