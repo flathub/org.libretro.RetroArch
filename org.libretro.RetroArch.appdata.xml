@@ -3,6 +3,11 @@
   <id type="desktop">org.libretro.RetroArch.desktop</id>
   <name>RetroArch</name>
   <summary>Frontend for emulators, game engines and media players.</summary>
+  <developer_name>libretro</developer_name>
+  <url type="homepage">https://www.retroarch.com</url>
+  <categories>
+    <category>Game</category>
+  </categories>
   <screenshots>
     <screenshot type="default">
       <caption>The RetroArch main menu.</caption>
