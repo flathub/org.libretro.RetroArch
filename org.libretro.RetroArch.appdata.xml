@@ -15,8 +15,8 @@
     </p>
   </description>
   <url type="homepage">http://retroarch.com</url>
-  <projectlicense>GPL-3.0</projectlicense>
-  <metadatalicense>CC0-1.0</metadatalicense>
+  <project_license>GPL-3.0</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
   <releases>
     <release version="1.7.1" date="2018-02-19">
       <description>
