@@ -49,7 +49,8 @@
       ],
       "modules": [
         "libpng/libpng-1.2.59.json",
-        "nvidia-cg-toolkit/nvidia-cg-toolkit-3.1.0013.json"
+        "nvidia-cg-toolkit/nvidia-cg-toolkit-3.1.0013.json",
+        "shared-modules/udev/udev-175.json"
       ]
     },
     {
