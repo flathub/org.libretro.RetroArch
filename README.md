@@ -43,7 +43,8 @@ flatpak run --filesystem=host --filesystem=/media/NAS/roms org.libretro.RetroArc
 To test the application locally, use [flatpak-builder](http://docs.flatpak.org/en/latest/flatpak-builder.html) with:
 ```
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.freedesktop.Sdk//1.6
+flatpak install --user flathub org.freedesktop.Sdk//1.6
+flatpak install --user flathub org.freedesktop.Platform//1.6
 flatpak-builder --repo=libretro --force-clean retroarch org.libretro.RetroArch.json
 flatpak remote-add --user libretro libretro --no-gpg-verify
 flatpak install --user libretro org.libretro.RetroArch
