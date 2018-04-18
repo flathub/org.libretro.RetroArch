@@ -50,3 +50,10 @@ flatpak remote-add --user libretro libretro --no-gpg-verify
 flatpak install --user libretro org.libretro.RetroArch
 flatpak run org.libretro.RetroArch --verbose
 ```
+
+### Clean
+
+```
+flatpak uninstall --user libretro org.libretro.RetroArch
+rm -rf ~/.var/app/org.libretro.RetroArch
+```
