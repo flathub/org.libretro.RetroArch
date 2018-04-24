@@ -10,13 +10,18 @@
     "--socket=x11",
     "--socket=wayland",
     "--socket=pulseaudio",
+    "--socket=system-bus",
+    "--socket=session-bus",
     "--share=ipc",
     "--share=network",
+    "--persist=.",
     "--device=all",
     "--filesystem=host",
-    "--allow=multiarch"
+    "--allow=multiarch",
+    "--allow=devel"
   ],
   "modules": [
+    "shared-modules/udev/udev-175.json",
     {
       "name": "retroarch",
       "make-args": [
