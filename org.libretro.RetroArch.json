@@ -11,7 +11,6 @@
     "--socket=wayland",
     "--socket=pulseaudio",
     "--socket=system-bus",
-    "--socket=session-bus",
     "--share=ipc",
     "--share=network",
     "--persist=.",
