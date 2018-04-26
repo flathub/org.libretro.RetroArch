@@ -13,7 +13,6 @@
     "--socket=system-bus",
     "--share=ipc",
     "--share=network",
-    "--persist=.",
     "--device=all",
     "--filesystem=host",
     "--allow=multiarch",
