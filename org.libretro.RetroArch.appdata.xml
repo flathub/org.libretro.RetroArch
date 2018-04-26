@@ -11,7 +11,19 @@
   <screenshots>
     <screenshot type="default">
       <caption>The RetroArch main menu.</caption>
-      <image type="source" width="1280" height="720">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot.png</image>
+      <image type="source" width="1920" height="1080">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>RetroArch running the Nintendo Entertainment System.</caption>
+      <image type="source" width="1172" height="960">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-2.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>RetroArch running Sheep It Up on the Gameboy.</caption>
+      <image type="source" width="1554" height="1050">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-3.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>RetroArch running the Super Nintendo.</caption>
+      <image type="source" width="1172" height="896">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-4.png</image>
     </screenshot>
   </screenshots>
   <description>
