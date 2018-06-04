@@ -14,12 +14,16 @@
     "--share=network",
     "--device=all",
     "--filesystem=host",
-    "--allow=multiarch"
+    "--allow=multiarch",
+    "--talk-name=org.freedesktop.ScreenSaver"
   ],
   "modules": [
     "shared-modules/udev/udev-175.json",
     {
       "name": "retroarch",
+      "config-opts": [
+        "--enable-dbus"
+      ],
       "make-args": [
         "GLOBAL_CONFIG_DIR=/app/etc"
       ],
