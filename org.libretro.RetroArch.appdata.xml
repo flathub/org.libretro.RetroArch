@@ -34,6 +34,21 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.7.3" date="2018-05-03">
+      <description>
+        <ul>
+          <li>AUDIO: Audio mixer supports FLAC/MP3 file types now.</li>
+          <li>COMMON: Fixed bug 'crashing in cores that don't range check retro_set_controller_type'. Some people were having crashes when device is set to RETRO_DEVICE_NONE and the cores don't check the number of ports, in VBAM's case it was overflowing and crashing. QuickNES was crashing too.</li>
+          <li>COMMON: (QuickMenu) Added Configuration Override submenu.</li>
+          <li>LOCALIZATION: Update Italian translation.</li>
+          <li>LOCALIZATION: Update Portuguese translation.</li>
+          <li>MENU: Audio mixer now works in the menu without any cores loaded. You have to enable the setting 'Enable menu audio' for this to work.</li>
+          <li>REMAPPING/OVERLAYS: Fix regression - overlays could no longer be remapped.</li>
+          <li>SCANNER: Add Wii Backup File WBFS support.</li>
+          <li>X11: CRT SwitchRes support for X11/Linux.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.2" date="2018-04-24">
       <description>
         <ul>
