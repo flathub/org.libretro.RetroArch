@@ -32,7 +32,7 @@
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
           "branch": "v1.7.4",
-          "commit": "41f7de72cd12f520b4923d69901ee792b3def316"
+          "commit": "02e23be127db29a72170d3c79bfd642288cd15ea"
         },
         {
           "type": "file",
