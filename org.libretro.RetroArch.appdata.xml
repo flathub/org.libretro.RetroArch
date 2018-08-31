@@ -49,13 +49,6 @@
           <li>LOCALIZATION: Update Russian translation.</li>
           <li>LOCALIZATION: Update Spanish translation.</li>
           <li>MIDI: Add MIDI support to the libretro API. Dosbox is the first proof of concept core implementing libretro MIDI.</li>
-          <li>MENU/QT/WIMP: Qt QSlider styling for Dark Theme.</li>
-          <li>MENU/QT/WIMP: Remove button ghostly inside highlighting.</li>
-          <li>MENU/QT/WIMP: Initial grid view.</li>
-          <li>MENU/QT/WIMP: Drag and drop to add new playlist items, add option to add/edit/delete playlists.</li>
-          <li>MENU/QT/WIMP: Add menu option to update RetroArch (Windows only for now).</li>
-          <li>MENU/QT/WIMP: Add menu option to manage shaders.</li>
-          <li>MENU/QT/WIMP: Add menu option to manage core options.</li>
           <li>MENU/XMB: Add new icons for the settings</li>
           <li>MENU/XMB: Add an option to show the desktop ui</li>
           <li>NETWORK: Enable SSL/TLS support by default for desktop platforms.</li>
