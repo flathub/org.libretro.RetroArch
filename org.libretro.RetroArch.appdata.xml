@@ -34,6 +34,32 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.7.4" date="2018-08-30">
+      <description>
+        <ul>
+          <li>CHEEVOS: Fix crash when scrolling Achievement List while Unofficial Achievements enabled (#6732).</li>
+          <li>CHEEVOS: Added hitcounts support for PauseIf/ResetIf (#6817).</li>
+          <li>COMMON: Automatically hide "Configuration Override options" in Quick Menu.</li>
+          <li>COMMON: Small Bugfix to not trigger savestate code when pressing Reset.</li>
+          <li>COMMON: Added libsixel video driver.</li>
+          <li>LOCALIZATION: Update Italian translation.</li>
+          <li>LOCALIZATION: Update Japanese translation.</li>
+          <li>LOCALIZATION: Update Polish translation.</li>
+          <li>LOCALIZATION: Update Portuguese / Brazilian translation.</li>
+          <li>LOCALIZATION: Update Russian translation.</li>
+          <li>LOCALIZATION: Update Spanish translation.</li>
+          <li>MIDI: Add MIDI support to the libretro API. Dosbox is the first proof of concept core implementing libretro MIDI.</li>
+          <li>MENU/XMB: Add new icons for the settings</li>
+          <li>MENU/XMB: Add an option to show the desktop ui</li>
+          <li>NETWORK: Enable SSL/TLS support by default for desktop platforms.</li>
+          <li>REMAPS: Fix the way offsets are calculated for keyboard remapping.</li>
+          <li>RUNAHEAD: Fix full-screen mode change breaking Secondary Core's environment variables.</li>
+          <li>VULKAN: Fix two validation errors.</li>
+          <li>VULKAN: Try to avoid creating swapchains redundantly. Should fix black screen and having to alt tab out of window again to get display working on Nvidia GPUs (Windows).</li>
+          <li>X11: Fix Game Focus Toggle.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.3" date="2018-05-03">
       <description>
         <ul>

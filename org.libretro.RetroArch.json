@@ -31,8 +31,8 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "branch": "v1.7.3",
-          "commit": "b2ceb50897bc5c314bbd653a583a95050f03e1e2"
+          "branch": "v1.7.4",
+          "commit": "02e23be127db29a72170d3c79bfd642288cd15ea"
         },
         {
           "type": "file",
@@ -58,97 +58,6 @@
       ]
     },
     {
-      "name": "retroarch-assets",
-      "make-install-args": [
-        "PREFIX=/app"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libretro/retroarch-assets.git",
-          "commit": "467a0ccf48b6d507ce4fd3b61eac3936c46d2a20"
-        }
-      ]
-    },
-    {
-      "name": "libretro-database",
-      "make-install-args": [
-        "PREFIX=/app"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "0ed1e38c56899a73d74e064dd1ae9bdcc4f4af23"
-        }
-      ]
-    },
-    {
-      "name": "libretro-core-info",
-      "make-install-args": [
-        "PREFIX=/app"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "06e335bf8b05d4babcde383dc51d75f031778b64"
-        }
-      ]
-    },
-    {
-      "name": "retroarch-joypad-autoconfig",
-      "make-install-args": [
-        "PREFIX=/app"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "5a9a7e9b26d7e3ec0c6abb5024b074bc5846dc6d"
-        }
-      ]
-    },
-    {
-      "name": "common-shaders",
-      "make-install-args": [
-        "PREFIX=/app"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libretro/common-shaders.git",
-          "commit": "01c80d20ddfa2ca25c1340b5beb72866c606f88c"
-        }
-      ]
-    },
-    {
-      "name": "slang-shaders",
-      "make-install-args": [
-        "PREFIX=/app"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libretro/slang-shaders.git",
-          "commit": "36db5c17cbcb06ce6634a796d482b57fec7cef43"
-        }
-      ]
-    },
-    {
-      "name": "glsl-shaders",
-      "make-install-args": [
-        "PREFIX=/app"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libretro/glsl-shaders.git",
-          "commit": "8ab54cd2925bbba8ce320d2a2fe35e11d67ab1d5"
-        }
-      ]
-    },
-    {
       "name": "retroarch-filers-video",
       "subdir": "gfx/video_filters",
       "make-install-args": [
@@ -158,7 +67,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "b2ceb50897bc5c314bbd653a583a95050f03e1e2"
+          "commit": "41f7de72cd12f520b4923d69901ee792b3def316"
         }
       ]
     },
@@ -172,7 +81,98 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "b2ceb50897bc5c314bbd653a583a95050f03e1e2"
+          "commit": "41f7de72cd12f520b4923d69901ee792b3def316"
+        }
+      ]
+    },
+    {
+      "name": "retroarch-assets",
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/retroarch-assets.git",
+          "commit": "d111305d39616b6619edab15fd69bbe38d56c781"
+        }
+      ]
+    },
+    {
+      "name": "libretro-database",
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/libretro-database.git",
+          "commit": "5d2db4979b65c06653b62ad119a3789d3442f1e1"
+        }
+      ]
+    },
+    {
+      "name": "libretro-core-info",
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/libretro-core-info.git",
+          "commit": "9feec8c12fcda2a20251d511311e646eca82f155"
+        }
+      ]
+    },
+    {
+      "name": "retroarch-joypad-autoconfig",
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
+          "commit": "7e3ca0095b7781fe6d95abea3cb72360c0207d63"
+        }
+      ]
+    },
+    {
+      "name": "common-shaders",
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/common-shaders.git",
+          "commit": "89ea90400694f548818ffda07bd7968c69b2b0ff"
+        }
+      ]
+    },
+    {
+      "name": "slang-shaders",
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/slang-shaders.git",
+          "commit": "b961d1ad1d97be3a194b3fc8be635c456008058c"
+        }
+      ]
+    },
+    {
+      "name": "glsl-shaders",
+      "make-install-args": [
+        "PREFIX=/app"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/glsl-shaders.git",
+          "commit": "a52c8b6798c7a10fd72971ef8e8b135e0f7a9ca0"
         }
       ]
     }
