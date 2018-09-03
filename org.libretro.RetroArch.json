@@ -18,6 +18,7 @@
     "--talk-name=org.freedesktop.ScreenSaver"
   ],
   "modules": [
+    "qt5/qt5-qtbase.json",
     "shared-modules/udev/udev-175.json",
     {
       "name": "retroarch",
