@@ -42,6 +42,8 @@ flatpak run --filesystem=host --filesystem=/media/NAS/roms org.libretro.RetroArc
 
 To test the application locally, use [flatpak-builder](http://docs.flatpak.org/en/latest/flatpak-builder.html) with:
 ```
+git clone --recursive https://github.com/flathub/org.libretro.RetroArch.git
+cd org.libretro.RetroArch
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install --user flathub org.freedesktop.Sdk//1.6
 flatpak install --user flathub org.freedesktop.Platform//1.6
@@ -54,6 +56,7 @@ flatpak run org.libretro.RetroArch --verbose
 ### Clean
 
 ```
-flatpak uninstall --user libretro org.libretro.RetroArch
+flatpak uninstall --user org.libretro.RetroArch
 rm -rf ~/.var/app/org.libretro.RetroArch
+flatpak remote-delete libretro
 ```
