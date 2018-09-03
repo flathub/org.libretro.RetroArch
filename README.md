@@ -58,6 +58,6 @@ flatpak run org.libretro.RetroArch --verbose
 
 ```
 flatpak uninstall --user org.libretro.RetroArch
-rm -rf ~/.var/app/org.libretro.RetroArch
+rm -rf ~/.var/app/org.libretro.RetroArch .flatpak-builder
 flatpak remote-delete libretro
 ```
