@@ -42,8 +42,9 @@ flatpak run --filesystem=host --filesystem=/media/NAS/roms org.libretro.RetroArc
 
 To test the application locally, use [flatpak-builder](http://docs.flatpak.org/en/latest/flatpak-builder.html) with:
 ```
-git clone --recursive https://github.com/flathub/org.libretro.RetroArch.git
+git clone https://github.com/flathub/org.libretro.RetroArch.git
 cd org.libretro.RetroArch
+git submodule update --init
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install --user flathub org.kde.Sdk//5.9
 flatpak install --user flathub org.kde.Platform//5.9
