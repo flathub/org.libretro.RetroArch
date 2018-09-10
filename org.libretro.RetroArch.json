@@ -20,6 +20,16 @@
   "modules": [
     "shared-modules/udev/udev-175.json",
     {
+      "name": "xrandr",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://xorg.freedesktop.org/archive/individual/app/xrandr-1.5.0.tar.bz2",
+          "sha256": "c1cfd4e1d4d708c031d60801e527abc9b6d34b85f2ffa2cadd21f75ff38151cd"
+        }
+      ]
+    },
+    {
       "name": "retroarch",
       "config-opts": [
         "--enable-dbus"
