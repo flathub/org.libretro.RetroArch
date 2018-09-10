@@ -46,8 +46,8 @@ git clone https://github.com/flathub/org.libretro.RetroArch.git
 cd org.libretro.RetroArch
 git submodule update --init
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install --user flathub org.kde.Sdk//5.9
-flatpak install --user flathub org.kde.Platform//5.9
+flatpak install --user flathub org.freedesktop.Sdk//1.6
+flatpak install --user flathub org.freedesktop.Platform//1.6
 flatpak-builder --repo=libretro --force-clean retroarch org.libretro.RetroArch.json
 flatpak remote-add --user libretro libretro --no-gpg-verify
 flatpak install --user libretro org.libretro.RetroArch
