@@ -6,8 +6,8 @@
   <developer_name>libretro</developer_name>
   <url type="homepage">https://www.retroarch.com</url>
   <url type="help">https://docs.libretro.com</url>
-  <url type="faq">http://retroarch.com/?page=faq</url>
-  <url type="donation">http://retroarch.com/index.php?page=donate</url>
+  <url type="faq">https://retroarch.com/?page=faq</url>
+  <url type="donation">https://retroarch.com/index.php?page=donate</url>
   <categories>
     <category>Game</category>
   </categories>
