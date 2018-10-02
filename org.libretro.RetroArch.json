@@ -31,8 +31,8 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "branch": "v1.7.4",
-          "commit": "02e23be127db29a72170d3c79bfd642288cd15ea"
+          "branch": "v1.7.5",
+          "commit": "c9c6c5a5a63cf49821f785eda58ad46864864cd5"
         },
         {
           "type": "file",
@@ -67,7 +67,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "41f7de72cd12f520b4923d69901ee792b3def316"
+          "commit": "c9c6c5a5a63cf49821f785eda58ad46864864cd5"
         }
       ]
     },
@@ -81,7 +81,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "41f7de72cd12f520b4923d69901ee792b3def316"
+          "commit": "c9c6c5a5a63cf49821f785eda58ad46864864cd5"
         }
       ]
     },
@@ -94,7 +94,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-assets.git",
-          "commit": "d111305d39616b6619edab15fd69bbe38d56c781"
+          "commit": "2318d3beecbfd34828e2c984d1fc1817127409f7"
         }
       ]
     },
@@ -107,7 +107,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "5d2db4979b65c06653b62ad119a3789d3442f1e1"
+          "commit": "64002f786cb830991ea2a369eafafcb41aa6b3c2"
         }
       ]
     },
@@ -120,7 +120,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "9feec8c12fcda2a20251d511311e646eca82f155"
+          "commit": "bb8f59de4137a8b1e3ecd39eff6a58b0618a0623"
         }
       ]
     },
@@ -133,7 +133,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "7e3ca0095b7781fe6d95abea3cb72360c0207d63"
+          "commit": "358643feb22b45d2429818025c2613e011dc3a5d"
         }
       ]
     },
@@ -146,7 +146,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/common-shaders.git",
-          "commit": "89ea90400694f548818ffda07bd7968c69b2b0ff"
+          "commit": "3e434c9934f6f19db17a7238c8d2289b4fcf1e93"
         }
       ]
     },
@@ -159,7 +159,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/slang-shaders.git",
-          "commit": "b961d1ad1d97be3a194b3fc8be635c456008058c"
+          "commit": "63a2ef84d8a83915d0b9396284bcfcefc0250ba8"
         }
       ]
     },
@@ -172,7 +172,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/glsl-shaders.git",
-          "commit": "a52c8b6798c7a10fd72971ef8e8b135e0f7a9ca0"
+          "commit": "64662f54e61ea668f4774458232aa83d917adf7a"
         }
       ]
     }
