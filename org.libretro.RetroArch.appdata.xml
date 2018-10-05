@@ -37,6 +37,36 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.7.5" date="2018-10-2">
+      <description>
+        <ul>
+          <li>CAMERA: Fix Video4Linux2 driver that broke years ago.</li>
+          <li>CONFIG: Add 'Reset To Defaults' setting in Configurations. Thi will reset your config file to defaults.</li>
+          <li>CHEATS: Add support for Rumble when increase or decrease by the rumble value.</li>
+          <li>CHEATS: Add cheat variables to allow for updating large portions of memory.</li>
+          <li>CHEEVOS: Prevent loading states before achievements are fully loaded.</li>
+          <li>COMMON: Support for "OEM-102" key (usually '' on Euro keyboards).</li>
+          <li>DISCORD: Add 'Ask To Join' Feature.</li>
+          <li>INPUT: Add new menu toggle combos 'L3 + R' and 'L + R' (useful for Switch).</li>
+          <li>LOCALIZATION: Update Portuguese / Brazilian translation.</li>
+          <li>LOCALIZATION: Update Japanese translation.</li>
+          <li>LOCALIZATION: Update Polish translation.</li>
+          <li>LOCALIZATION: Update Spanish translation.</li>
+          <li>MENU: Add dropdown lists for many settings.</li>
+          <li>MENU: Fix crash that could happen when changing core's options on Android.</li>
+          <li>MENU/QT/WIMP: Add option to rename playlists.</li>
+          <li>MENU/QT/WIMP: Add option to filter extensions inside archives when adding to a playlist.</li>
+          <li>MENU/QT/WIMP: Rename playlist entries with 2 single clicks.</li>
+          <li>MENU/QT/WIMP: Fix shader parameter checkboxes not working</li>
+          <li>NETPLAY: Save lobby details received back from server after first announcement.</li>
+          <li>OPENGL/GLX: Implement Adaptive VSync - GLX_EXT_swap_control_tear.</li>
+          <li>OPENGL/WGL: Implement Adaptive VSync - WGL_EXT_swap_control_tear.</li>
+          <li>RUNAHEAD: Fix performance degradation that could happen over time (after approx. 30 mins). Fixed input IDs outside of range 0-35 causing slow performance in runahead.</li>
+          <li>VULKAN: Fix race condition in threaded mailbox emulation.</li>
+          <li>VULKAN: Maintenance fixes.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.4" date="2018-08-30">
       <description>
         <ul>
