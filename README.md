@@ -10,7 +10,7 @@ Go to https://flathub.org/builds/ to see Flathub in action.
 To install RetroArch through Flathub, use the following:
 ```
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install --user flathub org.libretro.RetroArch
+flatpak install --user -y flathub org.libretro.RetroArch
 ```
 
 ## Run
@@ -46,8 +46,8 @@ git clone https://github.com/flathub/org.libretro.RetroArch.git
 cd org.libretro.RetroArch
 git submodule update --init
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y --user flathub org.kde.Sdk//5.9
-flatpak install -y --user flathub org.kde.Platform//5.9
+flatpak install -y --user flathub org.kde.Sdk//5.11
+flatpak install -y --user flathub org.kde.Platform//5.11
 flatpak-builder --repo=libretro --force-clean retroarch org.libretro.RetroArch.json
 flatpak remote-add --user libretro libretro --no-gpg-verify
 flatpak install -y --user libretro org.libretro.RetroArch
