@@ -18,6 +18,11 @@
     "--talk-name=org.freedesktop.ScreenSaver"
   ],
   "modules": [
+    "shared-modules/SDL/SDL-1.2.15.json",
+    "shared-modules/SDL/SDL_image-1.2.12.json",
+    "shared-modules/SDL/SDL_mixer-1.2.12.json",
+    "shared-modules/SDL/SDL_net-1.2.8.json",
+    "shared-modules/SDL/SDL_ttf-2.0.11.json",
     "shared-modules/udev/udev-175.json",
     {
       "name": "retroarch",
