@@ -46,11 +46,7 @@ git clone https://github.com/flathub/org.libretro.RetroArch.git
 cd org.libretro.RetroArch
 git submodule update --init
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y --user flathub org.kde.Sdk//5.11
-flatpak install -y --user flathub org.kde.Platform//5.11
-flatpak-builder --repo=libretro --force-clean retroarch org.libretro.RetroArch.json
-flatpak remote-add --user libretro libretro --no-gpg-verify
-flatpak install -y --user libretro org.libretro.RetroArch
+flatpak-builder builddir --install-deps-from=flathub --user --install --force-clean org.libretro.RetroArch.json
 flatpak run org.libretro.RetroArch --verbose
 ```
 
@@ -59,5 +55,4 @@ flatpak run org.libretro.RetroArch --verbose
 ```
 flatpak uninstall --user org.libretro.RetroArch
 rm -rf ~/.var/app/org.libretro.RetroArch .flatpak-builder
-flatpak remote-delete libretro
 ```
