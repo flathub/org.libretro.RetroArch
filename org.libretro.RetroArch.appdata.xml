@@ -37,6 +37,69 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.7.6" date="2019-02-03">
+      <description>
+        <ul>
+          <li>CHEEVOS: Reset when hardcore mode is toggled.</li>
+CHEEVOS: Update the hashing methods to identify NES, SNES and Lynx games (more accurate and accepting headerless ROMs).</li>
+          <li>COMMON: Add new JSON playlist format.</li>
+          <li>COMMON: Fix playlist corruption when deleting items.</li>
+          <li>COMMON: Fix archive progress display calculation.</li>
+          <li>COMMON: Fix playlist entries appearing with previously used names.</li>
+          <li>COMMON: Fix screenshot filename with no core or content.</li>
+          <li>COMMON: Allow compiling without menu support.</li>
+          <li>CORE UPDATER: Allow sideloading cores from the menu.</li>
+          <li>CPU FILTERS: Add Normal2x filter.</li>
+          <li>CRT/LINUX: New Linux switching method partially implemented.</li>
+          <li>CRT/LINUX: Linux restore desktop resolution fixed.</li>
+          <li>CRT/LINUX: Monitor index switching and auto enumerate for output detection in Linux (still working on the windows method).</li>
+          <li>CRT/RASPBERRY PI: Initial support.</li>
+          <li>DATE: Add Date / Time style options.</li>
+          <li>DEBUGGING: Add an integrated crash handler for debug builds (see https://docs.libretro.com/tech/debugging)</li>
+          <li>DISCORD: Register the application name properly.</li>
+          <li>DISK CONTROL: Remember the last used folder / current active folder to make disk-swapping faster.</li>
+          <li>INPUT: Add new menu toggle (hold start button for 2 seconds)</li>
+          <li>INPUT: Fix arrow keys being incorrectly bound as numpad keys</li>
+          <li>INPUT/SDL: Flush the joypad events. Decreases cpu usage over time with the SDL joypad driver.</li>
+          <li>LOCALIZATION: Add Greek translation.</li>
+          <li>LOCALIZATION: Update German translation.</li>
+          <li>LOCALIZATION: Update Italian translation.</li>
+          <li>LOCALIZATION: Update Japanese translation.</li>
+          <li>LOCALIZATION: Update Simplified Chinese translation.</li>
+          <li>LOCALIZATION: Update Spanish translation.</li>
+          <li>MENU: New "ozone" menu driver.</li>
+          <li>MENU: Only show CRT SwitchRes if video display server is implemented (Windows/Linux for now)</li>
+          <li>MENU: User Interface -> Appearance -> 'Menu Font Green/Blue Color' settings now work properly.</li>
+          <li>MENU: Add option to enable in-menu sound effects.</li>
+          <li>MENU/QT/WIMP: Allow building with MSVC2017.</li>
+          <li>MENU/QT/WIMP: Add detailed file browser table.</li>
+          <li>MENU/QT/WIMP: New grid view implementation that is faster and loads thumbnails on-demand.</li>
+          <li>MENU/QT/WIMP: Thumbnail drag and drop support.</li>
+          <li>MENU/RGUI: Overhaul custom theme interface + add wallpaper support.</li>
+          <li>MENU/RGUI: Thumbnail support and thumbnail downscaling.</li>
+          <li>MENU: Hide password values.</li>
+          <li>MENU/SOUNDS: Implement in-menu sound effects (not enabled by default for now, still experimental).</li>
+          <li>MIDI: Add a Linux ALSA driver for MIDI.</li>
+          <li>NETPLAY: Force fast-save-states when netplay is enabled.</li>
+          <li>NETPLAY: Allow quick joining subsystem lobbies.</li>
+          <li>RECORDING: Implement recording options in the menu complete with quality profiles, streaming, and proper file naming</li>
+          <li>SCANNER: Fix GDI disc scanning.</li>
+          <li>SHADERS: Fix auto shader preset loading on D3D10, D3D11, D3D12</li>
+          <li>SUBSYSTEM: Allow more than 10 subsystems</li>
+          <li>SUBSYSTEM: Cores that use subsystem for complex scenarios can now load content without starting a regular content first</li>
+          <li>SUBSYSTEM: Remember the last used folder to make loading subsystem type content faster</li>
+          <li>VULKAN: Fix RGUI crashing at startup.</li>
+          <li>VULKAN/RGUI: Enable 'Menu Linear Filter' option.</li>
+          <li>VULKAN: Fix secondary screens in overlays not working.</li>
+          <li>WAYLAND: Implement idle-inhibit support (needed for screensaver suspend).</li>
+          <li>WAYLAND: Fix fullscreen toggle.</li>
+          <li>VFS: Update to version 3.</li>
+          <li>XBONE: Initial Xbox One port.</li>
+          <li>XMB/OZONE: Add more icons.</li>
+          <li>???: Easter Egg.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.5" date="2018-10-2">
       <description>
         <ul>
