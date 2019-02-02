@@ -41,7 +41,7 @@
       <description>
         <ul>
           <li>CHEEVOS: Reset when hardcore mode is toggled.</li>
-CHEEVOS: Update the hashing methods to identify NES, SNES and Lynx games (more accurate and accepting headerless ROMs).</li>
+          <li>CHEEVOS: Update the hashing methods to identify NES, SNES and Lynx games (more accurate and accepting headerless ROMs).</li>
           <li>COMMON: Add new JSON playlist format.</li>
           <li>COMMON: Fix playlist corruption when deleting items.</li>
           <li>COMMON: Fix archive progress display calculation.</li>
