@@ -37,7 +37,7 @@
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
           "branch": "master",
-          "commit": "eda11bb99edb8e96a3f720fad47c5e0d3f73c8d7"
+          "commit": "9750719074041e0f1949cf9535d1e04945f6213b"
         },
         {
           "type": "file",
@@ -72,7 +72,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "eda11bb99edb8e96a3f720fad47c5e0d3f73c8d7"
+          "commit": "9750719074041e0f1949cf9535d1e04945f6213b"
         }
       ]
     },
@@ -86,7 +86,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "eda11bb99edb8e96a3f720fad47c5e0d3f73c8d7"
+          "commit": "9750719074041e0f1949cf9535d1e04945f6213b"
         }
       ]
     },
@@ -99,7 +99,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-assets.git",
-          "commit": "7a3c6d95aff2eccd8ae879fe3a2c549c29162a31"
+          "commit": "092ca6f1d57ed36f7f8f828bd6e41dd5a56eddad"
         }
       ]
     },
@@ -112,7 +112,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "94173ae5173119cd0d391976d5444843d0722e9a"
+          "commit": "b2853574592aa6fce1adaaf2bdc5f16eb7609ee9"
         }
       ]
     },
@@ -125,7 +125,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "b48f2444ba470b686a310ce83dd614be31271cd9"
+          "commit": "d285119cd58ec28bb4332eae523ed211399e94d1"
         }
       ]
     },
