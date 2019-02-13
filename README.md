@@ -26,7 +26,7 @@ flatpak install --user -y flathub org.libretro.RetroArch
 
 4. [Launch content](https://docs.libretro.com/guides/launch-content/) through RetroArch either through the menu, or through the command line:
     ```
-    flatpak run org.libretro.RetroArch -L ~/.var/app/org.libretro.RetroArch/data/cores/chailove_libretro.so FloppyBird.chailove
+    flatpak run org.libretro.RetroArch -L ~/.var/app/org.libretro.RetroArch/config/retroarch/cores/chailove_libretro.so FloppyBird.chailove
     ```
 
 ## Update
