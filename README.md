@@ -13,12 +13,21 @@ flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flath
 flatpak install --user -y flathub org.libretro.RetroArch
 ```
 
-## Run
+## Usage
 
-To run RetroArch through Flatpak, execute:
-```
-flatpak run org.libretro.RetroArch
-```
+1. Run RetroArch through Flatpak:
+    ```
+    flatpak run org.libretro.RetroArch
+    ```
+
+2. [Install some libretro cores](https://docs.libretro.com/guides/download-cores/) using the Online Updater. There is no need to update core info files, assets, joypad profiles, cheats, database, cg, glsl, or slang shaders, as those are shipped with the Flatpak.
+
+3. [Import content](https://docs.libretro.com/guides/import-content/) by scanning the folder where your games are kept.
+
+4. [Launch content](https://docs.libretro.com/guides/launch-content/) through RetroArch either through the menu, or through the command line:
+    ```
+    flatpak run org.libretro.RetroArch -L ~/.var/app/org.libretro.RetroArch/data/cores/chailove_libretro.so FloppyBird.chailove
+    ```
 
 ## Update
 
