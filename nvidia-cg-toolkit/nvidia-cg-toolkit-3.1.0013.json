@@ -2,9 +2,9 @@
   "name": "nvidia-cg-toolkit",
   "buildsystem": "simple",
   "build-commands": [
-    "mkdir -p /app/lib",
-    "install -m 0644 usr/lib64/libCg.so /app/lib",
-    "install -m 0644 usr/lib64/libCgGL.so /app/lib"
+    "mkdir -p ${FLATPAK_DEST}/lib",
+    "install -m 0644 usr/lib64/libCg.so ${FLATPAK_DEST}/lib",
+    "install -m 0644 usr/lib64/libCgGL.so ${FLATPAK_DEST}/lib"
   ],
   "sources": [
     {
