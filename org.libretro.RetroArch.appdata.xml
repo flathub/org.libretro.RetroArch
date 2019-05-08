@@ -37,6 +37,118 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.7.7" date="2019-05-07">
+      <url>https://www.libretro.com/index.php/retroarch-1-7-7-released/</url>
+      <description>
+        <ul>
+          <li>AUDIO: Avoid deadlocks in certain audio drivers when toggling menu sounds on.</li>
+          <li>BLISS-BOX: Support PSX Jogcon (requires firmware 3.0).</li>
+          <li>CHEEVOS: Fix crash when reading memory that is out of range.</li>
+          <li>CHEEVOS: New Cheevos implementation enabled by default.</li>
+          <li>CHEEVOS: Pop-up badges when an achievement is triggered.</li>
+          <li>CRT: Dynamic super resolution support.</li>
+          <li>DISCORD: Fix potential crash when username is empty and discord is disabled.</li>
+          <li>DISCORD: Ask to join support for Linux.</li>
+          <li>INPUT/ANDROID: Add "Input Block Timeout" option.</li>
+          <li>COMMON: For platforms without HAVE_THREADS, don't automatically resume content when saving/loading states</li>
+          <li>COMMON: Make playlist sorting optional and consistent.</li>
+          <li>COMMON: Fix sorting of playlists with blank labels.</li>
+          <li>COMMON: Fix content scanner creating false positive playlist entries that also have wrong label and crc32.</li>
+          <li>COMMON: Add some MMX-optimized pixel conversion routines.</li>
+          <li>COMMON: Fix typo preventing some SSE2-optimized pixel conversions from being used.</li>
+          <li>COMMON: Add option to track how long content has been running over time.</li>
+          <li>COMMON: Fix buffer overflows in system information.</li>
+          <li>COMMON: Add option to change screen orientation via the windowing system (Android, Windows, X11).</li>
+          <li>COMMON: Show CPU model name in log.</li>
+          <li>COMMON: Add "Help -> Send Debug Info" option (and F10 hotkey) to send diagnostic info to the RetroArch team for help with problems.</li>
+          <li>COMMON: Show GPU device name/version in log.</li>
+          <li>COMMON: Add menu option to write log info to a file.</li>
+          <li>COMMON: Add subsystem support for playlists. Subsystem info is automatically saved to the history playlist for easy relaunching.</li>
+          <li>GL: Add new "gl1" OpenGL 1.1 compliant video driver for legacy GPUs and software renderers</li>
+          <li>GL: Add a new "glcore" driver with slang support (requires GL 3.2+ or GLES3).</li>
+          <li>GL: Draw OSD on top of overlay.</li>
+          <li>GONG: Add savestate support.</li>
+          <li>GONG: Add video refresh rate core options.</li>
+          <li>GONG: Two player support via core option.</li>
+          <li>GUI: Fix text alignment when using stb_unicode.</li>
+          <li>GUI: Fix text display issues when using Japanese (and other unicode-dependent language) text with stb_unicode.</li>
+          <li>GUI: Set language on first startup to the user's preferred OS language (Windows, *nix and Android).</li>
+          <li>INPUT: Add (scaled radial) analog deadzone and sensitivity options.</li>
+          <li>LIBRETRO: Add Turkish language support.</li>
+          <li>LIBRETRO: Allow non-accelerated video to rotate the display.</li>
+          <li>LOCALIZATION: Update Chinese (Simplified) translation.</li>
+          <li>LOCALIZATION: Update Chinese (Traditional) translation.</li>
+          <li>LOCALIZATION: Update Dutch translation.</li>
+          <li>LOCALIZATION: Update French translation.</li>
+          <li>LOCALIZATION: Update German translation.</li>
+          <li>LOCALIZATION: Update Japanese translation.</li>
+          <li>LOCALIZATION: Update Polish translation.</li>
+          <li>LOCALIZATION: Update Russian translation.</li>
+          <li>LOCALIZATION: Update Spanish translation.</li>
+          <li>LOCALIZATION: Add new Turkish translation.</li>
+          <li>MIDI: Fix startup crash in midi driver.</li>
+          <li>MENU: Bugfix - you can no longer get stuck in Online Updater -> Update Core screen when toggling between ingame and menu.</li>
+          <li>MENU: Selectively hide 'Take Screenshot' for video drivers that don't support taking screenshots.</li>
+          <li>MENU: Framerate independent menu rendering. MaterialUI/Ozone/XMB/RGUI can now run at higher framerates.</li>
+          <li>MENU: Thumbnails work in history list.</li>
+          <li>MENU: Menu widgets.</li>
+          <li>MENU: Add memory statistics support to more context drivers.</li>
+          <li>MENU: Enable ozone driver for UWP builds.</li>
+          <li>MENU: Add optional "looping" menu text ticker with configurable speed.</li>
+          <li>MENU: Fix core video rendering when using ozone with GL cores that implement the scissor test.</li>
+          <li>MENU: Add optional playlist sublabels (associated core + play time, where available).</li>
+          <li>MENU: Dropdown list settings now apply immediately.</li>
+          <li>MENU: Add setting to require pressing the "Exit RetroArch" hotkey twice to confirm.</li>
+          <li>MENU: Now able to run at higher refresh rates than 60Hz.</li>
+          <li>MENU: Enable "Add to Favorites" without loading a core.</li>
+          <li>MENU: Allow core name to be hidden on history/favorites playlists.</li>
+          <li>MENU: Populate crc32 and db_name fields when adding history/favourites playlist entries.</li>
+          <li>MENU: Fix TTF files not showing in OSD/menu font selection screen.</li>
+          <li>MENU: Fix audio/video filters not showing in file browser.</li>
+          <li>MENU/MaterialUI: Add subsystem support.</li>
+          <li>MENU/MaterialUI: Add currently selected entry in dropdown menus.</li>
+          <li>MENU/OZONE: Add mouse support on entries (no sidebar yet).</li>
+          <li>MENU/OZONE: Allow collapsing the sidebar.</li>
+          <li>MENU/OZONE: Add thumbnail support.</li>
+          <li>MENU/OZONE: Battery notifications.</li>
+          <li>MENU/OZONE: Add wifi icon for network entries.</li>
+          <li>MENU/QT/WIMP: Add git version and build date to Help->About window.</li>
+          <li>MENU/QT/WIMP: Fix content loading via the file browser.</li>
+          <li>MENU/QT/WIMP: Add new settings window to control all RetroArch settings.</li>
+          <li>MENU/RGUI: Improve playlist titles.</li>
+          <li>MENU/RGUI: Add option to hide associated cores in playlists.</li>
+          <li>MENU/RGUI: Add internal upscaling option.</li>
+          <li>MENU/RGUI: Add subsystem support.</li>
+          <li>MENU/RGUI: Add menu sublabel support.</li>
+          <li>MENU/RGUI: Re-enable "Load Core" option when content is loaded.</li>
+          <li>MENU/RGUI: Add optional "Collections" entry to main menu.</li>
+          <li>MENU/RGUI: Add "Lock Menu Aspect Ratio" option.</li>
+          <li>MENU/RGUI: Add "full width" layout option.</li>
+          <li>MENU/RGUI: Ensure menu color theme is applied immediately.</li>
+          <li>MENU/RGUI: Fix "Lock Menu Aspect Ratio" option when using custom viewports.</li>
+          <li>MENU/RGUI: Add widescreen support.</li>
+          <li>MENU/RGUI: Allow text to be centred when selecting widescreen layouts.</li>
+          <li>MENU/RGUI: Add inline playlist thumbnail support.</li>
+          <li>MENU/RGUI: Add optional shadow effects.</li>
+          <li>MENU/RGUI: Performance optimizations.</li>
+          <li>MENU/RGUI: Add optional extended ASCII support.</li>
+          <li>MENU/RGUI: Add optional delay when loading thumbnails.</li>
+          <li>MENU/RGUI: Add on-screen keyboard.</li>
+          <li>MENU/RGUI: Battery notifications.</li>
+          <li>MENU/XMB: Prevent crashes when resizing to a tiny window.</li>
+          <li>MENU/XMB: XMB honors the 'show menu sublabels' setting now - was previously RGUI only</li>
+          <li>NETPLAY: Fix stall-out causing total disconnection with >2 players.</li>
+          <li>NETPLAY: Different (more intuitive?) default netplay share policy.</li>
+          <li>NETPLAY: Add hotkey option to toggle hosting on/off.</li>
+          <li>NETWORKING: Encode URLs to allow for spaces in directory names.</li>
+          <li>SCANNER: New option 'Scan without core match'. When this is enabled,
+supported extensions by all installed cores are not checked, and instead
+it will add all content it finds to a playlist. This way, you can install the core you need later on after scanning. Not enabled by default.</li>
+          <li>SHADERS: Don't alphabetize shader presets.</li>
+          <li>VULKAN: Fix color issues with RGBA8888 swapchains in readback (screenshots).</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.6" date="2019-02-03">
       <url>https://www.libretro.com/index.php/retroarch-1-7-6-released/</url>
       <description>
