@@ -29,6 +29,9 @@
       <image type="source" width="1172" height="896">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-4.png</image>
     </screenshot>
   </screenshots>
+  <metadata>
+    <value key="GnomeSoftware::popular-background">https://raw.githubusercontent.com/flathub/org.libretro.RetroArch/master/org.libretro.RetroArch-thumb.png</value>
+  </metadata>
   <description>
     <p>
       RetroArch enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all.
