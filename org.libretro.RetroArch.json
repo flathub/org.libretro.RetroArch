@@ -125,7 +125,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "f07499692853d46182ba924b524e2d9a2ba3ecb3"
+          "commit": "cd22a6ae55e07a4a8898f4a2ccb17b27e9e2626e"
         }
       ]
     },
