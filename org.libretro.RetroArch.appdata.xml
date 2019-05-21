@@ -8,24 +8,25 @@
   <url type="help">https://docs.libretro.com</url>
   <url type="faq">https://retroarch.com/?page=faq</url>
   <url type="donation">https://retroarch.com/index.php?page=donate</url>
+  <content_rating type="oars-1.0" />
   <categories>
     <category>Game</category>
   </categories>
   <screenshots>
     <screenshot type="default">
-      <caption>The RetroArch main menu.</caption>
+      <caption>RetroArch main menu</caption>
       <image type="source" width="1920" height="1080">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot.png</image>
     </screenshot>
     <screenshot>
-      <caption>RetroArch running the Nintendo Entertainment System.</caption>
+      <caption>RetroArch running the Nintendo Entertainment System</caption>
       <image type="source" width="1172" height="960">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-2.png</image>
     </screenshot>
     <screenshot>
-      <caption>RetroArch running Sheep It Up on the Gameboy.</caption>
+      <caption>RetroArch running Sheep It Up on the Gameboy</caption>
       <image type="source" width="1554" height="1050">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-3.png</image>
     </screenshot>
     <screenshot>
-      <caption>RetroArch running the Super Nintendo.</caption>
+      <caption>RetroArch running the Super Nintendo</caption>
       <image type="source" width="1172" height="896">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-4.png</image>
     </screenshot>
   </screenshots>
@@ -168,7 +169,7 @@ it will add all content it finds to a playlist. This way, you can install the co
           <li>CRT/LINUX: Monitor index switching and auto enumerate for output detection in Linux (still working on the windows method).</li>
           <li>CRT/RASPBERRY PI: Initial support.</li>
           <li>DATE: Add Date / Time style options.</li>
-          <li>DEBUGGING: Add an integrated crash handler for debug builds (see https://docs.libretro.com/tech/debugging)</li>
+          <li>DEBUGGING: Add an integrated crash handler for debug builds</li>
           <li>DISCORD: Register the application name properly.</li>
           <li>DISK CONTROL: Remember the last used folder / current active folder to make disk-swapping faster.</li>
           <li>INPUT: Add new menu toggle (hold start button for 2 seconds)</li>
@@ -370,7 +371,7 @@ it will add all content it finds to a playlist. This way, you can install the co
           <li>SHADERS: Don't save the path to the current preset to the main config. This was causing weird behavior, instead it will try to load currentconfig.ext and it will save a preset with that name when select apply shader preset. The resulting shader will restore properly after restarting and even after core/parent/game specific presets are loaded</li>
           <li>SHADERS: SPIRV-Cross/slang shader support for D3D11.</li>
           <li>SUBSYSTEM: Subsystem saves now respect the save directory</li>
-          <li>SUBSYSTEM: You can now load subsystem games from the menu (see https://github.com/libretro/RetroArch/pull/6282 for caveats)</li>
+          <li>SUBSYSTEM: You can now load subsystem games from the menu</li>
           <li>VULKAN: Fix swapchain recreation bug on Nvidia GPUs with Windows 10 (resolved in Windows Nvidia driver version 390.77).</li>
         </ul>
       </description>
