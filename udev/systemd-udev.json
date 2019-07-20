@@ -1,0 +1,14 @@
+{
+    "name": "udev",
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/systemd/systemd/archive/v242.tar.gz",
+            "sha256": "ec22be9a5dd94c9640e6348ed8391d1499af8ca2c2f01109198a414cff6c6cba"
+        },
+        {
+            "type": "patch",
+            "path": "set-paths.patch"
+        }
+    ]
+}

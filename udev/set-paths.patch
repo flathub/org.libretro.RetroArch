@@ -1,0 +1,24 @@
+diff --git a/meson.build b/meson.build
+index 3593eac710..2582dcab8c 100644
+--- a/meson.build
++++ b/meson.build
+@@ -6,8 +6,8 @@ project('systemd', 'c',
+         default_options: [
+                 'c_std=gnu99',
+                 'prefix=/usr',
+-                'sysconfdir=/etc',
+-                'localstatedir=/var',
++                'sysconfdir=/app/etc',
++                'localstatedir=/app/var',
+         ],
+         meson_version : '>= 0.46',
+        )
+@@ -70,7 +70,7 @@ endif
+ conf.set10('HAVE_SPLIT_BIN', split_bin,
+            description : 'bin and sbin directories are separate')
+ 
+-rootprefixdir = get_option('rootprefix')
++rootprefixdir = '/app'
+ # Unusual rootprefixdir values are used by some distros
+ # (see https://github.com/systemd/systemd/pull/7461).
+ rootprefix_default = split_usr ? '/' : '/usr'
