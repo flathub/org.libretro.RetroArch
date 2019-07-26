@@ -1,0 +1,39 @@
+{
+    "name": "udev",
+    "config-opts": [
+        "-Drootprefix=/app",
+        "--sysconfdir=/app/etc",
+        "--localstatedir=/app/var"
+    ],
+    "cleanup": [
+        "/bin",
+        "/etc/systemd",
+        "/include/systemd",
+        "/lib/libsystemd.so*",
+        "/lib/libnss_myhostname.so*",
+        "/lib/libnss_systemd.so*",
+        "/lib/libnss_mymachines.so*",
+        "/lib/libnss_resolve.so*",
+        "/lib/pkconfig/libsystemd.pc",
+        "/lib/security/pam_systemd.so*",
+        "/lib/systemd",
+        "/share/bash-completion",
+        "/share/dbus-1/system-services",
+        "/share/doc",
+        "/share/factory",
+        "/share/locale",
+        "/share/man",
+        "/share/pkgconfig/systemd.pc",
+        "/share/polkit-1/actions",
+        "/share/systemd",
+        "/share/zsh",
+        "*.d"
+    ],
+    "sources": [
+        {
+            "type": "archive",
+            "url": "https://github.com/systemd/systemd/archive/v242.tar.gz",
+            "sha256": "ec22be9a5dd94c9640e6348ed8391d1499af8ca2c2f01109198a414cff6c6cba"
+        }
+    ]
+}
