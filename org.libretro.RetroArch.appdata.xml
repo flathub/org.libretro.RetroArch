@@ -38,6 +38,74 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.7.8" date="2019-09-02">
+      <url>https://www.libretro.com/index.php/retroarch-1-7-8-released/</url>
+      <description>
+        <ul>
+          <li>COMMON: Add optional 'on demand' thumbnail downloads</li>
+          <li>COMMON: Add new playlist-based thumbnail downloader. Hide the legacy thumbnail pack version by default</li>
+          <li>COMMON: Show license per core (if available) inside 'Load Core'</li>
+          <li>COMMON: Add option to load content from (and dump) CD-ROM discs</li>
+          <li>COMMON: New core options interface, allows for localization, sublabels and more</li>
+          <li>COMMON: Re-enable '--log-file' command line option</li>
+          <li>COMMON: Default playlist core association is now stored as metadata inside each playlist</li>
+          <li>COMMON: Fix playlist format detection</li>
+          <li>COMMON: When saving core option overrides, only include settings for the current core</li>
+          <li>COMMON: Favorites playlist size can now be set independently of content history size. Values can be set from 0-999, or '-1' for unlimited (99999)</li>
+          <li>COMMON: Prevent adding new items to favorites when playlist is full (old entries are no longer overwritten)</li>
+          <li>COMMON: Prevent loading content with cores that require an incompatible graphics API version from the current one</li>
+          <li>COMMON: Saved shader presets are now portable across platforms and use relative paths</li>
+          <li>COMMON: Add '--set-shader' command line option which works like an override for automatic shader presets</li>
+          <li>COMMON: Add global shader presets</li>
+          <li>COMMON: Remove 'video_shader' setting, shaders are not saved automatically anymore</li>
+          <li>CPU FILTERS: Add Scanline2x filter</li>
+          <li>GL/GLCORE: Use highest supported OpenGL Core version on Windows and X11</li>
+          <li>GL1: Ignore alpha in core video, fixes XRGB8888 rendering in some cores</li>
+          <li>GLCORE: Don't hardcode shader cross compilation target version but poll it. glcore would always only use the minimum target shader version, i.e. GLSL ES 3.00 for OpenGL ES 3.0+ or GLSL 1.50 for OpenGL 3.2+</li>
+          <li>GLCORE/SLANG: Added "FrameDirection" slang semantic</li>
+          <li>INPUT: Menu toggle hotkey can now be bound to another keyboard key and it will toggle properly</li>
+          <li>LOCALIZATION: Update Korean translation</li>
+          <li>LOCALIZATION: Update Japanese translation</li>
+          <li>LOCALIZATION: Update Portuguese Brazilian Translation</li>
+          <li>LOCALIZATION: Update Polish translation</li>
+          <li>LOCALIZATION: Update Turkish translation</li>
+          <li>MENU/WIDGETS: All widgets are now properly cleaned up, fixing the frozen widgets bug when loading / closing content</li>
+          <li>MENU/WIDGETS: Widgets are now drawn above the overlay with OpenGL and Vulkan</li>
+          <li>MENU/WIDGETS: Fine tune progress bar colors</li>
+          <li>MENU: Fix longstanding menu display issues on Mali400 GPUs (on ARM hardware, SBCs and mobile phones/tablets)</li>
+          <li>MENU: Fix Record -> Streaming Quality, and Record -> Recording Threads settings</li>
+          <li>MENU: Fix history playlist navigation after running content</li>
+          <li>NENU: Menu entry performance optimisations</li>
+          <li>MENU: Add option to show 'remove playlist entry' only on history/favourites</li>
+          <li>MENU: Overhaul content 'Information' menu display</li>
+          <li>MENU: Add new 'Playlist Management' submenu. Allows default core associations to be set (via dropdown list), and all existing associations to be reset</li>
+          <li>MENU: Add 'Set Core Association' option to Quick Menu</li>
+          <li>MENU: Add option to remain in menu after saving/loading states</li>
+          <li>MENU/THUMBNAILS: Ensure that displayed thumbnails are always refreshed correctly after selecting 'Download Thumbnails' from Quick Menu</li>
+          <li>MENU/THUMBNAILS: Make PNG image loading/processing non-blocking on non-threaded systems</li>
+          <li>MENU/OZONE: Add it for PS3</li>
+          <li>MENU/OZONE: Fix regression in 1.7.7 - OSX/macOS - was unable to start it</li>
+          <li>MENU/OZONE: Fix sublabel spacing</li>
+          <li>MENU/XMB: Add menu animation settings</li>
+          <li>MENU/XMB: Add optional thumbnail scaling</li>
+          <li>MENU/XMB: Fix display of long sublabels. Text that would exceed the display area now scrolls line-by-line</li>
+          <li>MENU/XMB/OZONE: Add optional thumbnail upscaling</li>
+          <li>MENU/QT/WIMP: Path selector fixes</li>
+          <li>MENU/RGUI: Enable playlist display on platforms without database support</li>
+          <li>OSD: OSD is now drawn above the overlay with Vulkan</li>
+          <li>RECORD: Fix Twitch streaming</li>
+          <li>SCALER: Fix SSE2 path for ARGB/BGRA -> BGR24 - should fix screenshots being taken for XRGB888 (viewport)</li>
+          <li>SCANNER: Skip all databases with incompatible file extensions, whether content is inside an archive or not</li>
+          <li>SCANNER: Fix hang on empty files inside archives</li>
+          <li>SHADERS: Add proper shader compatibility checks</li>
+          <li>SHADERS: Enable Cg shaders for D3D9</li>
+          <li>VULKAN/SLANG: Added "FrameDirection" slang semantic</li>
+          <li>VULKAN: Add option to select which GPU to render with</li>
+          <li>X11: Add non-evdev keycodes to fix keyboard input on non-Linux systems with X11</li>
+          <li>X11/UDEV: Mouse pointer should work now in X11 environment with no Display</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.7" date="2019-05-07">
       <url>https://www.libretro.com/index.php/retroarch-1-7-7-released/</url>
       <description>
