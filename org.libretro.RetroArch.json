@@ -27,7 +27,8 @@
     {
       "name": "retroarch",
       "config-opts": [
-        "--enable-dbus"
+        "--enable-dbus",
+        "--disable-cdrom"
       ],
       "make-args": [
         "GLOBAL_CONFIG_DIR=${FLATPAK_DEST}/etc"
