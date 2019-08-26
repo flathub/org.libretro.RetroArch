@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright [year] [name] -->
+<!-- Copyright 2019 Rob Loach <robloach@gmail.com> -->
 <component type="desktop-application">
   <id>org.libretro.RetroArch</id>
   <launchable type="desktop-id">org.libretro.RetroArch.desktop</launchable>
@@ -36,12 +36,15 @@
     <p>
       RetroArch enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all.
     </p>
+    <p>
+      It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all. RetroArch has advanced features like shaders, netplay, rewinding, next-frame response times, runahead, and more!
+    </p>
   </description>
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
-    <release version="1.7.8" date="2019-08-23">
-      <url>https://www.libretro.com/index.php/retroarch-1-7-8-ai-service-how-to-set-it-up/</url>
+    <release version="1.7.8" date="2019-08-25">
+      <url>https://www.libretro.com/index.php/retroarch-1-7-8-released/</url>
       <description>
         <ul>
           <li>AI: Add AI Service functionality</li>
@@ -320,7 +323,7 @@
           <li>VFS: Update to version 3</li>
           <li>XBONE: Initial Xbox One port</li>
           <li>XMB/OZONE: Add more icons</li>
-          <li>???: Easter egg</li>
+          <li>Easter egg</li>
         </ul>
       </description>
     </release>
