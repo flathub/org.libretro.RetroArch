@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2019 Rob Loach -->
+<!-- Copyright 2019 Rob Loach <robloach@gmail.com> -->
 <component type="desktop-application">
   <id>org.libretro.RetroArch</id>
   <launchable type="desktop-id">org.libretro.RetroArch.desktop</launchable>
@@ -20,7 +20,7 @@
       <image type="source" width="1600" height="900">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot.png</image>
     </screenshot>
     <screenshot>
-      <caption>RetroArch running the Nintendo Entertainment System</caption>
+      <caption>RetroArch running the NES</caption>
       <image type="source" width="1135" height="900">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-2.png</image>
     </screenshot>
     <screenshot>
@@ -36,12 +36,15 @@
     <p>
       RetroArch enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all.
     </p>
+    <p>
+      It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all. RetroArch has advanced features like shaders, netplay, rewinding, next-frame response times, runahead, and more!
+    </p>
   </description>
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
-    <release version="1.7.8" date="2019-08-23">
-      <url>https://www.libretro.com/index.php/retroarch-1-7-8-ai-service-how-to-set-it-up/</url>
+    <release version="1.7.8" date="2019-08-25">
+      <url>https://www.libretro.com/index.php/retroarch-1-7-8-released/</url>
       <description>
         <ul>
           <li>AI: Add AI Service functionality</li>
@@ -254,9 +257,7 @@
           <li>NETPLAY: Different (more intuitive?) default netplay share policy</li>
           <li>NETPLAY: Add hotkey option to toggle hosting on/off</li>
           <li>NETWORKING: Encode URLs to allow for spaces in directory names</li>
-          <li>SCANNER: New option 'Scan without core match'. When this is enabled,
-supported extensions by all installed cores are not checked, and instead
-it will add all content it finds to a playlist. This way, you can install the core you need later on after scanning. Not enabled by default</li>
+          <li>SCANNER: New option 'Scan without core match'</li>
           <li>SHADERS: Don't alphabetize shader presets</li>
           <li>VULKAN: Fix color issues with RGBA8888 swapchains in readback (screenshots)</li>
         </ul>
@@ -322,7 +323,7 @@ it will add all content it finds to a playlist. This way, you can install the co
           <li>VFS: Update to version 3</li>
           <li>XBONE: Initial Xbox One port</li>
           <li>XMB/OZONE: Add more icons</li>
-          <li>???: Easter Egg</li>
+          <li>Easter egg</li>
         </ul>
       </description>
     </release>
@@ -393,7 +394,7 @@ it will add all content it finds to a playlist. This way, you can install the co
       <description>
         <ul>
           <li>AUDIO: Audio mixer supports FLAC/MP3 file types now</li>
-          <li>COMMON: Fixed bug 'crashing in cores that don't range check retro_set_controller_type'. Some people were having crashes when device is set to RETRO_DEVICE_NONE and the cores don't check the number of ports, in VBAM's case it was overflowing and crashing. QuickNES was crashing too</li>
+          <li>COMMON: Fixed bug 'crashing in cores that don't range check retro_set_controller_type'</li>
           <li>COMMON: (QuickMenu) Added Configuration Override submenu</li>
           <li>LOCALIZATION: Update Italian translation</li>
           <li>LOCALIZATION: Update Portuguese translation</li>
@@ -455,7 +456,7 @@ it will add all content it finds to a playlist. This way, you can install the co
     <release version="1.7.1" date="2018-02-19">
       <description>
         <ul>
-          <li>AUDIO: Added 'Audio Resampler Quality' setting to Audio Settings. Setting this higher will increase sound quality at the expense of sound latency and/or performance. Setting this value lower will improve sound latency/performance at the expense of sound quality. Only has an effect if the Sinc resampler is used, and you have to restart the game for changes to take effect</li>
+          <li>AUDIO: Added 'Audio Resampler Quality' setting to Audio Settings</li>
           <li>CHEEVOS: Fix unofficial achievements not being loaded</li>
           <li>CHEEVOS: Show savestate menu entries when no achievements are found even if hardcore mode is enabled</li>
           <li>CHEEVOS: Support Neo Geo Pocket</li>
@@ -479,8 +480,8 @@ it will add all content it finds to a playlist. This way, you can install the co
           <li>LOCALIZATION: Update Portuguese-Brazilian translation</li>
           <li>LOCALIZATION: Update Spanish translation</li>
           <li>NETPLAY: Add menu option to select different MITM (relay) server locations</li>
-          <li>SHADERS: Allow saving of shader presets based on the parent directory (Saving one for /foo/bar/mario.sfc would result in shaders/presets/corename/bar.ext). We decided it's safer to still isolate the presets to a single core because different cores may treat video output differently</li>
-          <li>SHADERS: Don't save the path to the current preset to the main config. This was causing weird behavior, instead it will try to load currentconfig.ext and it will save a preset with that name when select apply shader preset. The resulting shader will restore properly after restarting and even after core/parent/game specific presets are loaded</li>
+          <li>SHADERS: Allow saving of shader presets based on the parent directory</li>
+          <li>SHADERS: Don't save the path to the current preset to the main config</li>
           <li>SHADERS: SPIRV-Cross/slang shader support for D3D11</li>
           <li>SUBSYSTEM: Subsystem saves now respect the save directory</li>
           <li>SUBSYSTEM: You can now load subsystem games from the menu</li>
