@@ -21,15 +21,15 @@
     </screenshot>
     <screenshot>
       <caption>RetroArch running the NES</caption>
-      <image type="source" width="1135" height="900">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-2.png</image>
+      <image type="source" width="1135" height="638">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-2.png</image>
     </screenshot>
     <screenshot>
       <caption>RetroArch running Sheep It Up on the Gameboy</caption>
-      <image type="source" width="1332" height="900">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-3.png</image>
+      <image type="source" width="1332" height="749">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-3.png</image>
     </screenshot>
     <screenshot>
       <caption>RetroArch running the Super Nintendo</caption>
-      <image type="source" width="1172" height="896">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-4.png</image>
+      <image type="source" width="1172" height="659">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-4.png</image>
     </screenshot>
   </screenshots>
   <description>
@@ -39,21 +39,27 @@
     <p>
       It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all. RetroArch has advanced features like shaders, netplay, rewinding, next-frame response times, runahead, and more!
     </p>
+    <p>
+      For more information about RetroArch, and how to use it, visit <a href="https://retroarch.com/">retroarch.com</a>.
+    </p>
   </description>
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
-    <release version="1.7.8" date="2019-08-25">
-      <url>https://www.libretro.com/index.php/retroarch-1-7-8-released/</url>
+    <release version="1.7.8" date="2019-08-30">
+      <url>https://www.libretro.com/index.php/retroarch-1-7-8-v2-released/</url>
       <description>
         <ul>
           <li>AI: Add AI Service functionality</li>
-          <li>BPS/UPS: Re-allocation target_data variable for target patch size (can now apply bigger patches without extra-bytes on memory)</li>
+          <li>AI: Fix 'Japanese' setting</li>
+          <li>BPS/UPS: Re-allocation target_data variable for target patch size</li>
           <li>CDROM: Added real CD-ROM functionality for Windows and Linux</li>
           <li>CDROM: Added disc dumping</li>
+          <li>CHEEVOS: Fix Achievements badges</li>
+          <li>CHEEVOS: Add hashing support for PSX (bin/cue, chd, or real CD)</li>
           <li>COMMON: Add separate frontend logging</li>
           <li>COMMON: Ability to set FPS update interval (used in the window titlebar/FPS widget)</li>
-          <li>COMMON: Add 'Reset Frame Time Counter' functionality, enable it by default for resizing the window, loading/saving shader presets, fastforwarding, etc</li>
+          <li>COMMON: Add 'Reset Frame Time Counter' functionality</li>
           <li>COMMON: Add optional 'on demand' thumbnail downloads</li>
           <li>COMMON: Add new playlist-based thumbnail downloader</li>
           <li>COMMON: Show license per core (if available) inside 'Load Core'</li>
@@ -61,7 +67,7 @@
           <li>COMMON: Re-enable '--log-file' command line option</li>
           <li>COMMON: Default playlist core association is now stored as metadata inside each playlist</li>
           <li>COMMON: Fix playlist format detection</li>
-          <li>COMMON: Favorites playlist size can now be set independently of content history size. Values can be set from 0-999, or '-1' for unlimited (99999)</li>
+          <li>COMMON: Favorites playlist size can now be set independently of content history size</li>
           <li>COMMON: Prevent adding new items to favorites when playlist is full (old entries are no longer overwritten)</li>
           <li>COMMON: Prevent loading content with cores that require an incompatible graphics API version from the current one</li>
           <li>COMMON: Saved shader presets are now portable across platforms and use relative paths</li>
@@ -74,7 +80,8 @@
           <li>GL/MALI400: Fix menu issues on Mali 400 series GPUs, should also fix 'RetroArch flickers black on ARM Mali GPUs (Android/ARM Linux)</li>
           <li>GL/GLCORE: Use highest supported OpenGL Core version on Windows and X11</li>
           <li>GL1: Ignore alpha in core video, fixes XRGB8888 rendering in some cores</li>
-          <li>GLCORE: Don't hardcode shader cross compilation target version but poll it. glcore would always only use the minimum target shader version, i.e. GLSL ES 3.00 for OpenGL ES 3.0+ or GLSL 1.50 for OpenGL 3.2+</li>
+          <li>GLCORE: Don't hardcode shader cross compilation target version but poll it</li>
+          <li>GLCORE: Fix regression - shaders don't work</li>
           <li>GLCORE/SLANG: Added "FrameDirection slang semantic</li>
           <li>HID: Add Retrode support. Should work on Wii/WiiU</li>
           <li>INPUT: Menu toggle hotkey can now be bound to another keyboard key and it will toggle properly</li>
@@ -85,11 +92,15 @@
           <li>LOCALIZATION: Update Portuguese Brazilian Translation</li>
           <li>LOCALIZATION: Update Polish translation</li>
           <li>LOCALIZATION: Update Turkish translation</li>
+          <li>LOCALIZATION: Update Japanese translation</li>
+          <li>LOCALIZATION: Update Korean translation</li>
+          <li>LOCALIZATION: Update Polish translation</li>
+          <li>MENU/XMB: Smooth vertical ticker scrolling</li>
           <li>MENU: Add smooth ticker text</li>
-          <li>MENU: Ability to hide every settings submenu (User Interface -&gt; Views -&gt; Settings)</li>
-          <li>MENU: Ability to hide nearly every quick menu entry (User Interface -&gt; Views -&gt; Quick Menu)</li>
+          <li>MENU: Ability to hide every settings submenu (User Interface, Views, Settings)</li>
+          <li>MENU: Ability to hide nearly every quick menu entry (User Interface, Views, Quick Menu)</li>
           <li>MENU: Fix longstanding menu display issues on Mali400 GPUs (on ARM hardware, SBCs and mobile phones/tablets)</li>
-          <li>MENU: Fix Record -&gt; Streaming Quality, and Record -&gt; Recording Threads settings</li>
+          <li>MENU: Fix Record Streaming Quality, and Record, Recording Threads settings</li>
           <li>MENU: Fix history playlist navigation after running content</li>
           <li>NENU: Menu entry performance optimisations</li>
           <li>MENU: Add option to show 'remove playlist entry' only on history/favourites</li>
@@ -123,6 +134,8 @@
           <li>MIDI: correct pitch bend in ALSA driver - MIDI standard pitch bend center position is 0x2000 but ALSA's is 0</li>
           <li>MIDI: Fix SysEx handling</li>
           <li>OSD: OSD is now drawn above the overlay with Vulkan</li>
+          <li>PATCH: Fix IPS patches</li>
+          <li>PLAYLISTS: Fix playlist heap corruption bug</li>
           <li>PLAYLISTS: Add history/favourites to 'Playlist Management' menu</li>
           <li>RECORD: Fix Twitch streaming</li>
           <li>REMOTE RETROPAD: Fix for Remote RetroPad input</li>
@@ -132,6 +145,8 @@
           <li>SCALER: Fix SSE2 path for ARGB/BGRA -&gt; BGR24 - should fix screenshots being taken for XRGB888 (viewport)</li>
           <li>SCANNER: Skip all databases with incompatible file extensions, whether content is inside an archive or not</li>
           <li>SCANNER: Fix hang on empty files inside archives</li>
+          <li>SHADERS: Fix shader loading and saving in content-less cores</li>
+          <li>SHADERS: Implement video shader delay setting</li>
           <li>SHADERS: Add proper shader compatibility checks</li>
           <li>SHADERS: Enable Cg shaders for D3D9</li>
           <li>SHADERS: Remove 'video_shader' setting, replace it with global presets that make more sense</li>

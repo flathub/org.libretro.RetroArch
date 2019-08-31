@@ -1,7 +1,6 @@
 # RetroArch on Flathub
 
-[Flathub](https://flathub.org/) is the central place for building and hosting [Flatpak](http://flatpak.org/) builds.
-Go to https://flathub.org/builds/ to see Flathub in action.
+[Flathub](https://flathub.org/) is the central place for building and hosting [Flatpak](http://flatpak.org/) builds. Go to https://flathub.org/builds/ to see Flathub in action.
 
 [RetroArch](http://retroarch.com) is a frontend for emulators, game engines and media players.
 
@@ -50,6 +49,7 @@ flatpak run --filesystem=host --filesystem=/media/NAS/roms org.libretro.RetroArc
 ## Development
 
 To test the application locally, use [flatpak-builder](http://docs.flatpak.org/en/latest/flatpak-builder.html) with:
+
 ```
 git clone https://github.com/flathub/org.libretro.RetroArch.git
 cd org.libretro.RetroArch
