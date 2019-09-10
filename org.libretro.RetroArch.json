@@ -36,8 +36,8 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "branch": "v1.7.8",
-          "commit": "e4fb5587f7144ba9cb6cd1318a69845f97ef3796"
+          "branch": "v1.7.8.3",
+          "commit": "561a4cd4bf6f3476f78e719861e3f2328350c8f3"
         },
         {
           "type": "file",
@@ -72,7 +72,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "e4fb5587f7144ba9cb6cd1318a69845f97ef3796"
+          "commit": "561a4cd4bf6f3476f78e719861e3f2328350c8f3"
         }
       ]
     },
@@ -86,7 +86,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "e4fb5587f7144ba9cb6cd1318a69845f97ef3796"
+          "commit": "561a4cd4bf6f3476f78e719861e3f2328350c8f3"
         }
       ]
     },
@@ -112,7 +112,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "cae33e49c48410c4c7a9908929dadbb7fb78fa9e"
+          "commit": "2a8e53792586a7024df6b7f297b415de4b88d473"
         }
       ]
     },
@@ -125,7 +125,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "eef4f207b23132cf9f7b324e5f4eaf556cc50181"
+          "commit": "893d2c40c9df973af0f4ea32dbba17b05585ad8d"
         }
       ]
     },
@@ -138,7 +138,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "4f80e58b2b34bd3107e12cf615f955a87e0a83a4"
+          "commit": "a344f16ca04101ffc826e2046d716edf51711a09"
         }
       ]
     },
@@ -164,7 +164,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/slang-shaders.git",
-          "commit": "bf0dfe41cb561a5743fb352e75ef38ef954e5f88"
+          "commit": "ad8b06f747b5fe661c6440691d67aa21ca3167ab"
         }
       ]
     },
