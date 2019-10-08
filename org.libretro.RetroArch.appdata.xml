@@ -43,6 +43,42 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.7.9" date="2019-10-07">
+      <url>https://www.libretro.com/index.php/retroarch-1-7-9-released/</url>
+      <description>
+        <ul>
+          <li>AI SERVICE: Image mode is now much faster</li>
+          <li>BUGFIX: Touch input - When using an overlay to toggle the quick menu on touchscreen devices</li>
+          <li>BUGFIX: Networking - RetroArch crashed when pressing left while Relay Server Location entry was selected</li>
+          <li>BUGFIX: Networking - fix memory leak that could happen at exit after a network
+          operation had run</li>
+          <li>CHEEVOS: Improve handling of line endings when calculating CD hashes for retroachievements</li>
+          <li>CHEEVOS: Add support for Sega CD/Saturn; reduce hash calls to server</li>
+          <li>FPGA: Add initial FPGA port for Z-Turn boards - not really release-ready yet, will need community support to continue. Currently employs naive framebuffer approach, not fullspeed</li>
+          <li>GL1: GLDirect (D3D9 to OGL1.1 wrapper) support</li>
+          <li>GONG: Stability fixes</li>
+          <li>LINUX/UDEV: Fix touchscreen/lightgun issues</li>
+          <li>MENU/MATERIALUI: MaterialUI no longer 'forgets' its place when navigating backwards in menus, and navigation in general is 'cleaner'.</li>
+          <li>MENU/MATERIALUI: Add initial gesture support</li>
+          <li>MENU/MATERIALUI: Improved touch support</li>
+          <li>MENU/MATERIALUI: Bugfix - Random' items are no longer automatically highlighted when performing standard up/down 'flick' scrolling through lists</li>
+          <li>MENU/MATERIALUI: Bugfix - The display no longer 'jerks' for one frame when navigating backwards through lists</li>
+          <li>MENU/MATERIALUI: Bugfix - The Material UI scaling factor is now based upon the device-reported screen DPI value (previously it relied upon a hard-coded magic number, which was never correct)</li>
+          <li>MENU/RGUI: Functional mouse/touchscreen support</li>
+          <li>MENU/ONSCREEN KEYBOARD: On-screen keyboard entry via mouse/touchscreen has been tidied up - no more double inputs (or unwanted menu interaction in the background)</li>
+          <li>MENU/MOUSE: Mouse wheel up/down is now a proper 'up/down', same as using cursor keys or a dpad</li>
+          <li>MENU/MOUSE: Mouse wheel tilt left/right has been wired up to normal 'left/right' commands</li>
+          <li>MENU/OZONE: Add option to toggle between static and scrolling content metadata</li>
+          <li>MENU/XMB: Add full gesture support</li>
+          <li>MENU: When navigating backwards from a core options drop-down list (i.e. pressing select or cancel), the last menu position is remembered (instead of resetting back to the first core option item each time)</li>
+          <li>MENU: Add mouse/touchscreen gesture support</li>
+          <li>MENU: Add option to delete playlists (Settings and Playlists: Playlist Management)</li>
+          <li>OSD: Memory details should now be available on every platform (get_mem_total and get_mem_free need to be implemented in the frontend driver for it to work)</li>
+          <li>OSD: Memory details can now be shown individually without FPS and frame count</li>
+          <li>THREADED VIDEO: Fix FPS text in threaded video mode</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.7.8" date="2019-08-30">
       <url>https://www.libretro.com/index.php/retroarch-1-7-8-v2-released/</url>
       <description>
