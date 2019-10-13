@@ -138,7 +138,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "3304c5ddcdcda9afa6cd0755dddacedd4a50dee7"
+          "commit": "ae10e33d0c9f50b5dcd21031471792e8931e2034"
         }
       ]
     },
