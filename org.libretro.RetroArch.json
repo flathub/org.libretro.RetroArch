@@ -36,8 +36,8 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "branch": "v1.8.0",
-          "commit": "45deb2c2182ff6309f4dbffb08d61aff070455e9"
+          "branch": "v1.8.1",
+          "commit": "bfdc8e6a62d34e66879f79dfe6ae28940df752d1"
         },
         {
           "type": "file",
@@ -72,7 +72,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "45deb2c2182ff6309f4dbffb08d61aff070455e9"
+          "commit": "bfdc8e6a62d34e66879f79dfe6ae28940df752d1"
         }
       ]
     },
@@ -86,7 +86,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "45deb2c2182ff6309f4dbffb08d61aff070455e9"
+          "commit": "bfdc8e6a62d34e66879f79dfe6ae28940df752d1"
         }
       ]
     },
@@ -99,7 +99,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-assets.git",
-          "commit": "5f6d9fc69109a8e18ce9b846ef7f679fd974035a"
+          "commit": "c2bbf234195bbad91c827337a2fb2b5bc727407b"
         }
       ]
     },
@@ -112,7 +112,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "7d2ff6c20f83d972775d96f66d3dc98b774b8bfb"
+          "commit": "15299759ea3e4c6578d731113ba9c995080e897e"
         }
       ]
     },
@@ -125,7 +125,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "08ae877d60d6ca8dadf9de209d429808bac5b087"
+          "commit": "080b28a3266347ddda43def5306458dad211e9d4"
         }
       ]
     },
@@ -138,7 +138,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "723e984a9426ae61c329a627258be19e6a403418"
+          "commit": "ab19cf782ac59628a255f3ea7de653c1f10891b7"
         }
       ]
     },
