@@ -43,6 +43,24 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.8.1" date="2019-11-03">
+      <url>https://www.libretro.com/index.php/retroarch-1-8-1-released/</url>
+      <description>
+        <ul>
+          <li>BUGFIX/MENU: Fix menu rendering with Mali GPUs after changing video dimensions</li>
+          <li>CDROM: Adds pregap support to cdfs helper methods</li>
+          <li>CHEEVOS: Provides the new PCEngine hashing algorithm for RetroAchievements</li>
+          <li>LOCALIZATION: Update French translation</li>
+          <li>LOCALIZATION: Update Polish translation</li>
+          <li>LOCALIZATION: Update Spanish translation</li>
+          <li>MENU/MATERIALUI: Initial thumbnail support</li>
+          <li>MENU/MATERIALUI: Cutie / Virtual Boy theme added</li>
+          <li>MENU/MATERIALUI: Bugfix - Under certain extreme circumstances, entries with very long sublabel strings could have their text prematurely &#39;clipped&#39; as the entry is scrolled beyond the top of the screen</li>
+          <li>MENU/MATERIALUI: Bugfix - Certain setting value strings were unnecessarily truncated (with a ...) when using smooth ticker text</li>
+          <li>MENU/XMB: Sunbeam theme added</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.8.0" date="2019-10-26">
       <url>https://www.libretro.com/index.php/retroarch-1-8-0-released/</url>
       <description>
