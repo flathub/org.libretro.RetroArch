@@ -48,102 +48,102 @@
       <description>
         <ul>
           <li>BUG/CRASH/GLSLANG: Fix glslang crashing error - managed to reproduce an issue which has been plaguing
-          users for a while, where glslang throws an assert after closing a game (and starting a new one). This would affect all video drivers that use Slang for shaders, such as D3D10/11/12/Vulkan/Metal</li>
-          <li>CHEEVOS: Display Unofficial and Unsupported achievement states</li>
-          <li>CHEEVOS: Pass RetroArch and core versions through User-Agent HTTP header</li>
+          users for a while, where glslang throws an assert after closing a game (and starting a new one). This would affect all video drivers that use Slang for shaders, such as D3D10/11/12/Vulkan/Metal.</li>
+          <li>CHEEVOS: Display Unofficial and Unsupported achievement states.</li>
+          <li>CHEEVOS: Pass RetroArch and core versions through User-Agent HTTP header.</li>
           <li>CHEEVOS: Use PSX.EXE if SYSTEM.CNF cannot be found</li>
-          <li>CHEEVOS: Prevent loading state while achievements are still being fetched from server</li>
-          <li>CHEEVOS: Pause hardcore if core doesn't support achievements</li>
-          <li>CHEEVOS/CRASH: Fix AddressSanitizer + CHD cause hard crash when Cheevos are enabled</li>
-          <li>CORE UPDATER: Only download when new core is available</li>
-          <li>CORE UPDATER: Add option to update all installed cores</li>
-          <li>DRM/KMS: Better detection for the current video mode</li>
-          <li>DYNAMIC RATE CONTROL: Support DRC even when using a vsync swap interval higher than 1</li>
-          <li>FFMPEG CORE: Hardware accelerated video decoding</li>
-          <li>FFMPEG CORE: Implement send/receive encoding API, will allow for hardware accelerated AMD video encoding</li>
+          <li>CHEEVOS: Prevent loading state while achievements are still being fetched from server.</li>
+          <li>CHEEVOS: Pause hardcore if core doesn't support achievements.</li>
+          <li>CHEEVOS/CRASH: Fix AddressSanitizer + CHD cause hard crash when Cheevos are enabled.</li>
+          <li>CORE UPDATER: Only download when new core is available.</li>
+          <li>CORE UPDATER: Add option to update all installed cores.</li>
+          <li>DRM/KMS: Better detection for the current video mode.</li>
+          <li>DYNAMIC RATE CONTROL: Support DRC even when using a vsync swap interval higher than 1.</li>
+          <li>FFMPEG CORE: Hardware accelerated video decoding.</li>
+          <li>FFMPEG CORE: Implement send/receive encoding API, will allow for hardware accelerated AMD video encoding.</li>
           <li>FFMPEG CORE: The video FIFO can be removed, since we have a ring buffer in its place. This removes unneeded copy operations and as a positive side improves overall decoding speed. Makes 8k60p SW and 4k60p HW decoding feasible on many systems. For now the ring buffer is 32 images deep. This limitation will be removed, once audio and video decoder have their own packet handling.</li>
-          <li>INPUT: Fix 'Analog stick controls menu even if autoconfig disabled'</li>
+          <li>INPUT: Fix 'Analog stick controls menu even if autoconfig disabled'.</li>
           <li>INPUT/TURBO: Added alternate Turbo-Mode 'Single Button' - For systems supporting only a single button, the turbo-button will toggle firing that button without the need to hold it. When holding the button turbo will be suspended and resumed when the button is released. Holding the button may have a different function to just tapping it.</li>
-          <li>INPUT/ANALOG: Fix radial analog deadzone scaling</li>
-          <li>INPUT/ANALOG: Implement proper analog button deadzone</li>
-          <li>INPUT/MENU: Analog stick controls menu even if autoconfig disabled</li>
-          <li>LOCALIZATION: Update Italian translation</li>
-          <li>LOCALIZATION: Update French translation</li>
-          <li>LOCALIZATION: Update Polish translation</li>
-          <li>LOCALIZATION: Update Portuguese Brazilian Translation</li>
-          <li>LOCALIZATION: Update Turkish translation</li>
-          <li>LINUX/LOCALIZATION: Correct Droid Sans Fallback font path in Linux. This should fix Chinese/Korean font display issues on Fedora/RHEL/CentOS/openSUSE/SLE</li>
-          <li>MENU/BUGFIX: When using a keyboard/gamepad/mouse wheel to navigate, the menu scroll position is always maintained and updated in a consistent (and expected) fashion</li>
-          <li>MENU/BUGFIX: When resizing the window, or changing the orientation of a mobile device, the current scroll position is correctly preserved</li>
-          <li>MENU/BUGFIX: All 'normal' pointer input is now inhibited when showing message boxes</li>
-          <li>MENU/BUGFIX: The pointer actions 'select' and 'cancel' both now properly close a message box if it is currently being shown</li>
-          <li>MENU/BUGFIX: Pointer 'select' and 'cancel' actions are now inhibited when an input bind dialog is active</li>
-          <li>MENU/INPUT: Change 'User' terminology to 'Port' for input binding</li>
-          <li>MENU/LINUX: Add proper drives to Load Content</li>
-          <li>MENU/MATERIALUI: Halt scrolling when pointer is pressed/stationary</li>
-          <li>MENU/MATERIALUI: Dual thumbnail view</li>
-          <li>MENU/MATERIALUI: Fullscreen thumbnail viewer for boxart</li>
-          <li>MENU/MATERIALUI: Scroll rapidly by press and holding the scrollbar</li>
-          <li>MENU/RGUI: New theme 'Flux'</li>
-          <li>MENU/OZONE: Thumbnails now have a fade-in animation</li>
-          <li>MENU/OZONE: Fullscreen thumbnail viewer for boxart and pictures</li>
+          <li>INPUT/ANALOG: Fix radial analog deadzone scaling.</li>
+          <li>INPUT/ANALOG: Implement proper analog button deadzone.</li>
+          <li>INPUT/MENU: Analog stick controls menu even if autoconfig disabled.</li>
+          <li>LOCALIZATION: Update Italian translation.</li>
+          <li>LOCALIZATION: Update French translation.</li>
+          <li>LOCALIZATION: Update Polish translation.</li>
+          <li>LOCALIZATION: Update Portuguese Brazilian Translation.</li>
+          <li>LOCALIZATION: Update Turkish translation.</li>
+          <li>LINUX/LOCALIZATION: Correct Droid Sans Fallback font path in Linux. This should fix Chinese/Korean font display issues on Fedora/RHEL/CentOS/openSUSE/SLE.</li>
+          <li>MENU/BUGFIX: When using a keyboard/gamepad/mouse wheel to navigate, the menu scroll position is always maintained and updated in a consistent (and expected) fashion.</li>
+          <li>MENU/BUGFIX: When resizing the window, or changing the orientation of a mobile device, the current scroll position is correctly preserved.</li>
+          <li>MENU/BUGFIX: All 'normal' pointer input is now inhibited when showing message boxes.</li>
+          <li>MENU/BUGFIX: The pointer actions 'select' and 'cancel' both now properly close a message box if it is currently being shown.</li>
+          <li>MENU/BUGFIX: Pointer 'select' and 'cancel' actions are now inhibited when an input bind dialog is active.</li>
+          <li>MENU/INPUT: Change 'User' terminology to 'Port' for input binding.</li>
+          <li>MENU/LINUX: Add proper drives to Load Content.</li>
+          <li>MENU/MATERIALUI: Halt scrolling when pointer is pressed/stationary.</li>
+          <li>MENU/MATERIALUI: Dual thumbnail view.</li>
+          <li>MENU/MATERIALUI: Fullscreen thumbnail viewer for boxart.</li>
+          <li>MENU/MATERIALUI: Scroll rapidly by press and holding the scrollbar.</li>
+          <li>MENU/RGUI: New theme 'Flux'.</li>
+          <li>MENU/OZONE: Thumbnails now have a fade-in animation.</li>
+          <li>MENU/OZONE: Fullscreen thumbnail viewer for boxart and pictures.</li>
           <li>MENU/QT/WIMP: Fix dock titles getting cut off</li>
           <li>MENU/XMB: Fullscreen thumbnail viewer for boxart and pictures</li>
-          <li>MENU/USABILITY: Selectively hide 'Disallow Non-Slave Mode Clients' if 'Allow Slave-Mode Clients' is disabled</li>
-          <li>MENU/USABILITY: Hide 'Show desktop menu on startup' if 'Desktop menu' setting itself is disabled</li>
-          <li>MENU/USABILITY: Reimplement Quick Menu - > Shaders -> Watch shader files for changes - can now be turned on/off through touch</li>
-          <li>MENU/USABILITY: Refactor Quick Menu - Controls - each port now has its own submenu</li>
-          <li>MENU/USABILITY: Quick Menu - Cheats - Delete All no longer requires five right button presses - this should fix this functionality for mobile touch users too</li>
-          <li>MENU/USABILITY: Hide Refresh Rate options when Threaded Video is enabled - these settings do nothing with Threaded Video</li>
-          <li>MENU/USABILITY: Hide Logging Verbosity levels behind Logging Verbosity</li>
-          <li>MENU/USABILITY: Get rid of 'Port Number' label for Port Binds screen</li>
-          <li>MENU/USABILITY/MOBILE: Should no longer crash when clicking on a cheat entry</li>
-          <li>MENU/USABILITY: Shader parameters now have a dropdown list</li>
-          <li>MENU/USABILITY: Shader passes now has a dropdown list</li>
-          <li>MENU/USABILITY: Video - Hide Windowed Mode settings selectively</li>
-          <li>MENU/USABILITY: Video - Hide Fullscreen Mode settings if windowed mode is not supported by context driver</li>
-          <li>MENU/USABILITY: Selectively hide Network Command Port</li>
-          <li>MENU/USABILITY: Selectively hide Relay Server Location</li>
-          <li>MENU/USABILITY: User Interface -> Appearance - Selectively hide XMB Horizontal Animation setting</li>
-          <li>MENU/USABILITY: Playlists - more selective hiding</li>
-          <li>MENU/USABILITY: Selectively hide Rewind Settings</li>
-          <li>MENU/USABILITY: Selectively hide Overlay Settings</li>
-          <li>MENU/USABILITY: Selectively hide FPS Update Interval based on Display Framerate being enabled</li>
-          <li>MENU/USABILITY: Selectively hide Onscreen Notifications BG Color Settings</li>
-          <li>MENU/USABILITY: Settings -> Logging - Hide 'Log To File Timestamp' if 'Log To File' is disabled</li>
-          <li>MENU/USABILITY: Video -> Scaling - Hide Custom Viewport X/Y when Integer Scale is enabled as description indicates</li>
-          <li>MENU/USABILITY: Achievement submenu - selectively hide</li>
-          <li>MENU/USABILITY: Settings -> Video -> Aspect ratio - selectively hide/show values based on whether you have Custom or Config selected</li>
-          <li>MENU/USABILITY: Settings -> Video -> Selectively hide Hard Sync</li>
-          <li>MENU/USABILITY: Settings -> Video -> Implement selective hiding for VSync and Hard Sync</li>
-          <li>MENU/USABILITY: Selective hiding of Runahead settings based on global setting</li>
-          <li>MENU/USABILITY: Add Input -> Haptic Feedback submenu</li>
-          <li>MENU/USABILITY: Add Input -> Menu Controls submenu</li>
-          <li>MENU/USABILITY: Settings -> Video -> Max Swapchain Images - Add OK action</li>
-          <li>MENU/USABILITY: Input - Implement OK action for Bind Hold, Turbo Period and Duty Cycle</li>
-          <li>MENU/USABILITY: Input - Hotkey Binds refactor</li>
-          <li>MENU/USABILITY: Move 'Press Quit Twice' and 'Menu Toggle Gamepad Combo' to Input -> Hotkey Binds</li>
-          <li>MENU/USABILITY: Video - Add sublabel for Video Output submenu</li>
-          <li>MENU/USABILITY:  If 'Favorites Tab' is disabled, don't show 'Add To Favorites' option in Quick Menu/Playlist menu</li>
-          <li>MENU/USABILITY: If On-Demand Thumbnail Downloader is enabled, hide 'Download Thumbnails' from playlist menu screen</li>
-          <li>MENU/USABILITY: Add Audio Driver setting to Audio -> Output</li>
-          <li>MENU/USABILITY: Add Audio -> Resampler settings</li>
-          <li>MENU/USABILITY: Add Audio -> Output and Audio -> Synchronization</li>
-          <li>OPENGL: Shaders are now working properly (only in OpenGL) when rotating both from Core API rotation and from menu video rotation. The fix is clearly visible with crt-royale for example</li>
-          <li>OPENGL: 1:1 PAR is now correct when rotating (both from Core API rotation and from menu video rotation, as you said, in the latter case you currently have to change Aspect Ratio after menu video rotation for it to work)</li>
-          <li>OPENGL: When using Custom Aspect Ratio and rotation (both from Core API rotation and from menu video rotation), Integer Scaling is now working properly (correct multiples of internal resolution). Even when Integer Scaling is not activated, the Custom AR width / height are now correctly labeled using (1x), (2x), ... suffixes. You also have to activate Integer Scaling after menu video rotation for it to work</li>
-          <li>OPENGL: For all other Aspect Ratio options, Integer Scaling and rotation (both from Core API rotation and from menu video rotation) are now working properly together (correct multiples of internal resolution). You also have to activate Integer Scaling after menu video rotation for it to work</li>
-          <li>PLAYLISTS: Pressing 'Start' or long touching a playlist will bring you to a Playlist submenu where you can set a default core, setup thumbnail view, delete the playlist, etc</li>
-          <li>SCANNER: Manual scanner, not dependent on database files</li>
-          <li>SCANNER/MANUAL: Add option to scan inside archives</li>
+          <li>MENU/USABILITY: Selectively hide 'Disallow Non-Slave Mode Clients' if 'Allow Slave-Mode Clients' is disabled.</li>
+          <li>MENU/USABILITY: Hide 'Show desktop menu on startup' if 'Desktop menu' setting itself is disabled.</li>
+          <li>MENU/USABILITY: Reimplement Quick Menu - > Shaders -> Watch shader files for changes - can now be turned on/off through touch.</li>
+          <li>MENU/USABILITY: Refactor Quick Menu - Controls - each port now has its own submenu.</li>
+          <li>MENU/USABILITY: Quick Menu - Cheats - Delete All no longer requires five right button presses - this should fix this functionality for mobile touch users too.</li>
+          <li>MENU/USABILITY: Hide Refresh Rate options when Threaded Video is enabled - these settings do nothing with Threaded Video.</li>
+          <li>MENU/USABILITY: Hide Logging Verbosity levels behind Logging Verbosity.</li>
+          <li>MENU/USABILITY: Get rid of 'Port Number' label for Port Binds screen.</li>
+          <li>MENU/USABILITY/MOBILE: Should no longer crash when clicking on a cheat entry.</li>
+          <li>MENU/USABILITY: Shader parameters now have a dropdown list.</li>
+          <li>MENU/USABILITY: Shader passes now has a dropdown list.</li>
+          <li>MENU/USABILITY: Video - Hide Windowed Mode settings selectively.</li>
+          <li>MENU/USABILITY: Video - Hide Fullscreen Mode settings if windowed mode is not supported by context driver.</li>
+          <li>MENU/USABILITY: Selectively hide Network Command Port.</li>
+          <li>MENU/USABILITY: Selectively hide Relay Server Location.</li>
+          <li>MENU/USABILITY: User Interface -> Appearance - Selectively hide XMB Horizontal Animation setting.</li>
+          <li>MENU/USABILITY: Playlists - more selective hiding.</li>
+          <li>MENU/USABILITY: Selectively hide Rewind Settings.</li>
+          <li>MENU/USABILITY: Selectively hide Overlay Settings.</li>
+          <li>MENU/USABILITY: Selectively hide FPS Update Interval based on Display Framerate being enabled.</li>
+          <li>MENU/USABILITY: Selectively hide Onscreen Notifications BG Color Settings.</li>
+          <li>MENU/USABILITY: Settings -> Logging - Hide 'Log To File Timestamp' if 'Log To File' is disabled.</li>
+          <li>MENU/USABILITY: Video -> Scaling - Hide Custom Viewport X/Y when Integer Scale is enabled as description indicates.</li>
+          <li>MENU/USABILITY: Achievement submenu - selectively hide.</li>
+          <li>MENU/USABILITY: Settings -> Video -> Aspect ratio - selectively hide/show values based on whether you have Custom or Config selected.</li>
+          <li>MENU/USABILITY: Settings -> Video -> Selectively hide Hard Sync.</li>
+          <li>MENU/USABILITY: Settings -> Video -> Implement selective hiding for VSync and Hard Sync.</li>
+          <li>MENU/USABILITY: Selective hiding of Runahead settings based on global setting.</li>
+          <li>MENU/USABILITY: Add Input -> Haptic Feedback submenu.</li>
+          <li>MENU/USABILITY: Add Input -> Menu Controls submenu.</li>
+          <li>MENU/USABILITY: Settings -> Video -> Max Swapchain Images - Add OK action.</li>
+          <li>MENU/USABILITY: Input - Implement OK action for Bind Hold, Turbo Period and Duty Cycle.</li>
+          <li>MENU/USABILITY: Input - Hotkey Binds refactor.</li>
+          <li>MENU/USABILITY: Move 'Press Quit Twice' and 'Menu Toggle Gamepad Combo' to Input -> Hotkey Binds.</li>
+          <li>MENU/USABILITY: Video - Add sublabel for Video Output submenu.</li>
+          <li>MENU/USABILITY:  If 'Favorites Tab' is disabled, don't show 'Add To Favorites' option in Quick Menu/Playlist menu.</li>
+          <li>MENU/USABILITY: If On-Demand Thumbnail Downloader is enabled, hide 'Download Thumbnails' from playlist menu screen.</li>
+          <li>MENU/USABILITY: Add Audio Driver setting to Audio -> Output.</li>
+          <li>MENU/USABILITY: Add Audio -> Resampler settings.</li>
+          <li>MENU/USABILITY: Add Audio -> Output and Audio -> Synchronization.</li>
+          <li>OPENGL: Shaders are now working properly (only in OpenGL) when rotating both from Core API rotation and from menu video rotation. The fix is clearly visible with crt-royale for example.</li>
+          <li>OPENGL: 1:1 PAR is now correct when rotating (both from Core API rotation and from menu video rotation, as you said, in the latter case you currently have to change Aspect Ratio after menu video rotation for it to work).</li>
+          <li>OPENGL: When using Custom Aspect Ratio and rotation (both from Core API rotation and from menu video rotation), Integer Scaling is now working properly (correct multiples of internal resolution). Even when Integer Scaling is not activated, the Custom AR width / height are now correctly labeled using (1x), (2x), ... suffixes. You also have to activate Integer Scaling after menu video rotation for it to work.</li>
+          <li>OPENGL: For all other Aspect Ratio options, Integer Scaling and rotation (both from Core API rotation and from menu video rotation) are now working properly together (correct multiples of internal resolution). You also have to activate Integer Scaling after menu video rotation for it to work.</li>
+          <li>PLAYLISTS: Pressing 'Start' or long touching a playlist will bring you to a Playlist submenu where you can set a default core, setup thumbnail view, delete the playlist, etc.</li>
+          <li>SCANNER: Manual scanner, not dependent on database files.</li>
+          <li>SCANNER/MANUAL: Add option to scan inside archives.</li>
           <li>SCANNER/MANUAL: Enable automatic naming of arcade content via DAT files. This is compatible with DAT files in either Logiqx XML or MAME List XML format.</li>
-          <li>VIDEO: Do not reinit video driver on SET<em>SYSTEM</em>AV_INFO unless needed</li>
-          <li>VIDEO: Support DRC even when using a vsync swap interval higher than 1</li>
-          <li>VIDEO LAYOUT: Fixed XML parsing of attributes with spaces, should fix issues with several video layouts</li>
-          <li>VULKAN/ANDROID: Workaround weird WSI return codes in landscape mode -  Android WSI wants you to use preTransform, and if it is not used correctly, Android 10 will return VK<em>SUBOPTIMAL</em>KHR, and we would create a new swapchain every frame. This workaround just ignores this error, since it's not really an error. A more "proper" fix is to use prerotate and modify the MVP matrices,
-          which might help certain devices with crummy display processors</li>
+          <li>VIDEO: Do not reinit video driver on SET_SYSTEM_AV_INFO unless needed.</li>
+          <li>VIDEO: Support DRC even when using a vsync swap interval higher than 1.</li>
+          <li>VIDEO LAYOUT: Fixed XML parsing of attributes with spaces, should fix issues with several video layouts.</li>
+          <li>VULKAN/ANDROID: Workaround weird WSI return codes in landscape mode -  Android WSI wants you to use preTransform, and if it is not used correctly, Android 10 will return VK_SUBOPTIMAL_KHR, and we would create a new swapchain every frame. This workaround just ignores this error, since it's not really an error. A more "proper" fix is to use prerotate and modify the MVP matrices,
+          which might help certain devices with crummy display processors.</li>
           <li>VULKAN/ANDROID: Recreate swapchain on orientation change. ANativeWindow getWidth/Height does not detect any changes when using
-          Vulkan, so use the old onContentRectChanged callback to get notified when size changed. Use those values instead when figuring out how large swapchain to create</li>
+          Vulkan, so use the old onContentRectChanged callback to get notified when size changed. Use those values instead when figuring out how large swapchain to create.</li>
         </ul>
       </description>
     </release>
