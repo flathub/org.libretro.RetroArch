@@ -43,6 +43,26 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.8.4" date="2019-01-15">
+      <url>https://www.libretro.com/index.php/retroarch-1-8-4-released/</url>
+      <description>
+        <ul>
+          <li>CAMERA/BUGFIX: Fix crash when a core requires the camera driver and the platform only has a null driver. This would crash mgba on Wii for example</li>
+          <li>DISK CONTROL: Cycle Disk Tray now becomes Eject Disk or Insert Disk depending upon current drive state</li>
+          <li>DISK CONTROL: Current Disk Index is only shown when the current disk has been ejected</li>
+          <li>DISK CONTROL: The old Insert Disk entry has been changed to Load New Disk, and is only shown when a disk is currently inserted (this is because loading a new disk from the filesystem - i.e. bypassing the m3u playlist disk index interface - automatically ejects and inserts disks, and so cannot be done while the virtual drive is empty)</li>
+          <li>DISK CONTROL: The Current Disk Index may now be set more easily via a drop-down list.</li>
+          <li>DISK CONTROL: Selecting Eject Disk automatically moves the menu selection to the Current Disk Index entry</li>
+          <li>DISK CONTROL: Selecting an index via the Current Disk Index drop-down list automatically moves the menu selection back to Insert Disk</li>
+          <li>DISK CONTROL: The Disk Control entry sublabels have been changed for greater clarity</li>
+          <li>DISK CONTROL: All of the horrendous notification spam has been removed.</li>
+          <li>DISK CONTROL: A new Resume content after changing disks option has been added under Settings > User Interface. When enabled (default setting), content is resumed automatically after selecting either Insert Disk or Load New Disk</li>
+          <li>DISK CONTROL/BUGFIX: The Disk Control menu now has the correct title</li>
+          <li>DISK CONTROL/BUGFIX: Selecting a disk via the Load New Disk file browser no longer flushes the user back to the top level menu (it now correctly returns to the Disk Control menu)</li>
+          <li>PLAYLISTS: Add 'Clean Playlist' option</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.8.2" date="2019-12-28">
       <url>https://www.libretro.com/index.php/retroarch-1-8-2-released/</url>
       <description>
