@@ -25,6 +25,16 @@
     "shared-modules/SDL/SDL_ttf-2.0.11.json",
     "udev/systemd-udev.json",
     {
+      "name": "xrandr",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://www.x.org/archive/individual/app/xrandr-1.5.1.tar.gz",
+          "sha256": "7b99edb7970a1365eaf5bcaf552144e4dfc3ccf510c4abc08569849929fb366e"
+        }
+      ]
+    },
+    {
       "name": "retroarch",
       "config-opts": [
         "--enable-dbus"
