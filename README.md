@@ -28,6 +28,18 @@ flatpak install --user -y flathub org.libretro.RetroArch
     flatpak run org.libretro.RetroArch -L ~/.var/app/org.libretro.RetroArch/config/retroarch/cores/chailove_libretro.so FloppyBird.chailove
     ```
 
+## Known Issues
+
+There are a few known issues with using the Flatpak build of RetroArch, due to its sandboxed nature...
+
+### Joypad Driver
+
+Upstream udev support for Flatpak isn't quite there yet. Because of this, the Flatpak build of RetroArch uses the SDL driver, which lacks some of the controller autoconfigs. If you have a controller that isn't detected, feel free to submit the SDL config for it over at [retroarch-joypad-autoconfig](https://github.com/libretro/retroarch-joypad-autoconfig).
+
+### Core Libraries
+
+There are a few libretro cores that have been been compiled with dependencies on libraries that are not currently deployed with Flatpak. If you find one, you are invited to [create an issue](https://github.com/flathub/org.libretro.RetroArch/issues) detailing what's missing so that we can ship it in the sandboxed Flatpak.
+
 ## Update
 
 To update RetroArch through Flathub, use the follow command:
