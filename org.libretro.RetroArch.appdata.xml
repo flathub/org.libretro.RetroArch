@@ -43,6 +43,74 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.8.5" date="2020-03-21">
+      <url>https://www.libretro.com/index.php/retroarch-1-8-5-released/</url>
+      <description>
+        <ul>
+          <li>BUGFIX: Prevent double input when using &#39;return&#39; key (hardware) to close on-screen keyboard</li>
+          <li>BUGFIX: Fix mouse capture hotkey not working</li>
+          <li>BUGFIX: Avoid overflow when calculating multiplying performance counter</li>
+          <li>BUGFIX: Retroarch overlay displaying &quot;Game remap file loaded.&quot; on the overlay instead of &quot;Core remap file loaded.&quot; when only a core remap file is present</li>
+          <li>CHEEVOS/BUGFIX: Achievement triggers could cause Retroarch to Crash</li>
+          <li>CHEEVOS: Don&#39;t block Sameboy core because it only exposes some memory</li>
+          <li>CHEEVOS: Support for extended Sega CD memory</li>
+          <li>CHEEVOS: Show RetroAchievements Hash in content information list</li>
+          <li>CHEEVOS: If the core says it&#39;s exposing SYSTEM_RAM, give it the benefit of the doubt</li>
+          <li>CHEEVOS: RetroAchievements rich presence for RA.org website/Discord</li>
+          <li>CHEEVOS: Reset token when username or password changes</li>
+          <li>CHEEVOS: Display measured progress on locked achievements</li>
+          <li>CHEEVOS: Queue multiple popups</li>
+          <li>CHEEVOS: Add delay retries to leaderboard submits</li>
+          <li>CHEEVOS: Prevent buffer overflow when encountering an unknown macro</li>
+          <li>CORE UPDATER: Prevent hang when fetching core list if HTTP transfer fails</li>
+          <li>DISK CONTROL: Add disk labels to &#39;disk inserted&#39; notifications</li>
+          <li>FFMPEG CORE: Fix crash on seeking when using HW decoding in some cases</li>
+          <li>LIBRETRO: Add disk control interface API extension</li>
+          <li>LINUX: Avoid possible crash when running retroarch at startup</li>
+          <li>LINUX/GLX: Fix threaded video crashes/instability because of GLX OML sync callbacks</li>
+          <li>LOCALIZATION: Update French translation</li>
+          <li>LOCALIZATION: Update Korean translation</li>
+          <li>LOCALIZATION: Update Polish translation</li>
+          <li>LOCALIZATION: Update Spanish translation</li>
+          <li>LOCALIZATION: Update Portuguese Brazilian translation</li>
+          <li>MENU: Add Menu Scroll Acceleration option</li>
+          <li>MENU: Automatically select currently checked item when opening drop-down lists</li>
+          <li>MENU: Fix smooth (vertical) line ticker scroll speed</li>
+          <li>MENU: Don&#39;t flush on override/remap messages</li>
+          <li>MENU/DATETIME: Adds some new timedate styles that follow DD/MM/YYYY</li>
+          <li>MENU/DATETIME: Modifies the existing translation files in order to accommodate the new options that are now available</li>
+          <li>MENU/DATETIME: Reorders the timedate view options</li>
+          <li>MENU/BUGFIX: Fix bug when switching to RGUI menu driver</li>
+          <li>MENU/MATERIALUI: Add option to remove navigation bar</li>
+          <li>MENU/OZONE: Add DPI-based scaling</li>
+          <li>MENU/OZONE: Add rudimentary pointer support</li>
+          <li>MENU/OZONE: Add &#39;Nord&#39; and &#39;Gruvbox Dark&#39; themes</li>
+          <li>MENU/OZONE/POINTER: Pointer can be used to switch between sidebar and entries list</li>
+          <li>MENU/OZONE/POINTER: Pointer can be used to select sidebar and entries list items</li>
+          <li>MENU/OZONE/POINTER: Both sidebar and entries list can be scrolled by dragging</li>
+          <li>MENU/OZONE/POINTER: Clicking/pressing the header or footer produces a &#39;cancel&#39; action</li>
+          <li>MENU/OZONE/POINTER: Cursor focus follows mouse pointer from sidebar to entries list (and vice versa)</li>
+          <li>MENU/OZONE/POINTER: In entries list, item under cursor is automatically selected</li>
+          <li>MENU/OZONE/POINTER: In sidebar, item under cursor is not automatically selected (this is too jarring)</li>
+          <li>MENU/RGUI: Add &#39;Flux&#39; theme</li>
+          <li>MENU/XMB: New color themes &#39;Cube Purple&#39;, &#39;Family Red&#39;, etc</li>
+          <li>NETPLAY/MENU/BUGFIX: Fix Netplay Stateless Mode doesn&#39;t save. Affects other netplay settings which can be overridden by commandline option</li>
+          <li>NETPLAY/ROOMS/BUGFIX: Prevent out-of-bounds array indexing when displaying/selecting netplay rooms in menus</li>
+          <li>SCANNER: Add &#39;Arcade DAT Filter&#39; Option</li>
+          <li>SCANNER: Add scanning Korea and Asia PS1 discs</li>
+          <li>SCANNER: Add support for scanning PSP Korean</li>
+          <li>VIDEO: Set hardware &#39;Bilinear filtering&#39; off by default</li>
+          <li>VIDEO/WIDGETS: Widgets are now menu-independent</li>
+          <li>VIDEO/WIDGETS: Allow notifications to use full screen width when not displaying menu</li>
+          <li>VIDEO/WIDGETS: DPI-based scaling</li>
+          <li>VIDEO/WIDGETS: Fix volume widget scaling</li>
+          <li>VIDEO/WIDGETS: Add independent widget scale override settings for fullscreen/windowed modes</li>
+          <li>VIDEO/WIDGETS/BUGFIX: Prevent improper display of (old style) OSD text when widgets are enabled</li>
+          <li>VIDEO/WIDGETS/THREADED/BUGFIX: Fix issue - corruption of menu widgets when running some cores (e.g. VICE) with threaded video enabled</li>
+          <li>WIFI/CONNMANCTL: Display more characters from SSID</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.8.4" date="2020-01-15">
       <url>https://www.libretro.com/index.php/retroarch-1-8-4-released/</url>
       <description>
