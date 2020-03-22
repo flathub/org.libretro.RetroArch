@@ -47,7 +47,7 @@
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
           "branch": "v1.8.5",
-          "commit": "f48c6684477c2c926e47ed6ae991c2ae74d180a4"
+          "commit": "8bcd74bf42f486c37e243a80e29bc214b2b6b205"
         },
         {
           "type": "file",
@@ -82,7 +82,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "f48c6684477c2c926e47ed6ae991c2ae74d180a4"
+          "commit": "8bcd74bf42f486c37e243a80e29bc214b2b6b205"
         }
       ]
     },
@@ -96,7 +96,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "f48c6684477c2c926e47ed6ae991c2ae74d180a4"
+          "commit": "8bcd74bf42f486c37e243a80e29bc214b2b6b205"
         }
       ]
     },
