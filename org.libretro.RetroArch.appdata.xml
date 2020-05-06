@@ -40,19 +40,82 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.8.6" date="2020-05-06">
+      <url>https://www.libretro.com/index.php/retroarch-1-8-6-released/</url>
+      <description>
+        <ul>
+          <li>ARCHIVE/ZIP: Expand functionality of rzip_stream interface</li>
+          <li>AI SERVICE: Hide redundant entries when service is disabled</li>
+          <li>AI SERVICE: Added in auto-translate support</li>
+          <li>AI SERVICE: support for NVDA and SAPI narration</li>
+          <li>AUTOCONFIG: Use correct port index in input device configured/disconnected notifications</li>
+          <li>BUGFIX: Fix race condition where task could momentarily not be in the queue when reordering</li>
+          <li>CHEEVOS/BUGFIX: Prevent null reference rendering achievement list while closing application</li>
+          <li>CHEEVOS/BUGFIX: Report non-memorymap GBA cores as unsupported</li>
+          <li>COMMANDLINE: Advise against using -s and -S variables on the command line</li>
+          <li>CONFIG FILE: Only write config files to disk when parameters change</li>
+          <li>CONFIG FILE/BUGFIX: RetroArch no longer crashes when attempting to save a config file after unsetting a parameter (currently, this can be triggered quite easily by manipulating input remaps)</li>
+          <li>CONFIG FILE/BUGFIX: When using Material UI, RetroArch no longer modifies the wrong setting (or segfaults...) when tapping entries in the Quick Menu &gt; Controls input remapping submenu</li>
+          <li>CONFIG FILE/BUGFIX: Quite a few real and potential memory leaks have been fixed.</li>
+          <li>CHD: Fixes a crash caused by ignoring the return value from one of the CHD library functions</li>
+          <li>FASTFORWARDING: A new Mute When Fast-Forwarding option has been added under Settings &gt; Audio</li>
+          <li>GLCORE/SLANG: Set filter and wrap mode correctly when intialising shader textures</li>
+          <li>LOCALIZATION: Update Japanese translation</li>
+          <li>LOCALIZATION: Update Spanish translation</li>
+          <li>LOCALIZATION: Update Portuguese Brazilian translation</li>
+          <li>MENU: Prevent font-related segfaults when using extremely small scales/window sizes</li>
+          <li>MENU: Fix gfx_display_draw_texture_slice()</li>
+          <li>MENU/FONT: Enable correct vertical alignment of text (+ font rendering fixes)</li>
+          <li>MENU/RGUI: Enable automatic menu size reduction when running at low resolutions (down to 256x192)</li>
+          <li>MENU/OZONE: Update timedate style options for Last Played sublabel metadata</li>
+          <li>MENU/OZONE: Hide Menu Color Theme setting when Use preferred system color theme is enabled</li>
+          <li>MENU/OZONE: Fix thumbnail switching via scan button functionality</li>
+          <li>MENU/OZONE: Prevent glitches when rendering Ozones selection cursor</li>
+          <li>MENU/OZONE: Enable proper vertical text alignment + thumbnail display improvements</li>
+          <li>MENU/OZONE: Enable second thumbnail/content metadata toggle using RetroPad select</li>
+          <li>MENU/OZONE: Refactor footer display</li>
+          <li>MENU/OZONE: Hide thumbnail button hints when viewing file browser lists</li>
+          <li>MENU/OZONE/INPUT/BUGFIX: Fix undefined behaviour when using touch screen to change input remaps</li>
+          <li>MENU/OZONE/INPUT/BUGFIX: Pointer input is now correctly disabled when message boxes are displayed</li>
+          <li>MENU/XMB: Fix thumbnail switching via scan button functionality</li>
+          <li>ODROID GO ADVANCE: Add DRM HW context driver</li>
+          <li>PSL1GHT: Initial port</li>
+          <li>PSL1GHT/KEYBOARD: Implement PSL1GHT keyboard</li>
+          <li>PLAYLIST/BUGFIX: Improve handling of broken playlists</li>
+          <li>PLAYLIST/BUGFIX: RetroArch will no longer segfault when attempting to fetch content runtime information when core path is NULL</li>
+          <li>PLAYLIST/BUGFIX: Core name + runtime info will only be displayed on playlists and in the Information submenu if both the core path and core name fields are valid</li>
+          <li>PLAYLIST/BUGFIX: When handling entries with missing path fields, the menu sorting order now matches that of the playlist sorting order</li>
+          <li>PLAYLIST: Add optional per-playlist alphabetical sorting</li>
+          <li>PLAYLIST: Omit whitespace when writing compressed JSON format playlists</li>
+          <li>PLAYLIST: Add optional playlist compression</li>
+          <li>QNX: Support analog sticks</li>
+          <li>SAVESTATES: Add optional save state compression (enabled by default now)</li>
+          <li>SRAM: Add optional save (SRAM) file compression</li>
+          <li>SCANNER: Prevent redundant playlist entries when handling M3U content</li>
+          <li>SCANNER/ANDROID: Fix content scanner being unable to identify certain games from CHD images (raw data sector/subcode)</li>
+          <li>TASKS/BUGFIX: Fix task deadlocks</li>
+          <li>TASKS/SCREENSHOT/BUGFIX: Fix heap-use-after-free error when widgets are disabled</li>
+          <li>TVOS: Disable overlays for tvOS, fix app icon</li>
+          <li>VIDEO/WIDGETS/BUGFIX: The font ascender/descender metrics added in #10375 are now used to achieve pixel perfect vertical text alignment</li>
+          <li>VIDEO/WIDGETS/BUGFIX: Message queue text now uses its own dedicated font</li>
+          <li>VIDEO/WIDGETS/BUGFIX: Performance updates</li>
+          <li>VULKAN/BUGFIX: Fix display of statistics text</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.8.5" date="2020-03-21">
       <url>https://www.libretro.com/index.php/retroarch-1-8-5-released/</url>
       <description>
         <ul>
-          <li>BUGFIX: Prevent double input when using &#39;return&#39; key (hardware) to close on-screen keyboard</li>
+          <li>BUGFIX: Prevent double input when using return key (hardware) to close on-screen keyboard</li>
           <li>BUGFIX: Fix mouse capture hotkey not working</li>
           <li>BUGFIX: Avoid overflow when calculating multiplying performance counter</li>
           <li>BUGFIX: Retroarch overlay displaying &quot;Game remap file loaded.&quot; on the overlay instead of &quot;Core remap file loaded.&quot; when only a core remap file is present</li>
           <li>CHEEVOS/BUGFIX: Achievement triggers could cause Retroarch to Crash</li>
-          <li>CHEEVOS: Don&#39;t block Sameboy core because it only exposes some memory</li>
+          <li>CHEEVOS: Dont block Sameboy core because it only exposes some memory</li>
           <li>CHEEVOS: Support for extended Sega CD memory</li>
           <li>CHEEVOS: Show RetroAchievements Hash in content information list</li>
-          <li>CHEEVOS: If the core says it&#39;s exposing SYSTEM_RAM, give it the benefit of the doubt</li>
+          <li>CHEEVOS: If the core says its exposing SYSTEM_RAM, give it the benefit of the doubt</li>
           <li>CHEEVOS: RetroAchievements rich presence for RA.org website/Discord</li>
           <li>CHEEVOS: Reset token when username or password changes</li>
           <li>CHEEVOS: Display measured progress on locked achievements</li>
@@ -60,7 +123,7 @@
           <li>CHEEVOS: Add delay retries to leaderboard submits</li>
           <li>CHEEVOS: Prevent buffer overflow when encountering an unknown macro</li>
           <li>CORE UPDATER: Prevent hang when fetching core list if HTTP transfer fails</li>
-          <li>DISK CONTROL: Add disk labels to &#39;disk inserted&#39; notifications</li>
+          <li>DISK CONTROL: Add disk labels to disk inserted notifications</li>
           <li>FFMPEG CORE: Fix crash on seeking when using HW decoding in some cases</li>
           <li>LIBRETRO: Add disk control interface API extension</li>
           <li>LINUX: Avoid possible crash when running retroarch at startup</li>
@@ -73,7 +136,7 @@
           <li>MENU: Add Menu Scroll Acceleration option</li>
           <li>MENU: Automatically select currently checked item when opening drop-down lists</li>
           <li>MENU: Fix smooth (vertical) line ticker scroll speed</li>
-          <li>MENU: Don&#39;t flush on override/remap messages</li>
+          <li>MENU: Dont flush on override/remap messages</li>
           <li>MENU/DATETIME: Adds some new timedate styles that follow DD/MM/YYYY</li>
           <li>MENU/DATETIME: Modifies the existing translation files in order to accommodate the new options that are now available</li>
           <li>MENU/DATETIME: Reorders the timedate view options</li>
@@ -81,22 +144,22 @@
           <li>MENU/MATERIALUI: Add option to remove navigation bar</li>
           <li>MENU/OZONE: Add DPI-based scaling</li>
           <li>MENU/OZONE: Add rudimentary pointer support</li>
-          <li>MENU/OZONE: Add &#39;Nord&#39; and &#39;Gruvbox Dark&#39; themes</li>
+          <li>MENU/OZONE: Add Nord and Gruvbox Dark themes</li>
           <li>MENU/OZONE/POINTER: Pointer can be used to switch between sidebar and entries list</li>
           <li>MENU/OZONE/POINTER: Pointer can be used to select sidebar and entries list items</li>
           <li>MENU/OZONE/POINTER: Both sidebar and entries list can be scrolled by dragging</li>
-          <li>MENU/OZONE/POINTER: Clicking/pressing the header or footer produces a &#39;cancel&#39; action</li>
+          <li>MENU/OZONE/POINTER: Clicking/pressing the header or footer produces a cancel action</li>
           <li>MENU/OZONE/POINTER: Cursor focus follows mouse pointer from sidebar to entries list (and vice versa)</li>
           <li>MENU/OZONE/POINTER: In entries list, item under cursor is automatically selected</li>
           <li>MENU/OZONE/POINTER: In sidebar, item under cursor is not automatically selected (this is too jarring)</li>
-          <li>MENU/RGUI: Add &#39;Flux&#39; theme</li>
-          <li>MENU/XMB: New color themes &#39;Cube Purple&#39;, &#39;Family Red&#39;, etc</li>
-          <li>NETPLAY/MENU/BUGFIX: Fix Netplay Stateless Mode doesn&#39;t save. Affects other netplay settings which can be overridden by commandline option</li>
+          <li>MENU/RGUI: Add Flux theme</li>
+          <li>MENU/XMB: New color themes Cube Purple, Family Red, etc</li>
+          <li>NETPLAY/MENU/BUGFIX: Fix Netplay Stateless Mode doesnt save. Affects other netplay settings which can be overridden by commandline option</li>
           <li>NETPLAY/ROOMS/BUGFIX: Prevent out-of-bounds array indexing when displaying/selecting netplay rooms in menus</li>
-          <li>SCANNER: Add &#39;Arcade DAT Filter&#39; Option</li>
+          <li>SCANNER: Add Arcade DAT Filter Option</li>
           <li>SCANNER: Add scanning Korea and Asia PS1 discs</li>
           <li>SCANNER: Add support for scanning PSP Korean</li>
-          <li>VIDEO: Set hardware &#39;Bilinear filtering&#39; off by default</li>
+          <li>VIDEO: Set hardware Bilinear filtering off by default</li>
           <li>VIDEO/WIDGETS: Widgets are now menu-independent</li>
           <li>VIDEO/WIDGETS: Allow notifications to use full screen width when not displaying menu</li>
           <li>VIDEO/WIDGETS: DPI-based scaling</li>
@@ -244,7 +307,7 @@
           <li>LOCALIZATION: Update Spanish translation</li>
           <li>MENU/MATERIALUI: Initial thumbnail support</li>
           <li>MENU/MATERIALUI: Cutie / Virtual Boy theme added</li>
-          <li>MENU/MATERIALUI: Bugfix - Under certain extreme circumstances, entries with very long sublabel strings could have their text prematurely &#39;clipped&#39; as the entry is scrolled beyond the top of the screen</li>
+          <li>MENU/MATERIALUI: Bugfix - Under certain extreme circumstances, entries with very long sublabel strings could have their text prematurely clipped as the entry is scrolled beyond the top of the screen</li>
           <li>MENU/MATERIALUI: Bugfix - Certain setting value strings were unnecessarily truncated (with a ...) when using smooth ticker text</li>
           <li>MENU/XMB: Sunbeam theme added</li>
         </ul>
