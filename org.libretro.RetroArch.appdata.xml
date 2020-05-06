@@ -11,25 +11,22 @@
   <url type="faq">https://retroarch.com/?page=faq</url>
   <url type="donation">https://retroarch.com/index.php?page=donate</url>
   <content_rating type="oars-1.0" />
-  <categories>
-    <category>Game</category>
-  </categories>
   <screenshots>
     <screenshot type="default">
       <caption>RetroArch main menu</caption>
-      <image type="source" width="1600" height="900">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot.png</image>
+      <image type="source" width="768" height="414">https://www.libretro.com/wp-content/uploads/2020/03/ozone-768x414.png</image>
     </screenshot>
     <screenshot>
       <caption>RetroArch running the NES</caption>
-      <image type="source" width="1135" height="638">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-2.png</image>
+      <image type="source" width="768" height="672">https://www.libretro.com/wp-content/uploads/2020/03/micromachines-200313-175514-768x672.png</image>
     </screenshot>
     <screenshot>
-      <caption>RetroArch running Sheep It Up on the Gameboy</caption>
-      <image type="source" width="1332" height="749">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-3.png</image>
+      <caption>Rabbit : a fighting game from 1997, one of the only Electronic Arts arcade games</caption>
+      <image type="source" width="768" height="575">https://www.libretro.com/wp-content/uploads/2020/03/rabbit-200313-180233-768x575.png</image>
     </screenshot>
     <screenshot>
-      <caption>RetroArch running the Super Nintendo</caption>
-      <image type="source" width="1172" height="659">https://rawgit.com/flathub/org.libretro.RetroArch/master/screenshot-4.png</image>
+      <caption>Wolfenstein 3D (Shareware)</caption>
+      <image type="source" width="768" height="480">https://www.libretro.com/wp-content/uploads/2020/02/gamemaps-200225-094528-768x480.png</image>
     </screenshot>
   </screenshots>
   <description>
