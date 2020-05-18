@@ -40,6 +40,29 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.8.7" date="2020-05-18">
+      <url>https://www.libretro.com/index.php/retroarch-1-8-7-released/</url>
+      <description>
+        <ul>
+          <li>CHEEVOS/BUGFIX: Opening achievements list would crash RetroArch with badges enabled (on new games)</li>
+          <li>CHEEVOS: Option to start a session with all achievements active</li>
+          <li>CHEEVOS: Don't perform unnecessary cheevos initialisation when cheevos are disabled. Should reduce startup times when loading content</li>
+          <li>CORE OPTIONS: Disable 'Use Global Core Options File' by default</li>
+          <li>GLCORE: Switch to glcore video driver when requested by a core</li>
+          <li>LINUX/XDG: Use GenericName correctly in desktop entry</li>
+          <li>MENU/MATERIALUI: Add desktop-style playlist view mode</li>
+          <li>MENU/MATERIALUI/DESKTOPVIEW: When scrolling playlists, show last selected thumbnails while waiting for next entry to load</li>
+          <li>MENU/MATERIALUI: Limit tab switch rate when input repeat is active</li>
+          <li>MENU/OZONE: Fix sidebar playlist sort order when 'Truncate Playlist Names' is enabled</li>
+          <li>MENU/RGUI: Adjusted menu defaults, adjusted default scrolling speed</li>
+          <li>MENU/RGUI: Enable custom wallpaper when menu size is reduced at low resolutions</li>
+          <li>MENU/XMB: Limit tab switch rate when input repeat is active</li>
+          <li>NETPLAY: Fix regressions introduced in 1.8.5</li>
+          <li>RGUI: Add option to always stretch menu to fill the screen</li>
+          <li>WIIU: Enable graphics widgets</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.8.6" date="2020-05-06">
       <url>https://www.libretro.com/index.php/retroarch-1-8-6-released/</url>
       <description>
