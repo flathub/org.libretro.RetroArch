@@ -40,6 +40,55 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.8.9" date="2020-06-20">
+      <url></url>
+      <description>
+        <ul>
+          <li>AUTO SAVESTATES: Ensure save states are correctly flushed to disk when quitting RetroArch (fixes broken save states when exiting RetroArch - without first closing content - with 'Auto Save State' enabled)</li>
+          <li>BUILTIN CORES: Builtin cores like ffmpeg and imageviewer would previously try  to erroneously load a dynamic core named 'builtin' - this would fail and would just be a wasteful operation - this now skips dylib loading in libretro_get_system_info for builtin cores</li>
+          <li>CHEEVOS: Report API errors when unlocking achievements or submitting leaderboards</li>
+          <li>CHEEVOS: Support less common file extensions</li>
+          <li>CHEEVOS: Disable hardcore mode when playing BSV file</li>
+          <li>CHEEVOS: Correctly report unlocked non-hardcore achievements when hardcore is paused</li>
+          <li>CHEEVOS/M3U: Bugfix - did not handle absolute/relative paths in M3U files correctly before</li>
+          <li>CHEEVOS/M3U: Bugfix - it didn't handle comments/directives</li>
+          <li>CHEEVOS/M3U: Bugfix - it doesn't handle trailing whitespace</li>
+          <li>CHEEVOS/M3U: Bugfix - failed when loading M3U files with certain line endings</li>
+          <li>CORE MANAGEMENT: Add 'core management' menu (Settings -&gt; Core)</li>
+          <li>CORE MANAGEMENT: Add option to backup/restore installed cores</li>
+          <li>CORE MANAGEMENT: Improved core selection logic</li>
+          <li>CORE INFO: Search search optimisations</li>
+          <li>CORE DOWNLOADER: Rename 'Core Updater' to 'Core Downloader'</li>
+          <li>CORE DOWNLOADER: Add 'Show Experimental Cores' setting under Settings &gt; Network &gt; Updater</li>
+          <li>CORE DOWNLOADER: Core licenses are now shown for all entries in the Core Updater menu</li>
+          <li>CORE DOWNLOADER: Pressing RetroPad select on a Core Updater entry will now display any text in the description field of its info file</li>
+          <li>CORE DOWNLOADER: Installed cores are now highlighted via a [#] symbol</li>
+          <li>CORE DOWNLOADER: Pressing RetroPad start on a selected, installed entry opens the Core Information menu (when using Material UI, swiping left or right triggers the same action). This means we can now view bios info etc. - and more importantly delete cores - without jumping through all the hoops of loading a core first and navigating all over the place</li>
+          <li>CORE DOWNLOADER/UPDATER: Add option to automatically backup cores when updating</li>
+          <li>DISK CONTROL: Enable 'Load New Disc' while disk tray is open</li>
+          <li>INPUT: Added a hotkey delay option to allow hotkey input to work properly when it is assigned to another action</li>
+          <li>INPUT: Remove 'All Users Control Menu' setting, was buggy and will be properly reintroduced after input overhaul</li>
+          <li>LINUX: Set default saves/save states/system paths</li>
+          <li>LOCALIZATION: Add Persian language</li>
+          <li>LOCALIZATION: Add Hebrew language</li>
+          <li>LOCALIZATION: Add Asturian language</li>
+          <li>MENU: Proper line wrapping for message dialog boxes</li>
+          <li>MENU/HOTKEYS: Add sublabels to all hotkey bind entries</li>
+          <li>MENU/QUICK MENU: Suppress the display of 'empty' quick menu listings when closing content</li>
+          <li>MENU/OZONE: Performance improvements</li>
+          <li>MENU/SDL: Add mouse controls</li>
+          <li>OPENGL1/VITA: Initial changes for HW context without FBO</li>
+          <li>OVERLAYS: Add options for moving the on-screen overlay</li>
+          <li>PLAYLISTS/WINDOWS: Fix core path entries in image/video/music history playlists</li>
+          <li>SDL/GL: Advertise GLSL support</li>
+          <li>VIDEO/WIDGETS: Fix heap-use-after-free errors, leading to memory corruption</li>
+          <li>VULKAN/WSI: Better frame pacing</li>
+          <li>VULKAN/WSI: Fix Intel Mesa being broken when using Fences, we have to use Semaphores to acquire the swapchain or the entire GPU stalls</li>
+          <li>VULKAN/WSI: Add support for either using fences or semaphores when syncing</li>
+          <li>VULKAN/WSI: Prefer using semaphores for integrated GPUs as it promotes better throughput over fences</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.8.7" date="2020-05-18">
       <url>https://www.libretro.com/index.php/retroarch-1-8-7-released/</url>
       <description>
