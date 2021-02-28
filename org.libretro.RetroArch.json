@@ -25,6 +25,7 @@
     "shared-modules/SDL/SDL_ttf-2.0.11.json",
     "udev/systemd-udev.json",
     "libbz2/libbz2-1.0.8.json",
+    "libusb/libusb.json",
     {
       "name": "xrandr",
       "sources": [
