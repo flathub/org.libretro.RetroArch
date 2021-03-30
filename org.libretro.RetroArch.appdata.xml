@@ -167,7 +167,6 @@
           <li>OVERLAYS: Hide Overlay When Gamepad is Connected. Overlays will be hidden automatically when a gamepad is connected in port 1, and shown again when the gamepad is disconnected.</li>
           <li>OVERLAYS: New default overlays for mobile (neo-retropad)</li>
           <li>OVERLAYS: In addition to overlay scale, the user can now set an Overlay Aspect Adjustment factor. Most overlays are designed for 16:9 displays, which means they become stretched/ugly on modern wide aspect phones and suchlike. By changing the Overlay Aspect Adjustment factor, a user can scale the overlay width/height to achieve a uniform appearance regardless of display resolution.</li>
-          <li>OVERLAYS: Since scaling a gamepad overlay can result in buttons being squished too close together (or being pulled too far apart), the user can now adjust the effective spacing of the different 'halves' of an overlay via Overlay Horizontal Separation and Overlay Vertical Separation factors. Overlay Horizontal Separation divides the overlay in two vertically (left/right, at the centre point), and applies a spacing offset (positive or negative) between the UI elements on each side; Overlay Vertical Separation does the same, but the split is horizontal (top/bottom)</li>
           <li>OVERLAYS/FIX: The Overlay X Offset and Overlay Y Offset options have been fixed, and now work correctly</li>
           <li>OVERLAYS/FIX: All of the above options (and Overlay Scale) are configured and saved independently for landscape and portrait display orientations – so adjusting everything for a nice landscape layout won't break the portrait display</li>
           <li>OVERLAYS/FIX: When using the Vulkan gfx driver, memory is leaked every time an overlay is freed</li>
@@ -181,7 +180,7 @@
           <li>RBUF/M3U: Replace static entries array with dynamic array via RBUF library</li>
           <li>SENSORS: Android (crash-)fixes/improvements + add option to disable sensor input</li>
           <li>SDL2/VIDEO: Get the SDL2 video driver to work in Wayland/KMS</li>
-          <li>SAVESTATES: Adding savestate garbage collector for autoincrement stavestates. As some issues indicate, there's an issue with the autoincrement save slot feature: slot index will increase and very old saves won't be deleted. This adds support to delete old save states with a user defined save state limit (global). Instead of wrapping around the slot counter it will simply delete the oldest save, since it is simpler. For now there's a limit of one deletion per save, which ensures a user cannot delete many saves by accident if they set the limit too low.</li>
+          <li>SAVESTATES: Adding savestate garbage collector for autoincrement stavestates</li>
           <li>SAVESTATES/SAVEFILES: Ensure save file and playlist compression is disabled by default</li>
           <li>SHADERS: Add option to remember last selected shader preset/shader pass directories</li>
           <li>SHADERS: Use last selected shader preset directory when changing shaders via previous/next hotkeys</li>
