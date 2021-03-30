@@ -48,7 +48,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "branch": "v1.9.0",
+          "branch": "v1.9.1",
           "commit": "cf6ca2a47f44126f4caf9242cfa7917b94abbc52"
         },
         {
