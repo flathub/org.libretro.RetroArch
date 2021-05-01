@@ -40,6 +40,41 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.9.2" date="2021-04-30">
+      <url>https://www.libretro.com/index.php/retroarch-1-9-2-released/</url>
+      <description>
+        <ul>
+          <li>CHEEVOS: Allow rcheevos_patch_address to be called on game without achievements</li>
+          <li>CHEEVOS: Update achievement memory maps (add Supervision)</li>
+          <li>CONFIG/FILE: Use hash map to optimise key/value lookups</li>
+          <li>CORE INFO: Performance optimisations + code clean-ups/refactors</li>
+          <li>CRT/SWITCHRES: Fixed CRTSwitchRes framebuffer bug</li>
+          <li>DISCORD/RP: Fix regression</li>
+          <li>DRM: set the correct video mode</li>
+          <li>FASTFORWARD: Enforce minimum fastforward_ratio of 1.0</li>
+          <li>FONTS/FREETYPE/STB_UNICODE/BITMAPFONT: Prevent texture bleed when rendering text at non-integer scales</li>
+          <li>INPUT: Ensure that 'retro_set_controller_port_device' is called when updating 'Max Users'</li>
+          <li>INPUT/XEGL/MOUSE: Fix xegl_ctx.c mouse activation</li>
+          <li>INPUT/SDL: Fix crash in SDL input driver when analogs are bound.</li>
+          <li>INPUT/POINTER: Add scaling to pointer input.</li>
+          <li>INPUT REMAPPING: Fix regression on loading file</li>
+          <li>INPUT REMAPPING: Fix regression where disabling input remapping would disable input</li>
+          <li>LOGGING: RARCH_LOG_V checking for verbosity level is not necessary and can cause issues; removed said check.</li>
+          <li>LOGGING: Silence inappropriate cheatfile logging</li>
+          <li>MENU: Add optional menu screensaver</li>
+          <li>MENU: Add search filter support to cheats and overlays file browser menus</li>
+          <li>MENU/FILEBROWSER: Enhanced 'Load Content' file browser search functionality</li>
+          <li>MENU/INPUT: Block accidental diagonals in menu navigation </li>
+          <li>MENU/RGUI: Add option to disable menu transparency</li>
+          <li>MENU/RGUI: Fix display of 'Video > Scaling' menu when 'Lock Menu Aspect Ratio' is enabled</li>
+          <li>MENU/MATERIALUI: Add icon to 'Turbo Fire' menu entry</li>
+          <li>MENU/OZONE: Ozone Dracula theme</li>
+          <li>PATCHES: Added multi-softpatching support + OSD messages for patches</li>
+          <li>RHMAP: Track the complete string in rhmap</li>
+          <li>XEGL: Fix mouse not working when using OpenGLES with X11</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.9.1" date="2021-03-30">
       <url>https://www.libretro.com/index.php/retroarch-1-9-1-released/</url>
       <description>
