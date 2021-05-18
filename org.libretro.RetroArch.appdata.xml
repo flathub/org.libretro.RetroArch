@@ -40,6 +40,23 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.9.3" date="2021-05-17">
+      <url>https://www.libretro.com/index.php/retroarch-1-9-3-released/</url>
+      <description>
+        <ul>
+          <li>COMMAND: Initialize netcmd-&gt;cmd_source_len before recvfrom()</li>
+          <li>CONTENT LOADING/STATICALLY LINKED: Ensure 'Always Reload Core on Run Content' setting is applied when loading content via the file browser</li>
+          <li>CONTENT LOADING/EMSCRIPTEN: Fix content loading via file browser on platforms with 'broken' core handling (i.e. emscripten)</li>
+          <li>CORE INFO: Skip whitespace when writing compressed core info cache files</li>
+          <li>CORE INFO/FILE IO: Core Info cache; significant file I/O performance improvements on systems with slow disk file I/O</li>
+          <li>CORE INFO/FILE IO: Enable core info cache by default on all 'console' platforms</li>
+          <li>FREEBSD: FreeBSD build fix</li>
+          <li>LIBRETRO API: Add API extension for cores to override frontend fast-forward state</li>
+          <li>MENU/RGUI: Fix saving of config files/overrides when 'Lock Menu Aspect Ratio' is enabled</li>
+          <li>SHADERS: Fix 'Auto-Shader Delay' functionality</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.9.2" date="2021-04-30">
       <url>https://www.libretro.com/index.php/retroarch-1-9-2-released/</url>
       <description>
