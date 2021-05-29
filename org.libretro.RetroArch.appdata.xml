@@ -41,6 +41,25 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.9.4" date="2021-05-28">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.4</url>
+      <description>
+        <ul>
+          <li>CHEEVOS: update rcheevos to v10.0.0</li>
+          <li>CONTENT LOADING/FILE IO: Prevent unnecessary extraction (to disk) of compressed content files when need_fullpath is false</li>
+          <li>CORE INFO/FILE IO: Enable core info cache by default now for all platforms</li>
+          <li>CORE INFO/REGRESSION FIX: Fix regression caused by core info file caching - Downloads was no longer showing up in Load Content</li>
+          <li>FILE IO/COMPRESSED: Ability to load content inside ZIP files directly into RAM</li>
+          <li>INPUT/OVERLAYS: Add option to select between 'touched' elements and physical controller inputs when showing inputs on overlays</li>
+          <li>INPUT REMAPPING/OVERLAYS: Prevent duplicate inputs when using remaps with input overlays</li>
+          <li>LOCALIZATION: Fetch translations from Crowdin</li>
+          <li>MENU/OZONE: Added simple playlist entry enumeration</li>
+          <li>MENU/XMB: Fix display of 'Maximum Users' menu entry dropdown list</li>
+          <li>RPNG: Fix some memory corruption if processing broken input PNG file</li>
+          <li>SECURITY: Fix CVE-2021-28927</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.9.3" date="2021-05-17">
       <url>https://www.libretro.com/index.php/retroarch-1-9-3-released/</url>
       <description>

@@ -48,8 +48,8 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "branch": "v1.9.3",
-          "commit": "122be0cc641f76564de66409c61f165d4059463e"
+          "branch": "v1.9.4",
+          "commit": "750ad9aa7b9e29120962217f432317d1907203bb"
         },
         {
           "type": "file",
@@ -84,7 +84,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "122be0cc641f76564de66409c61f165d4059463e"
+          "commit": "750ad9aa7b9e29120962217f432317d1907203bb"
         }
       ]
     },
@@ -98,7 +98,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "122be0cc641f76564de66409c61f165d4059463e"
+          "commit": "750ad9aa7b9e29120962217f432317d1907203bb"
         }
       ]
     },
@@ -124,7 +124,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "92d00897d24e001a68a4e0d7110ed37ce44794b2"
+          "commit": "5e3511e8d060ad2c4eddee03a19c752ba9137421"
         }
       ]
     },
@@ -137,7 +137,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "62b5384e90e145eec38e7a543b92cae74bcc3754"
+          "commit": "33838a13a9c261bbf03777f6aed39b5b1bb5e727"
         }
       ]
     },
@@ -150,7 +150,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "fe9bab31432fea2db9981963bb399579bd1c903f"
+          "commit": "16e003ec4d134d81acd511adc090f35d587b3d3b"
         }
       ]
     },
@@ -176,7 +176,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/slang-shaders.git",
-          "commit": "59b8a11d6480ccfbb3f4d3ae351576e3b333fc79"
+          "commit": "70256e15f6af3ca7770b35d7b75c2e90d41ae206"
         }
       ]
     },
