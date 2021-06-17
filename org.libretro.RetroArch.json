@@ -15,7 +15,9 @@
     "--device=all",
     "--filesystem=host",
     "--allow=multiarch",
-    "--talk-name=org.freedesktop.ScreenSaver"
+    "--talk-name=org.freedesktop.ScreenSaver",
+    "--talk-name=org.freedesktop.PowerManagement.Inhibit",
+    "--talk-name=org.freedesktop.login1"
   ],
   "modules": [
     "shared-modules/libusb/libusb.json",
