@@ -26,7 +26,7 @@
     "shared-modules/SDL/SDL_mixer-1.2.12.json",
     "shared-modules/SDL/SDL_net-1.2.8.json",
     "shared-modules/SDL/SDL_ttf-2.0.11.json",
-    "udev/systemd-udev.json",
+    "udev/udev-248.json",
     "libbz2/libbz2-1.0.8.json",
     {
       "name": "xrandr",
