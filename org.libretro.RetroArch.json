@@ -14,21 +14,14 @@
     "--share=network",
     "--device=all",
     "--filesystem=host",
+    "--filesystem=home",
     "--allow=multiarch",
     "--talk-name=org.freedesktop.ScreenSaver",
     "--talk-name=org.freedesktop.PowerManagement.Inhibit",
-    "--talk-name=org.freedesktop.login1"
+    "--talk-name=org.freedesktop.login1",
+    "--filesystem=xdg-run/app/com.discordapp.Discord:create"
   ],
   "modules": [
-    "shared-modules/libusb/libusb.json",
-    "shared-modules/SDL/SDL-1.2.15.json",
-    "shared-modules/SDL/SDL_image-1.2.12.json",
-    "shared-modules/SDL/SDL_mixer-1.2.12.json",
-    "shared-modules/SDL/SDL_net-1.2.8.json",
-    "shared-modules/SDL/SDL_ttf-2.0.11.json",
-    "udev/udev-248.json",
-    "libbz2/libbz2-1.0.8.json",
-    "xrandr/xrandr-1.5.1.json",
     {
       "name": "retroarch",
       "config-opts": [
@@ -42,7 +35,7 @@
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
           "branch": "v1.9.6",
-          "commit": "0a5fd837a2432d19c76f660707bc67624dbf77fa"
+          "commit": "4a6dc36b1cc026bf337537e2d7527a117727bb91"
         },
         {
           "type": "file",
@@ -64,7 +57,16 @@
       ],
       "modules": [
         "libpng/libpng-1.6.35.json",
-        "nvidia-cg-toolkit/nvidia-cg-toolkit-3.1.0013.json"
+        "nvidia-cg-toolkit/nvidia-cg-toolkit-3.1.0013.json",
+        "shared-modules/SDL/SDL-1.2.15.json",
+        "shared-modules/SDL/SDL_image-1.2.12.json",
+        "shared-modules/SDL/SDL_mixer-1.2.12.json",
+        "shared-modules/SDL/SDL_net-1.2.8.json",
+        "shared-modules/SDL/SDL_ttf-2.0.11.json",
+        "shared-modules/libusb/libusb.json",
+        "udev/udev-248.json",
+        "libbz2/libbz2-1.0.8.json",
+        "xrandr/xrandr-1.5.1.json"
       ]
     },
     {
@@ -77,7 +79,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "0a5fd837a2432d19c76f660707bc67624dbf77fa"
+          "commit": "4a6dc36b1cc026bf337537e2d7527a117727bb91"
         }
       ]
     },
@@ -91,7 +93,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "0a5fd837a2432d19c76f660707bc67624dbf77fa"
+          "commit": "4a6dc36b1cc026bf337537e2d7527a117727bb91"
         }
       ]
     },

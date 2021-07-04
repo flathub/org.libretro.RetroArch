@@ -41,14 +41,16 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
-    <release version="1.9.6" date="2021-06-27">
+    <release version="1.9.6" date="2021-04-04">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.6</url>
       <description>
         <ul>
+          <li>ARCHIVE: Fix archive delimiter detection when file path contains no slashes</li>
           <li>ANDROID: Do not duplicate port 0 mouse and gun inputs to other ports</li>
           <li>AUDIO/XAUDIO2: Fail instead of crashing when disconnecting an audio device</li>
           <li>CHEEVOS: Reset cached progress each time menu is opened</li>
           <li>GFX: Fix uninitialized variables in gfx_display_draw_cursor</li>
+          <li>HISTORY: Hide 'Add to Favorites' when viewing an entry of the favorites playlist</li>
           <li>INPUT: 'Analog to Digital Type' usability improvements</li>
           <li>INPUT: Add support for mapping multiple controllers to a single input device</li>
           <li>INPUT/REMAPPING: Add support for mapping multiple controllers to a single input device</li>
@@ -62,6 +64,8 @@
           <li>MENU/OZONE: Ensure sidebar display status is updated correctly when performing rapid menu navigation</li>
           <li>MENU/XMB: Dynamic wallpaper fix</li>
           <li>MENU/XMB: Icon opacity fix</li>
+          <li>MENU/QT/WIMP: Fix default core detection when playlist file name does not match db_name</li>
+          <li>PLAYLISTS: Optimise scanning of large rom sets</li>
           <li>X11: Fix threaded video segfault</li>
         </ul>
       </description>
