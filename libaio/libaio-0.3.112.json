@@ -1,0 +1,19 @@
+{
+    "name": "libaio",
+    "config-opts": [
+      "--buildtype=debugoptimized"
+    ],
+    "buildsystem": "simple",
+    "build-commands": [
+      "make prefix=$FLATPAK_DEST install"
+    ],
+    "sources": [
+      {
+        "type": "git",
+        "url": "https://pagure.io/libaio.git",
+        "tag": "libaio-0.3.112",
+        "commit": "d025927efa75a0d1b46ca3a5ef331caa2f46ee0e"
+      }
+    ]
+  }
+  
