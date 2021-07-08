@@ -2,7 +2,7 @@
   "name": "libaio",
   "no-autogen": true,
   "make-install-args": [
-    "prefix=/app"
+    "prefix=${FLATPAK_DEST}"
   ],
   "sources": [
     {
