@@ -1,6 +1,9 @@
 {
   "name": "libaio",
   "no-autogen": true,
+  "make-install-args": [
+    "prefix=/app"
+  ],
   "sources": [
     {
       "type": "archive",
