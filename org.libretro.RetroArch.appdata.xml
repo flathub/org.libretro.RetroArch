@@ -41,6 +41,32 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.9.10" date="2021-09-05">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.9</url>
+      <description>
+        <ul>
+          <li>AUDIO/MIXER: Ensure than menu sounds are re-enabled when calling CMD_EVENT_AUDIO_REINIT</li>
+          <li>AUDIO/RESAMPLER/MIXER: Fix menu sounds (audio mixing) when using the 'sinc' resampler with quality lower than 'normal'</li>
+          <li>AUDIO/CONVERSION/ARM NEON: Add intrinsic NEON versions for float_to_s16/s16_to_float - should lead to optimized codepaths for AArch64/ARMv7 architectures without being dependent on ASM codepaths.</li>
+          <li>AUDIO/RESAMPLER/ARM NEON: Add intrinsic NEON version for lanczos sinc function - should lead to optimized codepaths for AArch64/ARMv7 architectures without being dependent on ASM codepaths.</li>
+          <li>CHEEVOS: Upgrade to rcheevos 10.2</li>
+          <li>CHEATS: Add enhanced search functionality to the 'Cheats' menu</li>
+          <li>CHEATS/RUNAHEAD: Fix cheats when using second instance runahead</li>
+          <li>CONFIG: Add option to (force-)write current core options to disk (Quick Menu)</li>
+          <li>CORE INFO CACHE: Remove core path from core info cache. Should make core info caches portable now (for example: you can move RetroArch to a separate dir and they would still work).</li>
+          <li>INPUT/OVERLAY: Fix overlay input when analog to digital mapping is enabled</li>
+          <li>INPUT/UDEV: Look for "ID_INPUT_KEY", not "ID_INPUT_KEYBOARD"</li>
+          <li>MENU: Allow 'Custom Aspect Ratio (X Position)/(Y Position)/(Width)/(Height)' to be entered manually via keyboard</li>
+          <li>MENU: Allow 'Vertical Refresh Rate' to be entered manually via keyboard</li>
+          <li>MENU/SHADERS: Highlight currently selected value in Shader Parameter drop-down lists</li>
+          <li>STABILITY: Safer way of avoiding the race condition in audio_driver_sample/audio_driver_sample_batch</li>
+          <li>STABILITY: When audio driver write callback function fails, don't turn audio off completely</li>
+          <li>STABILITY: Input robustness for cores that use internal threading, no audio should be processed at this point in time</li>
+          <li>VIDEO: Screen resolution list sanitizing</li>
+          <li>VULKAN: Fix some Vulkan validation layer errors</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.9.9" date="2021-09-05">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.9</url>
       <description>
