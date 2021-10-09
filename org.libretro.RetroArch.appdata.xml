@@ -41,6 +41,18 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.9.11" date="2021-10-09">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.11</url>
+      <description>
+        <ul>
+          <li>INPUT: Refactor menu toggle combo button logic to allow quit combo button</li>
+          <li>INPUT/UDEV: Add mouse relative check and set appropriately to fix issue</li>
+          <li>LIBRETRO: Add environment callback to enable cores to notify the frontend that a core otion value has changed</li>
+          <li>STEAM/LINUX: Move to new 'soldier' runtime</li>
+          <li>WAYLAND: Remove xdg-shell-v6 protocol</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.9.10" date="2021-09-18">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.10</url>
       <description>
