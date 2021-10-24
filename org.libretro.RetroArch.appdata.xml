@@ -41,6 +41,25 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.9.12" date="2021-10-24">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.12</url>
+      <description>
+        <ul>
+          <li>COMMAND: Command interface should work again</li>
+          <li>INPUT/HID: Rewrote the HID deregistration algorithm; it should no longer cause issues when dealing with multiple pads of the same HID/VID combo</li>
+          <li>INPUT/HID: Fix initialization bug that caused wiimotes to fail to register without an accessory attached</li>
+          <li>INPUT/HID: Fix Wiimote regression</li>
+          <li>INPUT/UDEV: Add extra abs check for dolphinbar</li>
+          <li>INPUT/UDEV: Add relative left mouse button when pointer device is not abs</li>
+          <li>INPUT/WAYLAND: Fix keyboard input on Wayland - fixes 'Certain cores ignore user input'</li>
+          <li>NETPLAY: Improvements from Cthulhu</li>
+          <li>LIBRETRO: Enable SRAM for contentless cores</li>
+          <li>LIBRETRO: Add environment callback to get the rate retro_run is called - GET_THROTTLE_STATE and RETRO_THROTTLE_UNBLOCKED environment callback</li>
+          <li>LINUX: Update metadata manifest</li>
+          <li>MENU/OZONE: New themes - Solarized Light, Solarized Dark</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.9.11" date="2021-10-09">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.11</url>
       <description>
