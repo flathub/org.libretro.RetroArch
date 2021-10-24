@@ -71,6 +71,18 @@ flatpak-builder builddir --install-deps-from=flathub --user --install --force-cl
 flatpak run org.libretro.RetroArch --verbose
 ```
 
+### Update
+
+To push up a newer version of RetroArch to Flathub, take on the following:
+
+1. Edit [org.libretro.RetroArch.json](https://github.com/flathub/org.libretro.RetroArch/blob/master/org.libretro.RetroArch.json)
+2. Change all commit hashes to the latest tag, and commit hashes for each repository
+3. Edit [org.libretro.RetroArch.appdata.xml](https://github.com/flathub/org.libretro.RetroArch/blob/master/org.libretro.RetroArch.appdata.xml)
+4. Create a new `<release>` element and list the latest [RetroArch CHANGES.md](https://github.com/libretro/RetroArch/blob/master/CHANGES.md) that apply to the Linux build
+5. Push up a Pull Request with the new changes
+6. Wait to see if Flathub bot approves the changes
+7. Merge the Pull Request and tag the release
+
 ### Clean
 
 ```
