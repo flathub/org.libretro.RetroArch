@@ -41,8 +41,24 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.9.13" date="2021-11-07">
+      <url>https://www.libretro.com/index.php/retroarch-1-9-13-release/</url>
+      <description>
+        <ul>
+          <li>CRT/SWITCHRES: Fixes some issue where scaling is incorrect in some video modes for CRT output</li>
+          <li>FRAMEDELAY: Add 'Automatic Frame Delay' option</li>
+          <li>INPUT: Add 'All users control the menu' setting - any gamepad can control the menu when this is enabled</li>
+          <li>INPUT/UDEV: Fix Dolphin bar and safeguard against not adding devices with no mouse or touch buttons detected</li>
+          <li>NETPLAY/CLI: -C/--connect commandline fix</li>
+          <li>NETPLAY: Other improvements</li>
+          <li>NETPLAY: Remove forced disconnection on unknown netplay command</li>
+          <li>TASKS/CHEEVOS: Replace coroutines with tasks/thread</li>
+          <li>TASKS/DATABASE/EXPLORE: Initialise 'Explore' menu on a background thread - no more stall when hovering over the Explore tab</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.9.12" date="2021-10-24">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.12</url>
+      <url>https://www.libretro.com/index.php/retroarch-1-9-12-release/</url>
       <description>
         <ul>
           <li>COMMAND: Command interface should work again</li>
@@ -61,7 +77,7 @@
       </description>
     </release>
     <release version="1.9.11" date="2021-10-09">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.11</url>
+      <url>https://www.libretro.com/index.php/retroarch-1-9-11-released/</url>
       <description>
         <ul>
           <li>INPUT: Refactor menu toggle combo button logic to allow quit combo button</li>
