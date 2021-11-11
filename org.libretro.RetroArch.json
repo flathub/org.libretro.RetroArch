@@ -197,8 +197,8 @@
       "sources": [
         {
           "type": "git",
-          "url": "https://github.com/robloach/common-overlays.git",
-          "commit": "1face62381f807a811fc60d82ab7fc1bce73a319"
+          "url": "https://github.com/libretro/common-overlays.git",
+          "commit": "db9744f4e58a740f0f10b04b62af347cd6f01928"
         }
       ]
     }
