@@ -15,7 +15,7 @@
   <screenshots>
     <screenshot type="default">
       <caption>RetroArch main menu</caption>
-      <image type="source" width="768" height="414">https://www.libretro.com/wp-content/uploads/2020/03/ozone-768x414.png</image>
+      <image type="source" width="1440" height="792">https://www.retroarch.com/images/ozone-tabs.png</image>
     </screenshot>
     <screenshot>
       <caption>RetroArch running the NES</caption>
