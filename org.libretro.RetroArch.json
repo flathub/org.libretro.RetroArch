@@ -198,7 +198,7 @@
         {
           "type": "git",
           "url": "https://github.com/robloach/common-overlays.git",
-          "commit": "5a490f03f3e53aa1cb8b8dc2c9a09962beff6262"
+          "commit": "1face62381f807a811fc60d82ab7fc1bce73a319"
         }
       ]
     }
