@@ -41,6 +41,21 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.9.13.1" date="2021-11-10">
+      <url>https://www.libretro.com/index.php/retroarch-1-9-13-release/</url>
+      <description>
+        <ul>
+          <li>CHEEVOS: Fix need-to-activate achievement logic for non-hardcore</li>
+          <li>CHEEVOS: Don't queue rewind re-init if already on main thread</li>
+          <li>CHEEVOS: Ignore unofficial achievements unless setting is enabled</li>
+          <li>NETPLAY: Networking - should not print country for a local lobby</li>
+          <li>NETPLAY: Add Text Chat functionality</li>
+          <li>OVERLAYS: Fix folder structure</li>
+          <li>VIDEO/ROTATION: Always return false if rotation can't occur</li>
+          <li>FLATPAK: Add Overlays to the Flatpak distribution</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.9.13" date="2021-11-07">
       <url>https://www.libretro.com/index.php/retroarch-1-9-13-release/</url>
       <description>

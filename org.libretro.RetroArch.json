@@ -34,7 +34,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "branch": "a68b95690c315ab62676acf052dfbbb4bd156f83"
+          "branch": "1280151d13fd52d6c94f5592d27f5ba0b70dfd86"
         },
         {
           "type": "file",
@@ -80,7 +80,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "673d77284dfeb51bb1e48542ad6d062a08aec7e3"
+          "commit": "1280151d13fd52d6c94f5592d27f5ba0b70dfd86"
         }
       ]
     },
@@ -94,7 +94,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "673d77284dfeb51bb1e48542ad6d062a08aec7e3"
+          "commit": "1280151d13fd52d6c94f5592d27f5ba0b70dfd86"
         }
       ]
     },
@@ -186,6 +186,19 @@
           "type": "git",
           "url": "https://github.com/libretro/glsl-shaders.git",
           "commit": "3b66160795221bf73d51d63d6d86a93c0a0a21c7"
+        }
+      ]
+    },
+    {
+      "name": "common-overlays",
+      "make-install-args": [
+        "PREFIX=${FLATPAK_DEST}"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/libretro/common-overlays.git",
+          "commit": "db9744f4e58a740f0f10b04b62af347cd6f01928"
         }
       ]
     }
