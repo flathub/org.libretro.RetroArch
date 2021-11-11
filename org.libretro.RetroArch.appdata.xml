@@ -51,7 +51,7 @@
           <li>NETPLAY: Networking - should not print country for a local lobby</li>
           <li>NETPLAY: Add Text Chat functionality</li>
           <li>OVERLAYS: Fix folder structure</li>
-          <li>VIDEO/ROTATION: Always return false if rotation can't occur. RETRO_ENVIRONMENT_SET_ROTATION should return false when rotation has been forcefully disabled in frontend, that way the core can decide if aspect ratio should be rotated or not for vertical games. Useful for FBNeo for instance.</li>
+          <li>VIDEO/ROTATION: Always return false if rotation can't occur</li>
           <li>FLATPAK: Add Overlays to the Flatpak distribution</li>
         </ul>
       </description>
