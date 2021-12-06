@@ -41,6 +41,46 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.9.14" date="2021-12-05">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.14</url>
+      <description>
+        <ul>
+          <li>AUDIO/MIXER: Increase sample buffer padding</li>
+          <li>CHEEVOS: Disallow achievements when spectating netplay</li>
+          <li>CHEEVOS: Fix need-to-activate achievement logic for non-hardcore</li>
+          <li>CHEEVOS: Don't queue rewind re-init if already on main thread</li>
+          <li>CHEEVOS: Ignore unofficial achievements unless setting is enabled</li>
+          <li>CHEEVOS: Use SSL host when available</li>
+          <li>CHEEVOS: Validate hashes for secondary discs in multi-disc games</li>
+          <li>CHEEVOS: Ensure placard is initialized on main thread when game has no achievements</li>
+          <li>CHEEVOS: Audit achievement settings defaults and visibility</li>
+          <li>CHEEVOS: Show error message when no password provided</li>
+          <li>CHEEVOS: Use widget for game loaded achievement progress</li>
+          <li>CONFIG: Honor config_save_on_exit when Reboot/Shutdown is called</li>
+          <li>DISK CONTROL: Focus on current content entry in Disk Control append/insert</li>
+          <li>FRAMEDELAY: Auto Frame Delay Improvements</li>
+          <li>INPUT/GYRO/ACCELEROMETER/ANDROID: Re-enable Gyroscope and Accelerometer when RetroArch resumes or regains focus</li>
+          <li>INPUT/HID: Fix gamepad disconnect on unrecognized HID device</li>
+          <li>LAKKA: Patch to fix keyboard typing</li>
+          <li>LAKKA: CD-ROM eject menu item</li>
+          <li>LAKKA/BLUETOOTH: Add option to remove pairing</li>
+          <li>LOGGING: Logging cleanups</li>
+          <li>NETPLAY: Networking - should not print country for a local lobby</li>
+          <li>NETPLAY: Added setting to allow/disallow players other than the host from pausing the game</li>
+          <li>NETPLAY: Added a sublabel for netplay max connections</li>
+          <li>NETPLAY: Fixed port override macro from not being set immediately after the port setting</li>
+          <li>NETPLAY: Show passworded rooms on lobby</li>
+          <li>NETWORK: Make HTTP header parsing case insensitive</li>
+          <li>NETWORK/UPNP: Fixed memory leaks</li>
+          <li>NETWORK/UPNP: Added a task_queue_wait to prevent executing two nat tasks at once, so it's also thread safe now</li>
+          <li>NETWORK/UPNP: Switch to a permanent lease time, but request it to be removed when we do netplay_free</li>
+          <li>NETWORK/UPNP: Only use a single interface for UPnP, return on the first one found instead of iterating over all of them and opening them one by one</li>
+          <li>OVERLAYS: Revert changes</li>
+          <li>VIDEO/ROTATION: Always return false if rotation can't occur</li>
+          <li>VULKAN: Avoid hard crash when capturing screenshot in emulating mailbox</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.9.13.2" date="2021-11-15">
       <url>https://www.libretro.com/index.php/retroarch-1-9-13-release/</url>
       <description>
@@ -148,13 +188,13 @@
         <ul>
           <li>AUDIO/MIXER: Ensure than menu sounds are re-enabled when calling CMD_EVENT_AUDIO_REINIT</li>
           <li>AUDIO/RESAMPLER/MIXER: Fix menu sounds (audio mixing) when using the 'sinc' resampler with quality lower than 'normal'</li>
-          <li>AUDIO/CONVERSION/ARM NEON: Add intrinsic NEON versions for float_to_s16/s16_to_float - should lead to optimized codepaths for AArch64/ARMv7 architectures without being dependent on ASM codepaths.</li>
-          <li>AUDIO/RESAMPLER/ARM NEON: Add intrinsic NEON version for lanczos sinc function - should lead to optimized codepaths for AArch64/ARMv7 architectures without being dependent on ASM codepaths.</li>
+          <li>AUDIO/CONVERSION/ARM NEON: Add intrinsic NEON versions for float_to_s16/s16_to_float - should lead to optimized codepaths for AArch64/ARMv7 architectures without being dependent on ASM codepaths</li>
+          <li>AUDIO/RESAMPLER/ARM NEON: Add intrinsic NEON version for lanczos sinc function - should lead to optimized codepaths for AArch64/ARMv7 architectures without being dependent on ASM codepaths</li>
           <li>CHEEVOS: Upgrade to rcheevos 10.2</li>
           <li>CHEATS: Add enhanced search functionality to the 'Cheats' menu</li>
           <li>CHEATS/RUNAHEAD: Fix cheats when using second instance runahead</li>
           <li>CONFIG: Add option to (force-)write current core options to disk (Quick Menu)</li>
-          <li>CORE INFO CACHE: Remove core path from core info cache. Should make core info caches portable now (for example: you can move RetroArch to a separate dir and they would still work).</li>
+          <li>CORE INFO CACHE: Remove core path from core info cache. Should make core info caches portable now (for example: you can move RetroArch to a separate dir and they would still work)</li>
           <li>INPUT/OVERLAY: Fix overlay input when analog to digital mapping is enabled</li>
           <li>INPUT/UDEV: Look for "ID_INPUT_KEY", not "ID_INPUT_KEYBOARD"</li>
           <li>MENU: Allow 'Custom Aspect Ratio (X Position)/(Y Position)/(Width)/(Height)' to be entered manually via keyboard</li>
@@ -327,11 +367,11 @@
           <li>FONTS/FREETYPE/STB_UNICODE/BITMAPFONT: Prevent texture bleed when rendering text at non-integer scales</li>
           <li>INPUT: Ensure that 'retro_set_controller_port_device' is called when updating 'Max Users'</li>
           <li>INPUT/XEGL/MOUSE: Fix xegl_ctx.c mouse activation</li>
-          <li>INPUT/SDL: Fix crash in SDL input driver when analogs are bound.</li>
-          <li>INPUT/POINTER: Add scaling to pointer input.</li>
+          <li>INPUT/SDL: Fix crash in SDL input driver when analogs are bound</li>
+          <li>INPUT/POINTER: Add scaling to pointer input</li>
           <li>INPUT REMAPPING: Fix regression on loading file</li>
           <li>INPUT REMAPPING: Fix regression where disabling input remapping would disable input</li>
-          <li>LOGGING: RARCH_LOG_V checking for verbosity level is not necessary and can cause issues; removed said check.</li>
+          <li>LOGGING: RARCH_LOG_V checking for verbosity level is not necessary and can cause issues; removed said check</li>
           <li>LOGGING: Silence inappropriate cheatfile logging</li>
           <li>MENU: Add optional menu screensaver</li>
           <li>MENU: Add search filter support to cheats and overlays file browser menus</li>
@@ -363,7 +403,7 @@
           <li>CONFIG/OVERRIDES: Fix empty override paths when launching without content</li>
           <li>CHEATS: Maximum search value corrections</li>
           <li>CHEEVOS: Generic memory mapping using rcheevos</li>
-          <li>CHEEVOS: Ensure badge textures are released before video driver is deinitialized. Should fix crashes with slang shaders.</li>
+          <li>CHEEVOS: Ensure badge textures are released before video driver is deinitialized. Should fix crashes with slang shaders</li>
           <li>CHEEVOS: Include achievement runtime state in save states</li>
           <li>CHEEVOS: Prevent hardcore toggle when emu-handled cheats are active</li>
           <li>CHEEVOS: Add confirmation submenu to achievements hardcore toggle</li>
@@ -395,13 +435,13 @@
           <li>INPUT: Duplicate key event blocking additions</li>
           <li>INPUT: Prevent duplicate key events with hotkeys + keyboard device type</li>
           <li>INPUT: Keyboard LED driver</li>
-          <li>INPUT/AUTOCONFIG: Allow controllers with no/empty names to work.</li>
+          <li>INPUT/AUTOCONFIG: Allow controllers with no/empty names to work</li>
           <li>INPUT/GAME FOCUS: Add option to automatically enable 'game focus' mode when running/resuming content</li>
           <li>INPUT/HOTKEYS: Hotkey for Close Content / Unload Core</li>
           <li>INPUT/LIBCEC: Map libcec-daemon keys to RETROK</li>
           <li>INPUT/X11: Enable keyboard input when mouse cursor is not inside the RetroArch window but window still has focus</li>
           <li>INPUT/X11: Fix mouse input when mouse is grabbed</li>
-          <li>INPUT/UDEV/RUMBLE: Fix rumble.</li>
+          <li>INPUT/UDEV/RUMBLE: Fix rumble</li>
           <li>INPUT/WINDOWS/DINPUT: Simultaneous shift sticky fix</li>
           <li>INPUT/WINDOWS/DINPUT: Prevent Win-key from opening Start Menu</li>
           <li>INPUT/WINDOWS/DINPUT: Option for disabling Windows hotkeys</li>
@@ -429,9 +469,9 @@
           <li>MENU: Tweak menu scroll initial hold delays</li>
           <li>MENU: Restrict menu acceleration to navigation buttons</li>
           <li>MENU: Add 'Menu Driver' setting to 'User Interface'</li>
-          <li>MENU: Relocate 'Menu Scroll' settings.</li>
-          <li>MENU: Separate 'Turbo Fire' menu.</li>
-          <li>MENU: Dropdown menu for 'Custom Aspect Ratio' setting.</li>
+          <li>MENU: Relocate 'Menu Scroll' settings</li>
+          <li>MENU: Separate 'Turbo Fire' menu</li>
+          <li>MENU: Dropdown menu for 'Custom Aspect Ratio' setting</li>
           <li>MENU: Reorder Mouse Index next to Device Index</li>
           <li>MENU: Submenu for Device Index/Mouse Index</li>
           <li>MENU: Reorganize User Interface menu</li>
@@ -448,7 +488,7 @@
           <li>MENU/INPUT/OZONE: Proper control port icons</li>
           <li>MENU/QUICK MENU: Add remap clearing ability under Quick Menu controls</li>
           <li>MENU/QUICK MENU: Cap 'State Slot' drop-down list to a maximum of 1000 (+Auto) entries</li>
-          <li>MENU: Customizable menu scroll hold delay.</li>
+          <li>MENU: Customizable menu scroll hold delay</li>
           <li>MENU/DESKTOP: Fix mouse cursor limited by window range on F5 press</li>
           <li>MENU/DESKTOP: Add simple shader option</li>
           <li>MENU/DESKTOP/WINDOWS: Remove broken 'Update RetroArch' functionality for Windows. We want this to not only be system agnostic if we bring it back, but also work outside of the Qt desktop interface</li>
@@ -462,18 +502,18 @@
           <li>NETWORK: Fix backwards condition in socket blocking behavior</li>
           <li>NETWORK/NETPLAY: Attempt IPv4 when IPv6 fails</li>
           <li>OGA/VIDEO: support for OGS</li>
-          <li>OGA: This keeps the tradition DRM driver along with the OGA one. The probe function skips the driver if the screen is non rotated to fall back to the regular DRM driver.</li>
+          <li>OGA: This keeps the tradition DRM driver along with the OGA one. The probe function skips the driver if the screen is non rotated to fall back to the regular DRM driver</li>
           <li>OGA: Fix messages from not disappearing</li>
-          <li>OGA: Implement RETRO_ENVIRONMENT_GET_CURRENT_SOFTWARE_FRAMEBUFFER. This is a faster rendering codepath for software rendered libretro cores that some libretro cores use right now. Video drivers in RetroArch have to explicitly implement this for this codepath to work at runtime.</li>
+          <li>OGA: Implement RETRO_ENVIRONMENT_GET_CURRENT_SOFTWARE_FRAMEBUFFER. This is a faster rendering codepath for software rendered libretro cores that some libretro cores use right now. Video drivers in RetroArch have to explicitly implement this for this codepath to work at runtime</li>
           <li>OPENDINGUX: Add/Optimise rumble interface</li>
           <li>OPENDINGUX: Fix frozen video when enabling fast forward</li>
           <li>OPENDINGUX/SDL: OSD font clean-up</li>
           <li>OPENDINGUX/SDL: Enable selection of image interpolation method when using 'sdl_dingux' gfx driver</li>
           <li>OPENDINGUX/SDL: Enable integer scaling when using the 'sdl_dingux' gfx driver</li>
           <li>OVERLAYS: Add option to scale overlays automatically (with aspect ratio correction)</li>
-          <li>OVERLAYS: Hide Overlay When Gamepad is Connected. Overlays will be hidden automatically when a gamepad is connected in port 1, and shown again when the gamepad is disconnected.</li>
+          <li>OVERLAYS: Hide Overlay When Gamepad is Connected. Overlays will be hidden automatically when a gamepad is connected in port 1, and shown again when the gamepad is disconnected</li>
           <li>OVERLAYS: New default overlays for mobile (neo-retropad)</li>
-          <li>OVERLAYS: In addition to overlay scale, the user can now set an Overlay Aspect Adjustment factor. Most overlays are designed for 16:9 displays, which means they become stretched/ugly on modern wide aspect phones and suchlike. By changing the Overlay Aspect Adjustment factor, a user can scale the overlay width/height to achieve a uniform appearance regardless of display resolution.</li>
+          <li>OVERLAYS: In addition to overlay scale, the user can now set an Overlay Aspect Adjustment factor. Most overlays are designed for 16:9 displays, which means they become stretched/ugly on modern wide aspect phones and suchlike. By changing the Overlay Aspect Adjustment factor, a user can scale the overlay width/height to achieve a uniform appearance regardless of display resolution</li>
           <li>OVERLAYS/FIX: The Overlay X Offset and Overlay Y Offset options have been fixed, and now work correctly</li>
           <li>OVERLAYS/FIX: All of the above options (and Overlay Scale) are configured and saved independently for landscape and portrait display orientations – so adjusting everything for a nice landscape layout won't break the portrait display</li>
           <li>OVERLAYS/FIX: When using the Vulkan gfx driver, memory is leaked every time an overlay is freed</li>
@@ -505,7 +545,7 @@
           <li>VIDEO FILTERS: Add Normal4x video filter</li>
           <li>VIDEO FILTERS: Add 'Upscale_256x-320×240' video filter</li>
           <li>VIDEO FILTERS: Add 'Upscale1.5x' video filter</li>
-          <li>WIFI/LAKKA: Add a proper WiFi menu, with Enable/Disable and Disconnect options. This also allows WiFi passwords to be remembered. The underlying tool (connman) allows to store passswords (that's why it auto connects whenever you boot a Lakka device), so we expose this so that the user does not have to re-input the pass when connecting to a saved wifi.</li>
+          <li>WIFI/LAKKA: Add a proper WiFi menu, with Enable/Disable and Disconnect options. This also allows WiFi passwords to be remembered. The underlying tool (connman) allows to store passswords (that's why it auto connects whenever you boot a Lakka device), so we expose this so that the user does not have to re-input the pass when connecting to a saved wifi</li>
         </ul>
       </description>
     </release>
@@ -516,16 +556,16 @@
           <li>AUTOCONFIG: Ensure correct directory is used when saving autoconfig profiles</li>
           <li>BLUETOOTH: Add a Bluetooth driver (Lakka-only for now)</li>
           <li>CHEATS: Fix for wrong number of remaining cheat search matches on some machines</li>
-          <li>CHEEVOS: Option to play sound on achievement unlock.</li>
+          <li>CHEEVOS: Option to play sound on achievement unlock</li>
           <li>CHEEVOS: Upgrade to rcheevos 9.1</li>
           <li>CHEEVOS: Restore display of unlocked achievements across hardcore modes</li>
           <li>CHEEVOS: Hash buffered data when available</li>
           <li>CHEEVOS: Fix Auto Save State freezes RetroArch while Cheevos is enabled</li>
           <li>CORE OPTIONS: Pressing OK (or clicking/tapping) on a boolean toggle core option no longer opens a drop-down list. The value now toggles directly, just like boolean options everywhere else in the menu</li>
           <li>CORE OPTIONS: Toggling an option that changes the number of core options being displayed (i.e. things like `Show Advanced Audio/Video Settings) no longer resets the navigation pointer to the start of the list</li>
-          <li>CORE OPTIONS: Before, RetroArch would identify core option values as being boolean if they had labels matching the specific strings enabled or disabled. Most core devs would abide by this, but not always... As a result, we sometimes would end up with misidentified values, with all kinds of Enabled, Off, True, etc. strings littering the menu, in place of proper toggle switches. All boolean-type value labels are now detected, and replaced with standard ON/OFF strings.</li>
+          <li>CORE OPTIONS: Before, RetroArch would identify core option values as being boolean if they had labels matching the specific strings enabled or disabled. Most core devs would abide by this, but not always... As a result, we sometimes would end up with misidentified values, with all kinds of Enabled, Off, True, etc. strings littering the menu, in place of proper toggle switches. All boolean-type value labels are now detected, and replaced with standard ON/OFF strings</li>
           <li>CLI: A new command line option --load-menu-on-error has been added</li>
-          <li>CRT: On the fly CRT porch adjuments - these changes allow a user to adjust how the porch algorithm generates the 15khz/31khz output. Giving the ability to change over/under scan.</li>
+          <li>CRT: On the fly CRT porch adjuments - these changes allow a user to adjust how the porch algorithm generates the 15khz/31khz output. Giving the ability to change over/under scan</li>
           <li>CONFIG FILE: Optimise parsing of configuration files</li>
           <li>DRIVERS: Implemented protection to avoid setting critical drivers to nothing thus preventing the user from locking him/herself out of the program</li>
           <li>FFMPEG CORE: Prevent seeking past the end of files (hang fix)</li>
@@ -641,7 +681,7 @@
           <li>CONFIG FILE: Only write config files to disk when parameters change</li>
           <li>CONFIG FILE/BUGFIX: RetroArch no longer crashes when attempting to save a config file after unsetting a parameter (currently, this can be triggered quite easily by manipulating input remaps)</li>
           <li>CONFIG FILE/BUGFIX: When using Material UI, RetroArch no longer modifies the wrong setting (or segfaults...) when tapping entries in the Quick Menu &gt; Controls input remapping submenu</li>
-          <li>CONFIG FILE/BUGFIX: Quite a few real and potential memory leaks have been fixed.</li>
+          <li>CONFIG FILE/BUGFIX: Quite a few real and potential memory leaks have been fixed</li>
           <li>CHD: Fixes a crash caused by ignoring the return value from one of the CHD library functions</li>
           <li>FASTFORWARDING: A new Mute When Fast-Forwarding option has been added under Settings &gt; Audio</li>
           <li>GLCORE/SLANG: Set filter and wrap mode correctly when intialising shader textures</li>
@@ -764,11 +804,11 @@
           <li>DISK CONTROL: Cycle Disk Tray now becomes Eject Disk or Insert Disk depending upon current drive state</li>
           <li>DISK CONTROL: Current Disk Index is only shown when the current disk has been ejected</li>
           <li>DISK CONTROL: The old Insert Disk entry has been changed to Load New Disk, and is only shown when a disk is currently inserted (this is because loading a new disk from the filesystem - i.e. bypassing the m3u playlist disk index interface - automatically ejects and inserts disks, and so cannot be done while the virtual drive is empty)</li>
-          <li>DISK CONTROL: The Current Disk Index may now be set more easily via a drop-down list.</li>
+          <li>DISK CONTROL: The Current Disk Index may now be set more easily via a drop-down list</li>
           <li>DISK CONTROL: Selecting Eject Disk automatically moves the menu selection to the Current Disk Index entry</li>
           <li>DISK CONTROL: Selecting an index via the Current Disk Index drop-down list automatically moves the menu selection back to Insert Disk</li>
           <li>DISK CONTROL: The Disk Control entry sublabels have been changed for greater clarity</li>
-          <li>DISK CONTROL: All of the horrendous notification spam has been removed.</li>
+          <li>DISK CONTROL: All of the horrendous notification spam has been removed</li>
           <li>DISK CONTROL: A new Resume content after changing disks option has been added under Settings > User Interface. When enabled (default setting), content is resumed automatically after selecting either Insert Disk or Load New Disk</li>
           <li>DISK CONTROL/BUGFIX: The Disk Control menu now has the correct title</li>
           <li>DISK CONTROL/BUGFIX: Selecting a disk via the Load New Disk file browser no longer flushes the user back to the top level menu (it now correctly returns to the Disk Control menu)</li>
@@ -781,102 +821,102 @@
       <description>
         <ul>
           <li>BUG/CRASH/GLSLANG: Fix glslang crashing error - managed to reproduce an issue which has been plaguing
-          users for a while, where glslang throws an assert after closing a game (and starting a new one). This would affect all video drivers that use Slang for shaders, such as D3D10/11/12/Vulkan/Metal.</li>
-          <li>CHEEVOS: Display Unofficial and Unsupported achievement states.</li>
-          <li>CHEEVOS: Pass RetroArch and core versions through User-Agent HTTP header.</li>
+          users for a while, where glslang throws an assert after closing a game (and starting a new one). This would affect all video drivers that use Slang for shaders, such as D3D10/11/12/Vulkan/Metal</li>
+          <li>CHEEVOS: Display Unofficial and Unsupported achievement states</li>
+          <li>CHEEVOS: Pass RetroArch and core versions through User-Agent HTTP header</li>
           <li>CHEEVOS: Use PSX.EXE if SYSTEM.CNF cannot be found</li>
-          <li>CHEEVOS: Prevent loading state while achievements are still being fetched from server.</li>
-          <li>CHEEVOS: Pause hardcore if core doesn't support achievements.</li>
-          <li>CHEEVOS/CRASH: Fix AddressSanitizer + CHD cause hard crash when Cheevos are enabled.</li>
-          <li>CORE UPDATER: Only download when new core is available.</li>
-          <li>CORE UPDATER: Add option to update all installed cores.</li>
-          <li>DRM/KMS: Better detection for the current video mode.</li>
-          <li>DYNAMIC RATE CONTROL: Support DRC even when using a vsync swap interval higher than 1.</li>
-          <li>FFMPEG CORE: Hardware accelerated video decoding.</li>
-          <li>FFMPEG CORE: Implement send/receive encoding API, will allow for hardware accelerated AMD video encoding.</li>
-          <li>FFMPEG CORE: The video FIFO can be removed, since we have a ring buffer in its place. This removes unneeded copy operations and as a positive side improves overall decoding speed. Makes 8k60p SW and 4k60p HW decoding feasible on many systems. For now the ring buffer is 32 images deep. This limitation will be removed, once audio and video decoder have their own packet handling.</li>
-          <li>INPUT: Fix 'Analog stick controls menu even if autoconfig disabled'.</li>
-          <li>INPUT/TURBO: Added alternate Turbo-Mode 'Single Button' - For systems supporting only a single button, the turbo-button will toggle firing that button without the need to hold it. When holding the button turbo will be suspended and resumed when the button is released. Holding the button may have a different function to just tapping it.</li>
-          <li>INPUT/ANALOG: Fix radial analog deadzone scaling.</li>
-          <li>INPUT/ANALOG: Implement proper analog button deadzone.</li>
-          <li>INPUT/MENU: Analog stick controls menu even if autoconfig disabled.</li>
-          <li>LOCALIZATION: Update Italian translation.</li>
-          <li>LOCALIZATION: Update French translation.</li>
-          <li>LOCALIZATION: Update Polish translation.</li>
-          <li>LOCALIZATION: Update Portuguese Brazilian Translation.</li>
-          <li>LOCALIZATION: Update Turkish translation.</li>
-          <li>LINUX/LOCALIZATION: Correct Droid Sans Fallback font path in Linux. This should fix Chinese/Korean font display issues on Fedora/RHEL/CentOS/openSUSE/SLE.</li>
-          <li>MENU/BUGFIX: When using a keyboard/gamepad/mouse wheel to navigate, the menu scroll position is always maintained and updated in a consistent (and expected) fashion.</li>
-          <li>MENU/BUGFIX: When resizing the window, or changing the orientation of a mobile device, the current scroll position is correctly preserved.</li>
-          <li>MENU/BUGFIX: All 'normal' pointer input is now inhibited when showing message boxes.</li>
-          <li>MENU/BUGFIX: The pointer actions 'select' and 'cancel' both now properly close a message box if it is currently being shown.</li>
-          <li>MENU/BUGFIX: Pointer 'select' and 'cancel' actions are now inhibited when an input bind dialog is active.</li>
-          <li>MENU/INPUT: Change 'User' terminology to 'Port' for input binding.</li>
-          <li>MENU/LINUX: Add proper drives to Load Content.</li>
-          <li>MENU/MATERIALUI: Halt scrolling when pointer is pressed/stationary.</li>
-          <li>MENU/MATERIALUI: Dual thumbnail view.</li>
-          <li>MENU/MATERIALUI: Fullscreen thumbnail viewer for boxart.</li>
-          <li>MENU/MATERIALUI: Scroll rapidly by press and holding the scrollbar.</li>
-          <li>MENU/RGUI: New theme 'Flux'.</li>
-          <li>MENU/OZONE: Thumbnails now have a fade-in animation.</li>
-          <li>MENU/OZONE: Fullscreen thumbnail viewer for boxart and pictures.</li>
+          <li>CHEEVOS: Prevent loading state while achievements are still being fetched from server</li>
+          <li>CHEEVOS: Pause hardcore if core doesn't support achievements</li>
+          <li>CHEEVOS/CRASH: Fix AddressSanitizer + CHD cause hard crash when Cheevos are enabled</li>
+          <li>CORE UPDATER: Only download when new core is available</li>
+          <li>CORE UPDATER: Add option to update all installed cores</li>
+          <li>DRM/KMS: Better detection for the current video mode</li>
+          <li>DYNAMIC RATE CONTROL: Support DRC even when using a vsync swap interval higher than 1</li>
+          <li>FFMPEG CORE: Hardware accelerated video decoding</li>
+          <li>FFMPEG CORE: Implement send/receive encoding API, will allow for hardware accelerated AMD video encoding</li>
+          <li>FFMPEG CORE: The video FIFO can be removed, since we have a ring buffer in its place. This removes unneeded copy operations and as a positive side improves overall decoding speed. Makes 8k60p SW and 4k60p HW decoding feasible on many systems. For now the ring buffer is 32 images deep. This limitation will be removed, once audio and video decoder have their own packet handling</li>
+          <li>INPUT: Fix 'Analog stick controls menu even if autoconfig disabled'</li>
+          <li>INPUT/TURBO: Added alternate Turbo-Mode 'Single Button' - For systems supporting only a single button, the turbo-button will toggle firing that button without the need to hold it. When holding the button turbo will be suspended and resumed when the button is released. Holding the button may have a different function to just tapping it</li>
+          <li>INPUT/ANALOG: Fix radial analog deadzone scaling</li>
+          <li>INPUT/ANALOG: Implement proper analog button deadzone</li>
+          <li>INPUT/MENU: Analog stick controls menu even if autoconfig disabled</li>
+          <li>LOCALIZATION: Update Italian translation</li>
+          <li>LOCALIZATION: Update French translation</li>
+          <li>LOCALIZATION: Update Polish translation</li>
+          <li>LOCALIZATION: Update Portuguese Brazilian Translation</li>
+          <li>LOCALIZATION: Update Turkish translation</li>
+          <li>LINUX/LOCALIZATION: Correct Droid Sans Fallback font path in Linux. This should fix Chinese/Korean font display issues on Fedora/RHEL/CentOS/openSUSE/SLE</li>
+          <li>MENU/BUGFIX: When using a keyboard/gamepad/mouse wheel to navigate, the menu scroll position is always maintained and updated in a consistent (and expected) fashion</li>
+          <li>MENU/BUGFIX: When resizing the window, or changing the orientation of a mobile device, the current scroll position is correctly preserved</li>
+          <li>MENU/BUGFIX: All 'normal' pointer input is now inhibited when showing message boxes</li>
+          <li>MENU/BUGFIX: The pointer actions 'select' and 'cancel' both now properly close a message box if it is currently being shown</li>
+          <li>MENU/BUGFIX: Pointer 'select' and 'cancel' actions are now inhibited when an input bind dialog is active</li>
+          <li>MENU/INPUT: Change 'User' terminology to 'Port' for input binding</li>
+          <li>MENU/LINUX: Add proper drives to Load Content</li>
+          <li>MENU/MATERIALUI: Halt scrolling when pointer is pressed/stationary</li>
+          <li>MENU/MATERIALUI: Dual thumbnail view</li>
+          <li>MENU/MATERIALUI: Fullscreen thumbnail viewer for boxart</li>
+          <li>MENU/MATERIALUI: Scroll rapidly by press and holding the scrollbar</li>
+          <li>MENU/RGUI: New theme 'Flux'</li>
+          <li>MENU/OZONE: Thumbnails now have a fade-in animation</li>
+          <li>MENU/OZONE: Fullscreen thumbnail viewer for boxart and pictures</li>
           <li>MENU/QT/WIMP: Fix dock titles getting cut off</li>
           <li>MENU/XMB: Fullscreen thumbnail viewer for boxart and pictures</li>
-          <li>MENU/USABILITY: Selectively hide 'Disallow Non-Slave Mode Clients' if 'Allow Slave-Mode Clients' is disabled.</li>
-          <li>MENU/USABILITY: Hide 'Show desktop menu on startup' if 'Desktop menu' setting itself is disabled.</li>
-          <li>MENU/USABILITY: Reimplement Quick Menu - > Shaders -> Watch shader files for changes - can now be turned on/off through touch.</li>
-          <li>MENU/USABILITY: Refactor Quick Menu - Controls - each port now has its own submenu.</li>
-          <li>MENU/USABILITY: Quick Menu - Cheats - Delete All no longer requires five right button presses - this should fix this functionality for mobile touch users too.</li>
-          <li>MENU/USABILITY: Hide Refresh Rate options when Threaded Video is enabled - these settings do nothing with Threaded Video.</li>
-          <li>MENU/USABILITY: Hide Logging Verbosity levels behind Logging Verbosity.</li>
-          <li>MENU/USABILITY: Get rid of 'Port Number' label for Port Binds screen.</li>
-          <li>MENU/USABILITY/MOBILE: Should no longer crash when clicking on a cheat entry.</li>
-          <li>MENU/USABILITY: Shader parameters now have a dropdown list.</li>
-          <li>MENU/USABILITY: Shader passes now has a dropdown list.</li>
-          <li>MENU/USABILITY: Video - Hide Windowed Mode settings selectively.</li>
-          <li>MENU/USABILITY: Video - Hide Fullscreen Mode settings if windowed mode is not supported by context driver.</li>
-          <li>MENU/USABILITY: Selectively hide Network Command Port.</li>
-          <li>MENU/USABILITY: Selectively hide Relay Server Location.</li>
-          <li>MENU/USABILITY: User Interface -> Appearance - Selectively hide XMB Horizontal Animation setting.</li>
-          <li>MENU/USABILITY: Playlists - more selective hiding.</li>
-          <li>MENU/USABILITY: Selectively hide Rewind Settings.</li>
-          <li>MENU/USABILITY: Selectively hide Overlay Settings.</li>
-          <li>MENU/USABILITY: Selectively hide FPS Update Interval based on Display Framerate being enabled.</li>
-          <li>MENU/USABILITY: Selectively hide Onscreen Notifications BG Color Settings.</li>
-          <li>MENU/USABILITY: Settings -> Logging - Hide 'Log To File Timestamp' if 'Log To File' is disabled.</li>
-          <li>MENU/USABILITY: Video -> Scaling - Hide Custom Viewport X/Y when Integer Scale is enabled as description indicates.</li>
-          <li>MENU/USABILITY: Achievement submenu - selectively hide.</li>
-          <li>MENU/USABILITY: Settings -> Video -> Aspect ratio - selectively hide/show values based on whether you have Custom or Config selected.</li>
-          <li>MENU/USABILITY: Settings -> Video -> Selectively hide Hard Sync.</li>
-          <li>MENU/USABILITY: Settings -> Video -> Implement selective hiding for VSync and Hard Sync.</li>
-          <li>MENU/USABILITY: Selective hiding of Runahead settings based on global setting.</li>
-          <li>MENU/USABILITY: Add Input -> Haptic Feedback submenu.</li>
-          <li>MENU/USABILITY: Add Input -> Menu Controls submenu.</li>
-          <li>MENU/USABILITY: Settings -> Video -> Max Swapchain Images - Add OK action.</li>
-          <li>MENU/USABILITY: Input - Implement OK action for Bind Hold, Turbo Period and Duty Cycle.</li>
-          <li>MENU/USABILITY: Input - Hotkey Binds refactor.</li>
-          <li>MENU/USABILITY: Move 'Press Quit Twice' and 'Menu Toggle Gamepad Combo' to Input -> Hotkey Binds.</li>
-          <li>MENU/USABILITY: Video - Add sublabel for Video Output submenu.</li>
-          <li>MENU/USABILITY:  If 'Favorites Tab' is disabled, don't show 'Add To Favorites' option in Quick Menu/Playlist menu.</li>
-          <li>MENU/USABILITY: If On-Demand Thumbnail Downloader is enabled, hide 'Download Thumbnails' from playlist menu screen.</li>
-          <li>MENU/USABILITY: Add Audio Driver setting to Audio -> Output.</li>
-          <li>MENU/USABILITY: Add Audio -> Resampler settings.</li>
-          <li>MENU/USABILITY: Add Audio -> Output and Audio -> Synchronization.</li>
-          <li>OPENGL: Shaders are now working properly (only in OpenGL) when rotating both from Core API rotation and from menu video rotation. The fix is clearly visible with crt-royale for example.</li>
-          <li>OPENGL: 1:1 PAR is now correct when rotating (both from Core API rotation and from menu video rotation, as you said, in the latter case you currently have to change Aspect Ratio after menu video rotation for it to work).</li>
-          <li>OPENGL: When using Custom Aspect Ratio and rotation (both from Core API rotation and from menu video rotation), Integer Scaling is now working properly (correct multiples of internal resolution). Even when Integer Scaling is not activated, the Custom AR width / height are now correctly labeled using (1x), (2x), ... suffixes. You also have to activate Integer Scaling after menu video rotation for it to work.</li>
-          <li>OPENGL: For all other Aspect Ratio options, Integer Scaling and rotation (both from Core API rotation and from menu video rotation) are now working properly together (correct multiples of internal resolution). You also have to activate Integer Scaling after menu video rotation for it to work.</li>
-          <li>PLAYLISTS: Pressing 'Start' or long touching a playlist will bring you to a Playlist submenu where you can set a default core, setup thumbnail view, delete the playlist, etc.</li>
-          <li>SCANNER: Manual scanner, not dependent on database files.</li>
-          <li>SCANNER/MANUAL: Add option to scan inside archives.</li>
-          <li>SCANNER/MANUAL: Enable automatic naming of arcade content via DAT files. This is compatible with DAT files in either Logiqx XML or MAME List XML format.</li>
-          <li>VIDEO: Do not reinit video driver on SET_SYSTEM_AV_INFO unless needed.</li>
-          <li>VIDEO: Support DRC even when using a vsync swap interval higher than 1.</li>
-          <li>VIDEO LAYOUT: Fixed XML parsing of attributes with spaces, should fix issues with several video layouts.</li>
+          <li>MENU/USABILITY: Selectively hide 'Disallow Non-Slave Mode Clients' if 'Allow Slave-Mode Clients' is disabled</li>
+          <li>MENU/USABILITY: Hide 'Show desktop menu on startup' if 'Desktop menu' setting itself is disabled</li>
+          <li>MENU/USABILITY: Reimplement Quick Menu - > Shaders -> Watch shader files for changes - can now be turned on/off through touch</li>
+          <li>MENU/USABILITY: Refactor Quick Menu - Controls - each port now has its own submenu</li>
+          <li>MENU/USABILITY: Quick Menu - Cheats - Delete All no longer requires five right button presses - this should fix this functionality for mobile touch users too</li>
+          <li>MENU/USABILITY: Hide Refresh Rate options when Threaded Video is enabled - these settings do nothing with Threaded Video</li>
+          <li>MENU/USABILITY: Hide Logging Verbosity levels behind Logging Verbosity</li>
+          <li>MENU/USABILITY: Get rid of 'Port Number' label for Port Binds screen</li>
+          <li>MENU/USABILITY/MOBILE: Should no longer crash when clicking on a cheat entry</li>
+          <li>MENU/USABILITY: Shader parameters now have a dropdown list</li>
+          <li>MENU/USABILITY: Shader passes now has a dropdown list</li>
+          <li>MENU/USABILITY: Video - Hide Windowed Mode settings selectively</li>
+          <li>MENU/USABILITY: Video - Hide Fullscreen Mode settings if windowed mode is not supported by context driver</li>
+          <li>MENU/USABILITY: Selectively hide Network Command Port</li>
+          <li>MENU/USABILITY: Selectively hide Relay Server Location</li>
+          <li>MENU/USABILITY: User Interface -> Appearance - Selectively hide XMB Horizontal Animation setting</li>
+          <li>MENU/USABILITY: Playlists - more selective hiding</li>
+          <li>MENU/USABILITY: Selectively hide Rewind Settings</li>
+          <li>MENU/USABILITY: Selectively hide Overlay Settings</li>
+          <li>MENU/USABILITY: Selectively hide FPS Update Interval based on Display Framerate being enabled</li>
+          <li>MENU/USABILITY: Selectively hide Onscreen Notifications BG Color Settings</li>
+          <li>MENU/USABILITY: Settings -> Logging - Hide 'Log To File Timestamp' if 'Log To File' is disabled</li>
+          <li>MENU/USABILITY: Video -> Scaling - Hide Custom Viewport X/Y when Integer Scale is enabled as description indicates</li>
+          <li>MENU/USABILITY: Achievement submenu - selectively hide</li>
+          <li>MENU/USABILITY: Settings -> Video -> Aspect ratio - selectively hide/show values based on whether you have Custom or Config selected</li>
+          <li>MENU/USABILITY: Settings -> Video -> Selectively hide Hard Sync</li>
+          <li>MENU/USABILITY: Settings -> Video -> Implement selective hiding for VSync and Hard Sync</li>
+          <li>MENU/USABILITY: Selective hiding of Runahead settings based on global setting</li>
+          <li>MENU/USABILITY: Add Input -> Haptic Feedback submenu</li>
+          <li>MENU/USABILITY: Add Input -> Menu Controls submenu</li>
+          <li>MENU/USABILITY: Settings -> Video -> Max Swapchain Images - Add OK action</li>
+          <li>MENU/USABILITY: Input - Implement OK action for Bind Hold, Turbo Period and Duty Cycle</li>
+          <li>MENU/USABILITY: Input - Hotkey Binds refactor</li>
+          <li>MENU/USABILITY: Move 'Press Quit Twice' and 'Menu Toggle Gamepad Combo' to Input -> Hotkey Binds</li>
+          <li>MENU/USABILITY: Video - Add sublabel for Video Output submenu</li>
+          <li>MENU/USABILITY:  If 'Favorites Tab' is disabled, don't show 'Add To Favorites' option in Quick Menu/Playlist menu</li>
+          <li>MENU/USABILITY: If On-Demand Thumbnail Downloader is enabled, hide 'Download Thumbnails' from playlist menu screen</li>
+          <li>MENU/USABILITY: Add Audio Driver setting to Audio -> Output</li>
+          <li>MENU/USABILITY: Add Audio -> Resampler settings</li>
+          <li>MENU/USABILITY: Add Audio -> Output and Audio -> Synchronization</li>
+          <li>OPENGL: Shaders are now working properly (only in OpenGL) when rotating both from Core API rotation and from menu video rotation. The fix is clearly visible with crt-royale for example</li>
+          <li>OPENGL: 1:1 PAR is now correct when rotating (both from Core API rotation and from menu video rotation, as you said, in the latter case you currently have to change Aspect Ratio after menu video rotation for it to work)</li>
+          <li>OPENGL: When using Custom Aspect Ratio and rotation (both from Core API rotation and from menu video rotation), Integer Scaling is now working properly (correct multiples of internal resolution). Even when Integer Scaling is not activated, the Custom AR width / height are now correctly labeled using (1x), (2x), ... suffixes. You also have to activate Integer Scaling after menu video rotation for it to work</li>
+          <li>OPENGL: For all other Aspect Ratio options, Integer Scaling and rotation (both from Core API rotation and from menu video rotation) are now working properly together (correct multiples of internal resolution). You also have to activate Integer Scaling after menu video rotation for it to work</li>
+          <li>PLAYLISTS: Pressing 'Start' or long touching a playlist will bring you to a Playlist submenu where you can set a default core, setup thumbnail view, delete the playlist, etc</li>
+          <li>SCANNER: Manual scanner, not dependent on database files</li>
+          <li>SCANNER/MANUAL: Add option to scan inside archives</li>
+          <li>SCANNER/MANUAL: Enable automatic naming of arcade content via DAT files. This is compatible with DAT files in either Logiqx XML or MAME List XML format</li>
+          <li>VIDEO: Do not reinit video driver on SET_SYSTEM_AV_INFO unless needed</li>
+          <li>VIDEO: Support DRC even when using a vsync swap interval higher than 1</li>
+          <li>VIDEO LAYOUT: Fixed XML parsing of attributes with spaces, should fix issues with several video layouts</li>
           <li>VULKAN/ANDROID: Workaround weird WSI return codes in landscape mode -  Android WSI wants you to use preTransform, and if it is not used correctly, Android 10 will return VK_SUBOPTIMAL_KHR, and we would create a new swapchain every frame. This workaround just ignores this error, since it's not really an error. A more "proper" fix is to use prerotate and modify the MVP matrices,
-          which might help certain devices with crummy display processors.</li>
+          which might help certain devices with crummy display processors</li>
           <li>VULKAN/ANDROID: Recreate swapchain on orientation change. ANativeWindow getWidth/Height does not detect any changes when using
-          Vulkan, so use the old onContentRectChanged callback to get notified when size changed. Use those values instead when figuring out how large swapchain to create.</li>
+          Vulkan, so use the old onContentRectChanged callback to get notified when size changed. Use those values instead when figuring out how large swapchain to create</li>
         </ul>
       </description>
     </release>
@@ -948,7 +988,7 @@
           <li>GL1: GLDirect (D3D9 to OGL1.1 wrapper) support</li>
           <li>GONG: Stability fixes</li>
           <li>LINUX/UDEV: Fix touchscreen/lightgun issues</li>
-          <li>MENU/MATERIALUI: MaterialUI no longer 'forgets' its place when navigating backwards in menus, and navigation in general is 'cleaner'.</li>
+          <li>MENU/MATERIALUI: MaterialUI no longer 'forgets' its place when navigating backwards in menus, and navigation in general is 'cleaner'</li>
           <li>MENU/MATERIALUI: Add initial gesture support</li>
           <li>MENU/MATERIALUI: Improved touch support</li>
           <li>MENU/MATERIALUI: Bugfix - Random' items are no longer automatically highlighted when performing standard up/down 'flick' scrolling through lists</li>
