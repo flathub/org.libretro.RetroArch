@@ -42,7 +42,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
     <release version="1.9.14" date="2021-12-05">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.9.14</url>
+      <url>https://www.libretro.com/index.php/retroarch-1-9-14-release/</url>
       <description>
         <ul>
           <li>AUDIO/MIXER: Increase sample buffer padding</li>
