@@ -82,7 +82,7 @@
       </description>
     </release>
     <release version="1.10.0" date="2022-01-19">
-      <url>https://github.com/libretro/RetroArch/releases/tag/v1.10.0</url>
+      <url>https://www.libretro.com/index.php/retroarch-1-10-0-release/</url>
       <description>
         <ul>
           <li>ARCHIVE: Allow loading files from archive subdirectory</li>
