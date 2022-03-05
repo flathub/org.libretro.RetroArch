@@ -41,6 +41,46 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.10.1" date="2022-03-04">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.10.1</url>
+      <description>
+        <ul>
+          <li>CHEEVOS: add mastery placard</li>
+          <li>CHEEVOS: more description message for missing RetroAchievements credentials</li>
+          <li>CHEEVOS: prevent occasional infinite wait loading multi-disc game from secondary disc</li>
+          <li>CHEEVOS: stop load process if unable to retrieve achievement data</li>
+          <li>CHEEVOS: support for identifying Dreamcast CHDs</li>
+          <li>CHEEVOS: Updated to 10.3.2</li>
+          <li>CONTENTLESS CORES: Disable per-game and per-content-directory remaps when running contentless cores</li>
+          <li>CONTENTLESS CORES: Disable per-game and per-content-directory shader presets</li>
+          <li>CONTENTLESS CORES: Enable config overrides</li>
+          <li>CONTENTLESS CORES: Enable runtime logging</li>
+          <li>CORE INFORMATION: Show core version</li>
+          <li>CORE UPDATER: Add 'Core System Files Downloader'</li>
+          <li>CORES/SETTINGS: Add 'Standalone Cores' menu</li>
+          <li>GBA: New GBA filter Upscale_240x160-320x240</li>
+          <li>GONG: Removed now that it's a standalone core</li>
+          <li>HISTORY/FAVORITES: Fix default core on 'Add to Favorites'</li>
+          <li>INPUT/WAYLAND: Allow toggling mouse grabs</li>
+          <li>INPUT/WAYLAND: Release keys and mouse buttons on lost focus</li>
+          <li>LIBRETRO: Fix crash when cores using RETRO_ENVIRONMENT_SET_AUDIO_CALLBACK return false from retro_load_game()</li>
+          <li>LIBRETRO: Add optional frame skipping when fast-forwarding</li>
+          <li>LOCALIZATION: Fetch translations from Crowdin</li>
+          <li>LOCALIZATION: OSD fonts for Chinese, Korean, Arabic and Persian</li>
+          <li>LOCALIZATION: Translation fixes for various languages</li>
+          <li>MENU/RGUI: Add dynamic theme</li>
+          <li>MIYOO: Enable NEAREST audio resampler</li>
+          <li>MIYOO: Support battery level</li>
+          <li>NETPLAY: Disable savestates on stateless mode</li>
+          <li>OZONE/XMB: Improve efficiency/accuracy of History/Favorites icon rendering</li>
+          <li>RECORDING/FFMPEG: Fix building against FFmpeg 5.0</li>
+          <li>RETROARCH INFORMATION: No longer report on enabled Python support, which was removed in RetroArch 1.7.8</li>
+          <li>SAVESTATES: Disable save states based on save state support level defined in core info files</li>
+          <li>UNIX/WINDOWS: Allow setting the default libretro_directory via environment variable</li>
+          <li>WAYLAND/VULKAN: Fix Wayland Vulkan not reacting to initial resize</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.10.0" date="2022-01-19">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.10.0</url>
       <description>
