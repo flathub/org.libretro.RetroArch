@@ -41,6 +41,30 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.10.3" date="2022-04-11">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.10.3</url>
+      <description>
+        <ul>
+          <li>AI/SERVICE: Disable AI Service setting by default</li>
+          <li>BLUETOOTH/LAKKA: bluetoothctl: add / modify pairing steps</li>
+          <li>CHEEVOS: Disallow manual frame delay setting in Hardcore Mode</li>
+          <li>DATABASE: Serial scanning for Wii now includes WBFS</li>
+          <li>INPUT/MAPPING: Fix offset + crash when clearing input port binds</li>
+          <li>INPUT/MAPPING: Fix saving of 'Analog to Digital Type' when configuration overrides are used</li>
+          <li>INPUT/MAPPING: Fix saving of 'Analog to Digital Type' when configuration overrides are used</li>
+          <li>LOCALIZATION: Add Valencian language option</li>
+          <li>LOCALIZATION: Updates</li>
+          <li>MENU/SETTINGS: Move 'Show Menu Bar' under 'Windowed Mode' settings</li>
+          <li>MENU/SETTINGS: Add sublabels for 'Subsystems' and 'Input Deadzone/Sensitivity'</li>
+          <li>MENU/SETTINGS: Move 'On-Screen Notifications' to top</li>
+          <li>MENU/XMB: Unified the shadow alpha value to a slightly darker one for better readability</li>
+          <li>MENU/XMB: Corrected the option label and sublabel for actual behavior</li>
+          <li>STEAM: Introduce Steam Rich Presence</li>
+          <li>VIDEO: Fast-Forward Frameskip improvement</li>
+          <li>VIDEO/THREADED: Stability fixes</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.10.2" date="2022-03-22">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.10.2</url>
       <description>
