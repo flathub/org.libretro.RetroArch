@@ -1,7 +1,7 @@
 {
   "app-id": "org.libretro.RetroArch",
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-21.08",
+  "runtime-version": "5.15-22.08",
   "sdk": "org.kde.Sdk",
   "command": "retroarch",
   "rename-desktop-file": "retroarch.desktop",
