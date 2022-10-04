@@ -41,6 +41,18 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.11.1" date="2022-10-04">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.11.1</url>
+      <description>
+        <ul dir="auto">
+          <li>GENERAL: Fix DEFAULT_FILL_TITLE_MACRO</li>
+          <li>NETWORKING: Add the const qualifier to some function parameters</li>
+          <li>NETWORKING/NETPLAY/UPNP: Add a private or CGNAT address warning to UPnP</li>
+          <li>SAVESTATES/SCREENSHOTS: Avoid 'video_gpu_screenshot' with savestates</li>
+          <li>UWP: Better Save on quit fix</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.11.0" date="2022-09-30">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.11.0</url>
       <description>

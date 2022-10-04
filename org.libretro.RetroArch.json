@@ -34,7 +34,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "9586d679a8b143fbe1880dff7454fd0809262b55"
+          "commit": "389ef31a8f4a505f255e9bfebe882750d22ab490"
         },
         {
           "type": "file",
@@ -81,7 +81,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "9586d679a8b143fbe1880dff7454fd0809262b55"
+          "commit": "389ef31a8f4a505f255e9bfebe882750d22ab490"
         }
       ]
     },
@@ -95,7 +95,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "9586d679a8b143fbe1880dff7454fd0809262b55"
+          "commit": "389ef31a8f4a505f255e9bfebe882750d22ab490"
         }
       ]
     },
