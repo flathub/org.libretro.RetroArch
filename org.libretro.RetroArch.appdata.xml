@@ -44,7 +44,7 @@
     <release version="1.11.1" date="2022-10-04">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.11.1</url>
       <description>
-        <ul dir="auto">
+        <ul>
           <li>GENERAL: Fix DEFAULT_FILL_TITLE_MACRO</li>
           <li>NETWORKING: Add the const qualifier to some function parameters</li>
           <li>NETWORKING/NETPLAY/UPNP: Add a private or CGNAT address warning to UPnP</li>
