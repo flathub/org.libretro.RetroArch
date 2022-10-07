@@ -41,6 +41,166 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.11.1" date="2022-10-04">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.11.1</url>
+      <description>
+        <ul>
+          <li>GENERAL: Fix DEFAULT_FILL_TITLE_MACRO</li>
+          <li>NETWORKING: Add the const qualifier to some function parameters</li>
+          <li>NETWORKING/NETPLAY/UPNP: Add a private or CGNAT address warning to UPnP</li>
+          <li>SAVESTATES/SCREENSHOTS: Avoid 'video_gpu_screenshot' with savestates</li>
+          <li>UWP: Better Save on quit fix</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.11.0" date="2022-09-30">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.11.0</url>
+      <description>
+        <ul>
+          <li>AUDIO/AUDIO MIXER: Add missing locks for thread safety</li>
+          <li>AUDIO/AUDIO MIXER: Fix audio mixer memory leak + remove redundant 'single threaded' rthreads implementation</li>
+          <li>AUTOSAVE: Change/improve exit behavior of autosave thread</li>
+          <li>CDROM: Fix memory leak caught with asan - buf passed to filestream_read_file</li>
+          <li>CORE INFO/NETPLAY: Ensure current core info is initialized at runloop_event_init_core when netplay is enabled</li>
+          <li>CHEEVOS: Upgrade to rcheevos 10.4</li>
+          <li>CHEEVOS: Allow creating auto savestate in hardcore</li>
+          <li>CHEEVOS: prevent invalid memory reference if game has achievements but core doesn't expose memory</li>
+          <li>CHEEVOS: Release achievement badge textures when video driver is deinitialized</li>
+          <li>CHEEVOS: Re-enforce hardcore limitations once achievements are loade</li>
+          <li>CHEEVOS/MENU/MATERIALUI: Show achievement badge icons in MaterialUI driver</li>
+          <li>DATABASE: Reformat 'rdb_entry_int' - Nitpick adjustments for database entries</li>
+          <li>DATABASE/EXPLORE: Allow On-Demand Thumbnails in Explore menu</li>
+          <li>DATABASE/EXPLORE/MENU/OZONE/XMB/RGUI: Explore menu thumbnails</li>
+          <li>DISC CONTROL: Better Disc Control append focus</li>
+          <li>AUTOMATIC FRAME DELAY: Added slowmotion resiliency</li>
+          <li>AUTOMATIC FRAME DELAY: Added string representation for seeing the current effective delay without opening statistics</li>
+          <li>AUTOMATIC FRAME DELAY: Added "ms" to logging and "(ms)" to label just like in Audio Latency</li>
+          <li>GENERAL: Don't bake in OpenAL and libcaca by default unless explicitly enabled with configure switch</li>
+          <li>GENERAL: Reduce amount of strlen calls</li>
+          <li>GENERAL: Reduce or simply sin/cosf calls</li>
+          <li>GFX: Fix readability and precision issues in aspectratio_lut</li>
+          <li>GFX: Add option to manually enable/disable automatic refresh rate switching</li>
+          <li>GFX: Enable automatic configuration of 'VSync Swap Interval'</li>
+          <li>GFX/FONT/FREETYPE: Use FT_New_Memory_Face</li>
+          <li>GFX/THUMBNAILS: Thumbnail aspect ratio fix</li>
+          <li>GFX/THREADED VIDEO: Optimizations, fixes and cleanups</li>
+          <li>GFX/VIDEO FILTERS: Add Upscale_240x160-320x240 video filter with 'mixed' method</li>
+          <li>GLSLANG: Fix compilation with ./configure --disable-builtinglslang</li>
+          <li>INPUT: Fix off by one error for input_block_timeout setting</li>
+          <li>INPUT: Analog button mapping fixes</li>
+          <li>INPUT/HID/LINUX: (qb) Disable HAVE_HID by default for now for Linux as long as there are no working backends for both</li>
+          <li>INPUT/OVERLAY: Block pointer input when overlay is pressed</li>
+          <li>INPUT/REMAPPING: input_remapping_save_file - existing remapping file was needlessly reloaded</li>
+          <li>INPUT/REMAPPING: Add option to disable automatic saving of input remap files</li>
+          <li>INPUT/LINUX/UDEV: Fix lightgun scaling on Y axis</li>
+          <li>INPUT/LINUX/X11/LED: Add LED keyboard driver</li>
+          <li>LIBRETRO/SAVESTATES: Implement an api call for context awareness</li>
+          <li>LOCALIZATION: Updates</li>
+          <li>LOCALIZATION: Add Catalan language option</li>
+          <li>LOCALIZATION: Fix some bad localization</li>
+          <li>LINUX: Make memfd_create call more backwards compatible by calling it through syscall</li>
+          <li>LINUX/MALI FBDEV: Fix assertion failed on video threaded switch</li>
+          <li>MENU: Menu paging navigation adjustments</li>
+          <li>MENU: New Menu Items for disabling Info &amp; Search buttons in the menu</li>
+          <li>MENU: Allow the user to use volume up/down/mute hotkeys from within the menu</li>
+          <li>MENU: Add missing sublabels for non-running Quick Menu</li>
+          <li>MENU: Reorganize Quick Menu Information</li>
+          <li>MENU: Savestate thumbnails - Savestate slot reset action</li>
+          <li>MENU: Allow changing savestate slots with left/right on save/load</li>
+          <li>MENU: Add 'Ago' to playlist last played styles</li>
+          <li>MENU: Add proper icons for shader items</li>
+          <li>MENU/MATERIALUI: Add icon for 'Download Thumbnails'</li>
+          <li>MENU/XMB: Add options for hiding header and horizontal title margin</li>
+          <li>MENU/XMB: Dynamic wallpaper fixes</li>
+          <li>MENU/XMB: Add Daite XMB Icon Theme</li>
+          <li>MENU/XMB/OZONE: Savestate thumbnail aspect ratio</li>
+          <li>MENU/XMB/OZONE: Core option category icon refinements</li>
+          <li>MENU/XMB/OZONE: Fullscreen thumbnail browsing</li>
+          <li>MENU/XMB/OZONE: Add playlist icons under 'Load Content'</li>
+          <li>MENU/XMB/OZONE: Thumbnail improvements</li>
+          <li>MENU/XMB/OZONE: Savestate thumbnail fullscreen + dropdown</li>
+          <li>MENU/XMB/OZONE: Prevent unnecessary thumbnail requests when scrolling through playlists</li>
+          <li>MENU/OZONE: Fix playlist thumbnail mouse hover after returning from Quick Menu</li>
+          <li>MENU/OZONE: Thumbnail visibility corrections</li>
+          <li>MENU/OZONE: Playlist metadata reformat</li>
+          <li>MENU/OZONE: Savestate thumbnail fixes</li>
+          <li>MENU/OZONE: Add savestate thumbnails</li>
+          <li>MENU/OZONE: Header icon spacing adjustment</li>
+          <li>MENU/RGUI: Savestate thumbnails</li>
+          <li>MENU/SETTINGS: Turn Advanced Settings on by default</li>
+          <li>MENU/WIDGETS: Widget color + position adjustments</li>
+          <li>NETWORK: Allow MITM server selection on OK callback</li>
+          <li>NETWORK: Replace socket_select calls</li>
+          <li>NETWORK: Implement binary network streams</li>
+          <li>NETWORK: Poll support</li>
+          <li>NETWORK: Check connect errno for successful connection</li>
+          <li>NETWORK: Get rid of the timeout_enable parameter for socket_connect</li>
+          <li>NETWORK: Fix getnameinfo_retro's port value for HAVE_SOCKET_LEGACY platforms</li>
+          <li>NETWORK: Define inet_ntop and inet_pton for older Windows versions</li>
+          <li>NETWORK: Define isinprogress function</li>
+          <li>NETWORK/NATT: Move natt files to "network"</li>
+          <li>NETWORK/NETWORK STREAMS: Add function netstream_eof</li>
+          <li>NETWORK/NETPLAY: Fix game CRC parsing</li>
+          <li>NETWORK/NETPLAY: Disable and hide stateless mode</li>
+          <li>NETWORK/NETPLAY: Change default for input sharing to "no sharing"</li>
+          <li>NETWORK/NETPLAY: Enforce a timeout during connection</li>
+          <li>NETWORK/NETPLAY: Disallow clients from loading states and resetting</li>
+          <li>NETWORK/NETPLAY: Special saves directory for client</li>
+          <li>NETWORK/NETPLAY: Ensure current content is reloaded before joining a host</li>
+          <li>NETWORK/NETPLAY: Fix client info devices index</li>
+          <li>NETWORK/NETPLAY: Fix input for some cores when hosting</li>
+          <li>NETWORK/NETPLAY: Memory leak fixes</li>
+          <li>NETWORK/NETPLAY: Force a core update when starting netplay</li>
+          <li>NETWORK/NETPLAY: Fix NAT traversal announce for HAVE_SOCKET_LEGACY platforms</li>
+          <li>NETWORK/NETPLAY: Refactor fork arguments</li>
+          <li>NETWORK/NETPLAY: Fix content reload deadlocks on static core platforms</li>
+          <li>NETWORK/NETPLAY: Disallow netplay start when content is not loaded for static core platforms</li>
+          <li>NETWORK/NETPLAY: Show client slowdown information</li>
+          <li>NETWORK/NETPLAY: Improve check frames menu entry</li>
+          <li>NETWORK/NETPLAY: Do not try to receive new data if the data is in the buffer</li>
+          <li>NETWORK/NETPLAY: Copy data on receive, even if the buffer is full</li>
+          <li>NETWORK/NETPLAY: Fix lobby sublabel CRC display on some platforms</li>
+          <li>NETWORK/NETPLAY: Support for customizing chat colors</li>
+          <li>NETWORK/NETPLAY: Small launch compatibility patch adjustments</li>
+          <li>NETWORK/NETPLAY: Support for banning clients</li>
+          <li>NETWORK/NETPLAY: Minor tweaks to the find content task</li>
+          <li>NETWORK/NETPLAY: Support for gathering client info and kicking</li>
+          <li>NETWORK/NETPLAY: Fix possible deadlock</li>
+          <li>NETWORK/NETPLAY: Initialize client's allow_pausing to true</li>
+          <li>NETWORK/NETPLAY: Disable netplay for unsupported cores</li>
+          <li>NETWORK/NETPLAY/DISCOVERY: Ensure fixed width ints on packet struct</li>
+          <li>NETWORK/NETPLAY/DISCOVERY: Support for IPv4 tunneling (6to4)</li>
+          <li>NETWORK/NETPLAY/DISCOVERY/TASKS: Netplay/LAN Discovery Task refactor</li>
+          <li>NETWORK/NETPLAY/TASKS: Find content task refactor</li>
+          <li>NETWORK/NETPLAY/LOBBY: Add setting for filtering out rooms with non-installed cores</li>
+          <li>NETWORK/NETPLAY/LOBBY: Hide older (incompatible) rooms</li>
+          <li>NETWORK/NETPLAY/LOBBY: Add a toggleable filter for passworded rooms</li>
+          <li>NETWORK/NETPLAY/MENU: Chat supported info for the host kick submenu</li>
+          <li>NETWORK/NETPLAY/MENU: Localize relay servers</li>
+          <li>NETWORK/NETPLAY/MENU: Host Ban Submenu</li>
+          <li>NETWORK/NETPLAY/MENU: Add client devices info to the kick sub-menu</li>
+          <li>NETWORK/NETPLAY/MENU: Path: Netplay -&gt; Host -&gt; Kick Client</li>
+          <li>NETWORK/UPNP: Attempt support for remaining platforms</li>
+          <li>NETWORK/UPNP: Support for IPv4 tunneling</li>
+          <li>ONLINE UPDATER: Online Updater menu reorganizing</li>
+          <li>PLAYLISTS: Ensure history list will contain CRC32</li>
+          <li>PLAYLISTS: Fix CRC32 comparison - as state content_crc has crc suffix</li>
+          <li>SHADERS: Shader Preset Loading of Multiple additional references lines for settings</li>
+          <li>SHADERS: Shader Load Extra Parameter Reference Files</li>
+          <li>SHADERS/MENU: Increase shader scale max value</li>
+          <li>STRING: Do not assume char is unsigned</li>
+          <li>TASKS: More thread-awareness in task callbacks</li>
+          <li>TASKS: Fix race condition at task_queue_wait</li>
+          <li>VFS: Fix various VFS / file stream issues</li>
+          <li>VULKAN: Fix more validation errors</li>
+          <li>VULKAN: Attempt to fix validation errors with HDR swapchain</li>
+          <li>VULKAN/DEBUG: Automatically mark buffer/images/memory with names</li>
+          <li>VULKAN/DEBUG: Move over to VK_EXT_debug_utils. Debug marker is deprecated years ago</li>
+          <li>VULKAN/HDR: Fix leak of HDR UBO buffer</li>
+          <li>VULKAN/BFI: Fix BFI (Black Frame Insertion) regression</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.10.3" date="2022-04-11">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.10.3</url>
       <description>
@@ -174,16 +334,16 @@
           <li>LOGGING: Logging cleanups</li>
           <li>LOGGING: Stop logging FPS statistics twice on quit</li>
           <li>LOGGING: Log font rendering backend only once</li>
-          <li>HOTKEYS: Added a hotkey toggle for the on-screen technical statistics.</li>
+          <li>HOTKEYS: Added a hotkey toggle for the on-screen technical statistics</li>
           <li>HOTKEYS: Add delay + acceleration to volume hotkeys</li>
           <li>MENU: Add option for showing notifications only in menu</li>
           <li>MENU/RGUI: Add Finnish to supported languages</li>
           <li>MENU/XMB: Optional vertical list item fade</li>
           <li>MENU/XMB/OZONE: Category + History/Favorites icons</li>
           <li>NETWORK: Fix dummy notification - no longer shows a netplay initialization failed notification when netplay is not enabled</li>
-          <li>NETWORK: LAN addresses only for UPnP - Some router devices might accept non-LAN addresses without raising an error.</li>
-          <li>NETWORK: Filter out non-connectable rooms. Add an option for filtering out non-connectable netplay rooms.</li>
-          <li>NETWORK: Netplay spectator notification fix. Fix double notification when the host switches to spectator.</li>
+          <li>NETWORK: LAN addresses only for UPnP - Some router devices might accept non-LAN addresses without raising an error</li>
+          <li>NETWORK: Filter out non-connectable rooms. Add an option for filtering out non-connectable netplay rooms</li>
+          <li>NETWORK: Netplay spectator notification fix. Fix double notification when the host switches to spectator</li>
           <li>NETWORK: Prevents long-term pausing from clients dishonoring allow pausing</li>
           <li>NETWORK/LOBBY: Lobby Viewer: Filter out rooms that are not running RetroArch</li>
           <li>NETWORK/LOBBY: Lobby Viewer: Display a non-connectable tag to non-connectable rooms</li>
@@ -193,7 +353,7 @@
           <li>NETWORK/UPNP: Various refactors/improvements, no more dependent on miniupnpc</li>
           <li>NETWORK/UPNP: Various UPnP binding fixes for specific routers</li>
           <li>NETWORK/UPNP: Accept IGD v2 service types</li>
-          <li>NETWORK/UPNP: Delay lobby server announcing - delay the announcing in order to give UPnP's port forwarding more time. Fix the remaining truncation warnings.</li>
+          <li>NETWORK/UPNP: Delay lobby server announcing - delay the announcing in order to give UPnP's port forwarding more time. Fix the remaining truncation warnings</li>
           <li>NETWORK/UPNP: Smart interface selection - Find the most suitable address for UPnP by scoring interfaces on how close their address is to the device's address</li>
           <li>OPENGL1: Fix buffer overflow - RetroArch would sometimes crashes at startup when loading asset textures with GL1 driver</li>
           <li>VULKAN: Double combined image sampler descriptor pool size - fix segfaults with AMD GPUs using RADV</li>
