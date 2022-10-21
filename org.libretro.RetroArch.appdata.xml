@@ -41,6 +41,35 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.12.0" date="2022-10-18">
+      <url>https://www.libretro.com/index.php/retroarch-1-12-0-release/</url>
+      <description>
+        <ul dir="auto">
+          <li>CONFIG/CLI: Allow use of --appendconfig with override cfgs instead of getting ignored</li>
+          <li>CONFIG/LOGGING: No more console startup logging if logging to file</li>
+          <li>CONFIG: Saves config on exit only once instead of (worst case scenario) 3 times</li>
+          <li>DATABASE/EXPLORE/VIEW: Add View feature - Add saving of a filter set in the Explore menu into a so called "View" file which then gets listed alongside playlists. This also adds the ability to filter a category by range in the Explore menu and not just filter on exact matches.</li>
+          <li>FILEBROWSER: Fix regression - certain extensions keep disappearing</li>
+          <li>INPUT/HAPTIC/OVERLAYS/ANDROID: Improve haptic feedback for input overlays</li>
+          <li>LINUX/MALI FBDEV: Add conditional support for OpenGL ES 3.x</li>
+          <li>LOCALIZATION: Updates</li>
+          <li>LOCALIZATION/ENGLISH: Add British English language option</li>
+          <li>LOGGING/QT: Increase log buffer to 2048 characters - Vulkan validation layer
+          messages output correctly now.</li>
+          <li>MENU/XMB: Remember selection per main tabs. Addresses the following : collection playlists can contain hundreds or thousands of items. When scrolling through one, pressing left or right by accident can be common. This resets the playlist to the top</li>
+          <li>MIST/STEAM/STEAMDECK: Don't expose Black Frame Insertion (BFI) if we are running on a Steam Deck</li>
+          <li>NETWORKING/WINDOWS: Disable poll support for MSVC 2010 and earlier. WSAPoll is not supported on Windows XP and earlier.</li>
+          <li>NETWORKING/WIIU: Fix socket_connect_with_timeout for WIIU</li>
+          <li>NETWORKING/WIIU: Fixes RetroAchievements login</li>
+          <li>NETWORKING/WIIU: Fixes other online updater functionality</li>
+          <li>SAVESTATES/NOTIFICATIONS: Add delay to savestate notifications, so that GPU savestate screenshots stay untouched</li>
+          <li>SAVESTATES/SCREENSHOTS: Avoid 'video_gpu_screenshot' with savestates. Allow GPU screenshots with savestates only when there is no other way of getting a screenshot.</li>
+          <li>SCREENSHOTS/VULKAN: Unload screenshot widget texture early. Fixes Vulkan crash when closing content while a screenshot widget is still on-screen</li>
+          <li>SCREENSHOTS/VULKAN: Fix screenshot widget crash when ticker animating</li>
+          <li>WAYLAND: Set correct app ID</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.11.1" date="2022-10-04">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.11.1</url>
       <description>
