@@ -41,10 +41,59 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.13.0" date="2022-11-19">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.13.0</url>
+      <description>
+        <ul>
+          <li>CHEEVOS: Upgrade to rcheevos 10.5</li>
+          <li>COMPILATION: Fixed compiling with --disable-menu</li>
+          <li>CONFIG: Don't show override notification with appendconfig alone</li>
+          <li>DATABASE/PLAYLISTS: Playlist + database changes</li>
+          <li>FRONTEND: Fix default remaps folder for various cores</li>
+          <li>HOTKEYS: Fix shader toggle and add hotkey + sublabel</li>
+          <li>HOTKEYS: Cleanups and corrections</li>
+          <li>INPUT: Addition to analog stick menu navigation</li>
+          <li>INPUT: Fixed the way devices were previously indexed</li>
+          <li>INPUT/AUTOCONFIG: Add option for pause on controller disconnect</li>
+          <li>INPUT/AUTOCONFIG: Driver independent disconnection notification</li>
+          <li>INPUT/HID: Added usb hid controllers for the famous ZeroDelay encoder</li>
+          <li>INPUT/OVERLAY: Add eightway area types</li>
+          <li>INPUT/OVERLAY: Fix overlay next_index for unnamed targets</li>
+          <li>LOCALIZATION: Updates</li>
+          <li>LOCALIZATION: Add Hungarian language option</li>
+          <li>MENU: Thumbnail fullscreen toggle behavior correction</li>
+          <li>MENU: Consistent left-right scrolling for Quick Menu items</li>
+          <li>MENU: Remove useless sublabel from System Information</li>
+          <li>MENU: Improve widget appearance with missing assets</li>
+          <li>MENU/INPUT: Add option for swapping menu scrolling buttons</li>
+          <li>MENU/QT/WIMP: Remove SSL/TLS check at startup</li>
+          <li>MENU/OZONE: Show metadata helper in footer only with second thumbnail</li>
+          <li>MENU/OZONE: Footer improvements - Add "Cycle thumbnails" helper when suitable</li>
+          <li>MENU/OZONE: Footer improvements - Show "Search" helper only when search function is enabled</li>
+          <li>MENU/OZONE: Footer improvements - Fix "Thumbnails available" helper for save states</li>
+          <li>MENU/OZONE: Footer improvements - Tighten padding between icon and title, and widen between helpers</li>
+          <li>MENU/OZONE: Remember selection per main tabs</li>
+          <li>MENU/OZONE: Remove incomplete assets warning</li>
+          <li>MENU/OZONE: Add option to adjust cursor memory when changing menu tabs</li>
+          <li>MENU/OZONE: Further extend texture support for Core Option categories</li>
+          <li>MENU/XMB: Remove incomplete assets warning</li>
+          <li>MENU/XMB: Add truncate playlist name option</li>
+          <li>MENU/XMB: Improve background image selector</li>
+          <li>MENU/XMB: Add option to adjust cursor memory when changing menu tabs</li>
+          <li>MENU/XMB: Further extend texture support for Core Option categories</li>
+          <li>MENU/MATERIALUI: Remove incomplete assets warning</li>
+          <li>OVERLAYS: Ignore hitboxes with zero area</li>
+          <li>OVERLAYS: Add 'reach' and 'exclusive' for hitboxes</li>
+          <li>QB: Don't fail if OSDependent/OGLCompiler libraries are not present</li>
+          <li>THREADED VIDEO/GLCORE: Fix regression 'Shader presets dont load, when video driver is set to glcore'</li>
+          <li>VULKAN: Fix HDR inverse tonemapping</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.12.0" date="2022-10-18">
       <url>https://www.libretro.com/index.php/retroarch-1-12-0-release/</url>
       <description>
-        <ul dir="auto">
+        <ul>
           <li>CONFIG/CLI: Allow use of --appendconfig with override cfgs instead of getting ignored</li>
           <li>CONFIG/LOGGING: No more console startup logging if logging to file</li>
           <li>CONFIG: Saves config on exit only once instead of (worst case scenario) 3 times</li>
