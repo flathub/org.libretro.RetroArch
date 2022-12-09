@@ -67,7 +67,7 @@
         "xrandr/xrandr-1.5.1.json",
         "libaio/libaio-0.3.112.json",
         "shared-modules/glu/glu-9.json",
-        "libdecor/libdecor-0.1.0.json"
+        "shared-modules/libdecor/libdecor-0.1.1.json"
       ]
     },
     {
