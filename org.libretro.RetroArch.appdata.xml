@@ -41,6 +41,64 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.14.0" date="2022-11-19">
+      <url>https://github.com/libretro/RetroArch/releases/tag/v1.14.0</url>
+      <description>
+        <ul>
+          <li>AUDIO/COREAUDIO/APPLE: Allow coreaudio3 driver to work with audio devices that have 2 or more output channels</li>
+          <li>CHEEVOS: Fix construction of Cheevos badge path</li>
+          <li>CLI: Fixed not getting any output when running --version or --features without --verbose</li>
+          <li>CLI: Fixed crash when running empty - parameter</li>
+          <li>CLI: Reformatted --features to require less rows and to be more consistent</li>
+          <li>CLI: Added -V shorthand for --version</li>
+          <li>CLI: Tab removal + whitespace nits</li>
+          <li>CONFIG/MIDI: Prevent MIDI startup error with old configurations</li>
+          <li>DATABASE/EXPLORE/VIEW: Bugfix - RGUI did not clear thumbnail on non-playlist items such as Save and Delete</li>
+          <li>DATABASE/EXPLORE/VIEW: Bugfix - XMB+Ozone cleared thumbnail in Quick Menu when navigating away from Run</li>
+          <li>FASTFORWARD: Restore framelimit on fastforward toggle</li>
+          <li>FFMPEG CORE: Fix runtime error in FFmpeg core when build with FFmpeg n5.1.2 and OpenGL ES</li>
+          <li>GFX/VIDEO FILTERS: (picoscale_256x_320x240) Added snn function to upscale Fuse (ZX Spectrum) core borderless output to 320x240</li>
+          <li>HOTKEYS: Further reorder internal hotkey items for consistency and removed SEND_DEBUG_INFO, OVERLAY_NEXT and OSK from visible hotkey bind list</li>
+          <li>INPUT/AUTOCONFIG: Disable 'pause on controller disconnect' by default - was enabled by default on 1.13.0</li>
+          <li>INPUT/MENU: Device Index menu refactor</li>
+          <li>INPUT/OVERLAY: Fix analog drift blocking touch input (could occur on overlay_next if physical inputs shown on overlay)</li>
+          <li>INPUT/OVERLAY: Fix overlay_next buttons lighting up in unison</li>
+          <li>INPUT/OVERLAY: Skip meta keys in input_overlay_add_inputs (not supported by input_state_internal)</li>
+          <li>LEAPFROG: Add Leapfrog (LFx000) Target</li>
+          <li>LOCALIZATION: Updates</li>
+          <li>LOCALIZATION/INPUT/IME/MENU/ONSCREEN KEYBOARD: Extended IME and Korean OSK</li>
+          <li>MENU: Cleanup of help texts</li>
+          <li>MENU: Allow toggling info off with the same button</li>
+          <li>MENU: Allow menu wallpaper/background reset. Let's also remove the current wallpaper from the screen when pressing Start.</li>
+          <li>MENU: Null driver shows with different color (Added for all menus the ability to show "disabled" items with a muted color)</li>
+          <li>MENU/DRIVERS: Menu driver first, Audio Resampler removed because it is enough to exist under audio settings</li>
+          <li>MENU/INPUT: Moved "Confirm Quit" to Input menu</li>
+          <li>MENU/INPUT/HOTKEYS: Input hotkey menu completely overhauled to keep related entries together, and also adjusted some labels and sublabels</li>
+          <li>MENU/OVERLAY: Fix overlays behind menu without core running</li>
+          <li>MENU/MATERIALUI: Fix home screen on first startup - no more stray entries</li>
+          <li>MENU/OZONE: Allowed drawing sidebar and thumbnail bar background color also when core is running</li>
+          <li>MENU/OZONE: Stopped using different padding and position for savestate thumbnails vs imageviewer</li>
+          <li>MENU/OZONE: Removed gradient background effect when core is running, because some themes already have gradient background, which creates ugly rough steps</li>
+          <li>MENU/OZONE: Fixed "Gray Light" theme from using the same background as "Gray Dark", which makes selection cursor near impossible to see</li>
+          <li>MENU/OZONE: Some whitespace corrections</li>
+          <li>MENU/UX: Extend OFF menu value colors</li>
+          <li>MENU/UX: Menu icon improvements - Menu Visibility icons (Quick Menu + Settings)</li>
+          <li>MENU/UX: Menu icon improvements - Playlist Manager icons</li>
+          <li>MENU/UX: Menu icon improvements - Explore icon as database icon</li>
+          <li>MENU/UX: Menu icon improvements - View and filter icons as cursor icon (folder icon in GLUI)</li>
+          <li>MENU/UX: Menu icon improvements - View save + delete icons</li>
+          <li>MENU/UX: Menu icon improvements - Moved Explore + Views below Standalone Cores</li>
+          <li>MENU/UX/OZONE: Removed icons from menus where others items don't have icons, and added icons to menus where the rest have icons</li>
+          <li>MENU/UX/OZONE: Changed the way "no icon" is handled from kludgy way of not drawing SUBSETTING icon</li>
+          <li>MENU/UX/XMB: Changed playlist entry index positioning to bottom right when thumbnails are in vertical mode</li>
+          <li>MENU/UX/XMB: Added a rather nasty hack to prevent showing wrong icons under Explore as "breadcrumb" icon</li>
+          <li>MENU/UX/XMB: Optimized certain icon drawing loops</li>
+          <li>MENU/UX/MATERIALUI: Fixed showing icons where there should not be any (Waitable Swapchains, Show Recording, Streaming)</li>
+          <li>SDL GFX: Fix no menu on start/blank screen issue</li>
+          <li>SRAM: Don't init SRAM saving without content</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.13.0" date="2022-11-19">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.13.0</url>
       <description>
