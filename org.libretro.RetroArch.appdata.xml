@@ -41,6 +41,153 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.15.0" date="2023-03-11">
+      <url>https://www.libretro.com/index.php/retroarch-1-15-0-release/</url>
+      <description>
+        <ul>
+          <li>AI SERVICE: Fix NVDA switching to Powershell on speak</li>
+          <li>AUTOMATIC FRAME DELAY: Helped delay to decrease easier when it should and helped delay to stay put when it should when triggering pause &amp; menu with or without pause &amp; fast-forward &amp; slow-motion &amp; geometry change</li>
+          <li>AUTOMATIC FRAME DELAY: Recalibrate delay on video reinit (fullscreen toggle and such)</li>
+          <li>AUTOMATIC FRAME DELAY: Show (x effective) only in menu item and not in dropdown list items when auto is enabled</li>
+          <li>CHEEVOS: Allow repositioning of RetroAchievement notifications</li>
+          <li>CHEEVOS/MENU: Add Achievements Visibility submenu option</li>
+          <li>CHEEVOS/MENU: Startup Summary split off from Verbose Mode, added option to hide for games with zero core cheevos</li>
+          <li>CHEEVOS/MENU: 'Unlocks/Mastery' split into two options</li>
+          <li>CHEEVOS/MENU: 'Account/Login Messages' split off from 'Verbose', gated all login success/error messages</li>
+          <li>CONFIG/INPUT: Unload restores current global config</li>
+          <li>CONFIG/INPUT/OVERRIDES: Removing a file does not unload current override</li>
+          <li>CONFIG/INPUT/OVERRIDES: Saving an empty override removes the file if it exists, and won't save when it does not</li>
+          <li>CONFIG/INPUT/OVERRIDES: Prevent the use of RUNLOOP_FLAG_OVERRIDES_ACTIVE with appendconfig</li>
+          <li>CORE OPTION: Core option setting type checks. Added checks for getting and setting core option type, since otherwise there will be a crash on close content after browsing to core option categories. Also fixed the no-show switch icon for lone wolf "Lock Installed Core"</li>
+          <li>CLI: Update selected save slot when start with cli --entryslot</li>
+          <li>CLI: Decouple config CLI append and config overrides</li>
+          <li>CLI/MENU/XMB: Stop showing bogus previous icon on CLI launch</li>
+          <li>FRAME DELAY/MENU: Show Frame Delay without VSync</li>
+          <li>GENERAL: Start unpause restriction. Limit the feature using retropad start button to unpause RA to the setting it was made for; "pause on controller disconnect"</li>
+          <li>GENERAL: Savestate thumbnail aspect ratio fallback. Thanks to at least one certain core that announces aspect ratio as 0, we have to add the same fallback in savestate thumbnails that is happening elsewhere in normal video driver use anyway</li>
+          <li>GENERAL: Add support for system subdirs per core/database. Added the trivial and graceful automatic ability to send a different system directory to cores if it exists, for keeping the system dir more sane. First by using the core/library name just like in configs and saves, and then by playlist name, like in thumbnails, and of course default to the current global system dir</li>
+          <li>GENERAL: Ignore system subdir replacement if subdir has subdirs</li>
+          <li>GENERAL: Restore cached video driver always on quit</li>
+          <li>LATENCY/PREEMPTIVE FRAMES: Add Preemptive Frames to Latency Settings. RunAhead alternative that reruns core logic to "rewrite history" before the current frame. Frames are only rerun when the controller state changes, so it's faster overall</li>
+          <li>LATENCY/PREEMPTIVE FRAMES: Call retro_run before retro_serialize (#14893). Fixes preemptive frames not starting up with a few cores</li>
+          <li>LOCALIZATION: Updates</li>
+          <li>LOCALIZATION: Enable localization of video rotation, orientation, and aspect ratio option values</li>
+          <li>LOCALIZATION: Mixer stream localization also added</li>
+          <li>LOCALIZATION/MENU/HELP: Context dependent help text for audio and video drivers. Language corrections</li>
+          <li>LOCALIZATION/MENU/LANGUAGE: Language submenu now shows the progress of translated strings for each language</li>
+          <li>LOCALIZATION: Help texts now localizable through Crowdin</li>
+          <li>LIBRETRO: Enable RETRO_ENVIRONMENT_SET_SUPPORT_NO_GAME for libretro-video-processor</li>
+          <li>LIBRETRO/HW: Add GET_HW_CONTEXT_NEGOTIATION_INTERFACE_SUPPORT</li>
+          <li>INPUT: Allowing keyboard hotkeys to work without hotkey modifier if modifier is only mapped to RetroPad</li>
+          <li>INPUT: Allowing keyboard hotkey keys for typing if hotkey modifier is set to keyboard but not pressed</li>
+          <li>INPUT: Allowing keyboard RetroPad keys for typing if emulated device type is "None"</li>
+          <li>INPUT/BLUETOOTH: Fix a crash in for BT HID devices. (#14922) pad_connection_destroy() frees slots, no need to free it again</li>
+          <li>INPUT/BSV/REPLAY: Don't start video recording when BSV recording starts</li>
+          <li>INPUT/BSV/REPLAY: Don't double-record inputs in BSV recording</li>
+          <li>INPUT/BSV/REPLAY: Don't autoload states if a BSV file is being played back or recorded</li>
+          <li>INPUT/BSV/REPLAY: Moved BSV initialization before autoload code</li>
+          <li>INPUT/BSV/REPLAY: Don't trigger autoload code if there is bsv movie state</li>
+          <li>INPUT/BSV/REPLAY: Allow for both -e and -R to start a BSV file recording at a state</li>
+          <li>INPUT/BSV/REPLAY: Add keyboard recording support to BSV</li>
+          <li>INPUT/BSV/REPLAY: Fix BSV playback from a starting state for DOSbox</li>
+          <li>INPUT/BSV/REPLAY: Associate states with replays. Now states can be saved and loaded during replay recording and playback in a way that keeps the integrity of the recording. Recordings also have a (moderately) unique identifier associated with them</li>
+          <li>INPUT/BSV/REPLAY: Add checkpointing feature for replay recordings. If cores are not deterministic, or if they only have bounded determinism, we can obtain less drift if replay files also contain periodic checkpoint states.  These are configured by the new retroarch setting replay_checkpoint_interval (measured in seconds).  States are inserted into the replay file in between frames. This also fixes the settings display for the replay autoincrement max keep setting</li>
+          <li>INPUT/FRAMEADVANCE: Use non-rendering pause mode when frameadvance is triggered</li>
+          <li>INPUT/HOTKEYS/OVERLAYS: Do not block input overlay hotkeys</li>
+          <li>INPUT/HOTKEYS: Hotkey blocking correction. Turned out the previous hotkey blocking changes worked properly only with winraw driver and not the rest (at least with Windows), because input_keyboard_event() could be called at the wrong moment, and thus storing keyboard menu press there broke the separation of controller Guide menu button and keyboard menu key. Also allowed the blocking to work in both directions so that controller hotkeys won't get blocked if only keyboard has "enable_hotkey" bind</li>
+          <li>INPUT/LINUX/UDEV: Fix udev guns input when id_mouse is not id_joystick</li>
+          <li>MENU: Rename 'Standalone Cores' to 'Contentless Cores'</li>
+          <li>MENU: Music files should also obey builtin_mediaplayer_enable (#14967)</li>
+          <li>MENU: Relocated items to a more logical order</li>
+          <li>MENU: Corrected some title capitalizations (when/before/after are not low case, but for/the/a are)</li>
+          <li>MENU/AUDIO: Add dropdown menu for audio device</li>
+          <li>MENU/HELP: Help for turbo modes (#14919). Help text added for each of the selectable turbo modes</li>
+          <li>MENU/INPUT: Add unified back action to all menu drivers. Usability boost for all menu drivers resulting in similar behavior as with Ozone currently, which is pressing back/cancel enough the selection jumps first to Main Menu and when pressed again jumps to the first item, so that when a core is running, Quick Menu is very quickly accessible from anywhere. And when core is not running, the first item would be Load Core</li>
+          <li>MENU/INPUT: Override bind save + menu manager overhaul</li>
+          <li>MENU/INPUT: Allowed and fixed input bind saving to overrides</li>
+          <li>MENU/INPUT: Overhauled override menu</li>
+          <li>MENU/INPUT: Pressing Start on the top active file entry reloads current overrides as startup would</li>
+          <li>MENU/SUBLABELS: All under "Configuration File" + moved "Reset to Defaults" to bottom</li>
+          <li>MENU/SUBLABELS: Quick Menu &gt; Controls &gt; Port x Controls</li>
+          <li>MENU/SUBLABELS: Port x Controls &gt; Device Type</li>
+          <li>MENU/RGUI: Fix disabled menu item color. The effect was not working properly, since transparency meant using the core output color as background</li>
+          <li>MENU/XMB: Fixed playlist manager icons to take Explore Views into account properly</li>
+          <li>MENU/XMB: Changed XMB Explore View title to match Ozone</li>
+          <li>MENU/XMB: Added "Switch Icons" option</li>
+          <li>MENU/XMB: Fix MENU_ACTION_CANCEL when search is active. Nasty issue discovered in XMB which broke search term cancelation</li>
+          <li>MENU/XMB: Layout corrections:</li>
+          <li>MENU/XMB: More room for longer item labels and values</li>
+          <li>MENU/XMB: "Core Downloader" has extra space for item and "installed" indicator</li>
+          <li>MENU/XMB: Fixed "Menu Scale Factor" to not require restarting to get the actual end result</li>
+          <li>MENU/XMB: Adjusted scale factor to behave better with both layouts</li>
+          <li>MENU/XMB: Fixed savestate thumbnails and adjusted vertical fade factor in "Handheld" layout</li>
+          <li>MENU/XMB: Changed thumbnail shadow to outline and tightened fullscreen thumbnail margins</li>
+          <li>MENU/XMB: Adjusted global shadow opacity</li>
+          <li>MENU/XMB: Remove "Framebuffer opacity" from XMB as it does not use it</li>
+          <li>MENU/OZONE: Fixed playlist manager icons to take Explore Views into account properly</li>
+          <li>MENU/OZONE: Refresh thumbnail on close content hotkey</li>
+          <li>MENU/OZONE: Ozone footer enhancements (#14926). Add Help button (Select) and Reset to Default (Start) to footer where applicable</li>
+          <li>MENU/OZONE: Ozone footer enhancements (#14934). Display Help footer only if there is actual info to be displayed, either actual help, or sublabel if it is not visible otherwise</li>
+          <li>MENU/OZONE: Ozone footer enhancement: Scan button (#14949). Display Scan button in footer when it is applicable</li>
+          <li>MENU/OZONE: Add Clear button to Ozone footer (#14947). Add indication of Clear button when it is applicable (currently: keybinds)</li>
+          <li>MENU/MATERIALUI: Added missing Favorites+History icons in playlist manager</li>
+          <li>MENU/MATERIALUI: Added "Switch Icons" option</li>
+          <li>MENU/CHEATS: Added missing icons in cheats (Delete + Copy After/Before)</li>
+          <li>MENU/CHEATS: Fixed label capitalization in cheats (Add New After/Before This)</li>
+          <li>MENU/SOUNDS: Add scrolling sounds for RGUI, XMB, MaterialUI and Ozone</li>
+          <li>MENU/SOUNDS: Better scrolling sound implementation, add new 'notice back' sound</li>
+          <li>MENU/SOUNDS: Scroll sound fixes. Correctly get list size in xmb.c for playing scrolling sound when switching categories, play the scrolling sound when pressing cancel in ozone, play the sound when scrolling with ZL and ZR, play the correct sound when scrolling with L- MIYOO: L3/R3 support for Dingux Gamepad controller device</li>
+          <li>MENU/WIDGETS: Show square sized widget on volume mute. Volume widget is currently fixed size always, and thus showing a lot of empty space when muting, therefore shorten the box to icon size only when muting</li>
+          <li>NETWORKING: Call ssl_socket_close for SSL sockets</li>
+          <li>NETWORKING/CHEEVOS: net_http - Temporary fix for cheevos crash. Don't use new timeout/poll code for cheevos HTTP requests</li>
+          <li>NETWORKING/MENU: Network information cleanup:</li>
+          <li>NETWORKING/MENU: Remove extra space from : delimiter</li>
+          <li>NETWORKING/MENU: Trim useless/duplicate garbage from the end of ipv6 address. Windows shows %[adapter number], Linux shows %[adapter name], which already shows before the address</li>
+          <li>NETWORKING/STDIN: Add LOAD_STATE_SLOT N command to stdin/network protocol</li>
+          <li>OSD/STATISTICS: Add Run-Ahead data to on-screen statistics</li>
+          <li>QB/CONFIGURE: Add new flags - HAVE_UPDATE_CORE_INFO, ASSETS_DIR, FILTERS_DIR</li>
+          <li>RECORDING: Add recordings to video history playlist</li>
+          <li>REWIND: Don't take rewind steps while menu pause active</li>
+          <li>RUNLOOP: Added a new runloop state for pause which renders last cached frame</li>
+          <li>RUNLOOP: Allowed rewinding while paused so that it acts like backwards frameadvance. Also moved rewind step taking before menu iteration so that steps won't be lost while in menu when menu_pause is disabled</li>
+          <li>RUNLOOP: State load and reset while paused will forget pause for x frames in order to show proper output</li>
+          <li>RUNLOOP: Allowed reading pause hotkey while menu is active</li>
+          <li>RUNLOOP: Allowed reading screenshot hotkey while menu is active</li>
+          <li>RUNLOOP: Joined 2 fullscreen hotkey checks to one (Any ideas why they were separated for paused and non-paused states, since one works fine for both..?)</li>
+          <li>RUNLOOP: Implement GET_HW_CONTEXT_NEGOTIATION_INTERFACE_SUPPORT</li>
+          <li>SAVESTATES: State slot hotkey adjustments</li>
+          <li>SAVESTATES: Allow selecting -1 Auto slot with hotkeys</li>
+          <li>SAVESTATES: Allow wrap-around from -1 to 999 and backwards</li>
+          <li>SAVESTATES: Show failure message when trying to load a state that does not exist instead of plain "Loading state"</li>
+          <li>SAVESTATES: Shorten the duration of slot change notification</li>
+          <li>SAVESTATES: Change the widget type to the same type as shader toggle for better back and forth action</li>
+          <li>SHADERS: Append Preset feature</li>
+          <li>SHADERS: Prepend Preset feature</li>
+          <li>SHADERS: Shader Preset - Wildcard Replacement in Paths on Load</li>
+          <li>SHADERS/SLANG/SPIRVCROSS: Update to latest SPIRV-Cross, fixing Metal shader compilation issues along the way</li>
+          <li>STATICALLY LINKED/SALAMANDER: Fix salamander config save on fork for static platforms</li>
+          <li>TVOS/VULKAN/MOLTENVK: Vulkan on tvOS</li>
+          <li>VIDEO: Allow manual video swap interval forcing</li>
+          <li>VULKAN: Fix crash when using multiple physical devices and HW core (#14889)</li>
+          <li>VULKAN: Detect if wrong PhysicalDevice is returned</li>
+          <li>VULKAN: Actually query physical device before creating core device</li>
+          <li>VULKAN: Define and implement v2 of context negotiation interface</li>
+          <li>VULKAN: Add v2 of context negotiation interface</li>
+          <li>VULKAN: Add vkEnumerateInstanceVersion symbol</li>
+          <li>VULKAN: Implement v2 context negotiation</li>
+          <li>VULKAN: Use compute shaders to upload RGB565</li>
+          <li>VULKAN: Fix regression with RGB565 and OriginalHistory</li>
+          <li>VULKAN/WAYLAND: Don't clamp the number of requested images</li>
+          <li>VULKAN/MENU/RGUI: Fix RGUI on Vulkan on platforms that don't have _pack16 VkFormats</li>
+          <li>VULKAN/MACOS/OSX: avoid using _PACK16 pixel formats on platforms without them</li>
+          <li>WAYLAND: On scaled desktops the wayland backend deciding to resize based on values multiplied by the scale factor twice</li>
+          <li>WAYLAND: Wait for splash screen configuration</li>
+          <li>WAYLAND: Changes the initial window to show a RetroArch logo copied from the icon of the X11 backend</li>
+          <li>WAYLAND: Build pointer-constraints and relative-pointer protocols</li>
+          <li>WAYLAND/GL: GL is sometimes not rescaling property (Super + Left)</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.14.0" date="2022-11-19">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.14.0</url>
       <description>
@@ -69,7 +216,7 @@
           <li>LOCALIZATION/INPUT/IME/MENU/ONSCREEN KEYBOARD: Extended IME and Korean OSK</li>
           <li>MENU: Cleanup of help texts</li>
           <li>MENU: Allow toggling info off with the same button</li>
-          <li>MENU: Allow menu wallpaper/background reset. Let's also remove the current wallpaper from the screen when pressing Start.</li>
+          <li>MENU: Allow menu wallpaper/background reset. Let's also remove the current wallpaper from the screen when pressing Start</li>
           <li>MENU: Null driver shows with different color (Added for all menus the ability to show "disabled" items with a muted color)</li>
           <li>MENU/DRIVERS: Menu driver first, Audio Resampler removed because it is enough to exist under audio settings</li>
           <li>MENU/INPUT: Moved "Confirm Quit" to Input menu</li>
@@ -155,22 +302,22 @@
           <li>CONFIG/CLI: Allow use of --appendconfig with override cfgs instead of getting ignored</li>
           <li>CONFIG/LOGGING: No more console startup logging if logging to file</li>
           <li>CONFIG: Saves config on exit only once instead of (worst case scenario) 3 times</li>
-          <li>DATABASE/EXPLORE/VIEW: Add View feature - Add saving of a filter set in the Explore menu into a so called "View" file which then gets listed alongside playlists. This also adds the ability to filter a category by range in the Explore menu and not just filter on exact matches.</li>
+          <li>DATABASE/EXPLORE/VIEW: Add View feature - Add saving of a filter set in the Explore menu into a so called "View" file which then gets listed alongside playlists. This also adds the ability to filter a category by range in the Explore menu and not just filter on exact matches</li>
           <li>FILEBROWSER: Fix regression - certain extensions keep disappearing</li>
           <li>INPUT/HAPTIC/OVERLAYS/ANDROID: Improve haptic feedback for input overlays</li>
           <li>LINUX/MALI FBDEV: Add conditional support for OpenGL ES 3.x</li>
           <li>LOCALIZATION: Updates</li>
           <li>LOCALIZATION/ENGLISH: Add British English language option</li>
           <li>LOGGING/QT: Increase log buffer to 2048 characters - Vulkan validation layer
-          messages output correctly now.</li>
+          messages output correctly now</li>
           <li>MENU/XMB: Remember selection per main tabs. Addresses the following : collection playlists can contain hundreds or thousands of items. When scrolling through one, pressing left or right by accident can be common. This resets the playlist to the top</li>
           <li>MIST/STEAM/STEAMDECK: Don't expose Black Frame Insertion (BFI) if we are running on a Steam Deck</li>
-          <li>NETWORKING/WINDOWS: Disable poll support for MSVC 2010 and earlier. WSAPoll is not supported on Windows XP and earlier.</li>
+          <li>NETWORKING/WINDOWS: Disable poll support for MSVC 2010 and earlier. WSAPoll is not supported on Windows XP and earlier</li>
           <li>NETWORKING/WIIU: Fix socket_connect_with_timeout for WIIU</li>
           <li>NETWORKING/WIIU: Fixes RetroAchievements login</li>
           <li>NETWORKING/WIIU: Fixes other online updater functionality</li>
           <li>SAVESTATES/NOTIFICATIONS: Add delay to savestate notifications, so that GPU savestate screenshots stay untouched</li>
-          <li>SAVESTATES/SCREENSHOTS: Avoid 'video_gpu_screenshot' with savestates. Allow GPU screenshots with savestates only when there is no other way of getting a screenshot.</li>
+          <li>SAVESTATES/SCREENSHOTS: Avoid 'video_gpu_screenshot' with savestates. Allow GPU screenshots with savestates only when there is no other way of getting a screenshot</li>
           <li>SCREENSHOTS/VULKAN: Unload screenshot widget texture early. Fixes Vulkan crash when closing content while a screenshot widget is still on-screen</li>
           <li>SCREENSHOTS/VULKAN: Fix screenshot widget crash when ticker animating</li>
           <li>WAYLAND: Set correct app ID</li>
