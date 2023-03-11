@@ -188,7 +188,6 @@
         </ul>
       </description>
     </release>
-  <releases>
     <release version="1.14.0" date="2022-11-19">
       <url>https://github.com/libretro/RetroArch/releases/tag/v1.14.0</url>
       <description>
