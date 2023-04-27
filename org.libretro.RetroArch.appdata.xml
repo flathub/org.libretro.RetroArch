@@ -41,6 +41,9 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.15.1" date="2023-04-27">
+      <description><p>Hotfix release on top of RetroArch 1.15.0.</p></description>
+    </release>
     <release version="1.15.0" date="2023-03-11">
       <url>https://www.libretro.com/index.php/retroarch-1-15-0-release/</url>
       <description>
