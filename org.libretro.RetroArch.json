@@ -27,7 +27,9 @@
         "--enable-dbus"
       ],
       "make-args": [
-        "GLOBAL_CONFIG_DIR=${FLATPAK_DEST}/etc"
+        "GLOBAL_CONFIG_DIR=${FLATPAK_DEST}/etc",
+        "HAVE_TRANSLATE=1",
+        "HAVE_ACCESSIBILITY=1"
       ],
       "sources": [
         {
