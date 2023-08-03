@@ -1,0 +1,20 @@
+{
+    "name": "espeak-ng",
+    "cleanup": [ "*.la" ],
+    "no-parallel-make": true,
+    "build-options": {
+        "ldflags": "-Wl,--allow-multiple-definition"
+    },
+    "sources": [
+        {
+            "type": "git",
+            "url": "https://github.com/espeak-ng/espeak-ng.git",
+            "tag": "1.51.1",
+            "commit": "34762a2b9621d3643e67a00642984c21f0626bdc"
+        }
+    ],
+    "post-install": [
+        "ln -s /app/lib/libespeak-ng.so /app/lib/libespeak.so",
+        "ln -s /app/lib/libespeak-ng.a /app/lib/libespeak.a"
+    ]
+}
