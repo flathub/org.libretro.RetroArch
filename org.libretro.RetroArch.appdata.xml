@@ -41,6 +41,147 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.16.0" date="2023-09-22">
+      <description>
+        <ul>
+          <li>AUDIO: Fast-Forward Audio Resampling</li>
+          <li>AUDIO: Reinit audio on audio sync toggle</li>
+          <li>AUDIO: Count audio samples in stats when rate control is disabled</li>
+          <li>AUDIO/PULSEAUDIO: Support device list for PulseAudio</li>
+          <li>ARCHIVE/ZIP: Improve ZIP decompression</li>
+          <li>CHEEVOS: Upgrade to rcheevos 10.7</li>
+          <li>CHEEVOS: Don't initialize rcheevos memory unless used</li>
+          <li>CHEEVOS: Add progress tracker widget</li>
+          <li>CHEEVOS: Eliminate leaderboard tracker stutter</li>
+          <li>CHEEVOS: Expand leaderboard visibility settings</li>
+          <li>CHEEVOS: Collapse trackers with same value definition</li>
+          <li>CHEEVOS: prevent frame step when hitting rewind button while paused in hardcore</li>
+          <li>CHEEVOS: disallow video_swap_interval and black_frame_insertion in hardcore</li>
+          <li>CRT/SWITCHRES: Don't always force core aspect ratio</li>
+          <li>CRT/SWITCHRES: Fix aspect ratio for tate games on a horizontal screen</li>
+          <li>CRT/SWITCHRES: Add PAL threshold option for automatic refresh rate switch</li>
+          <li>CRT/SWITCHRES/KMS: Add KMS modeswitch</li>
+          <li>COMMAND: Make cmd interface more useful for replay information</li>
+          <li>CONFIG: Allow all systems to check for backslashes (Windows) as last slash in path. Improves portable core logic</li>
+          <li>DOWNLOADS/THUMBNAILS: Prevent directory creation on bogus thumbnail downloads</li>
+          <li>FFMPEG: Fix RetroArch fails to restart streaming when video re-inits and instead starts recording</li>
+          <li>FRAMESKIP: Use refresh rate instead of core fps for frameskip timing</li>
+          <li>INPUT: Combo hold + 'enable_hotkey' correction. Fixed issue with having menu toggle hold combo in different button than 'enable_hotkey', which caused 'enable_hotkey' to also act as menu toggle if held long enough, and simplified and unified duplicate code in start+select holds to a single function.</li>
+          <li>INPUT: input_keyboard_event: Don't check hotkey binds when device is RETRO_DEVICE_POINTER</li>
+          <li>INPUT: Add input_keymaps_translate_rk_to_ascii() for correct character input to input_keyboard_event</li>
+          <li>INPUT: input_overlay_poll: Delay clearing INPUT_OVERLAY_BLOCKED flag until there is no overlay input (Avoids stray input after osk_toggle)</li>
+          <li>INPUT: Send keyboard events for modifiers before other keys (for correct modifier+key input if hitboxes overlap)</li>
+          <li>INPUT: Remember currently set keyboard mapping bits during same config read, because otherwise customized keybinds can get cleared out of the bits on the next iteration, causing keyboard events to get passed to the core when they should get blocked.</li>
+          <li>INPUT/AUTOCONFIG: Reinit after updating autoconf profiles</li>
+          <li>INPUT/LINUX/UDEV: Log mouse devices in info level</li>
+          <li>INPUT/LINUX/UDEV: First working version of udev driver with touchscreen support and gestures.</li>
+          <li>INPUT/WAYLAND: Add wayland to input driver list</li>
+          <li>INPUT/MENU: move port X binds into retropad binds submenu and add appropriate help text and sublabels to discourage people from messing around in there unnecessarily</li>
+          <li>INPUT/MENU: Add menu icons to 'RetroPad Binds'</li>
+          <li>INPUT/MENU/OSK: Allow more keyboard actions with menu osk</li>
+          <li>INPUT/REMAP: Remap label fix when no autoconf profile active</li>
+          <li>INPUT/REMAP: Add 'Save As' option for remaps and overrides</li>
+          <li>INPUT/OVERLAY: Add overlay parameter to control x/y separation in auto-scale mode</li>
+          <li>INPUT/OVERLAY: Revive/rewrite Keyboard Overlay and OSK Toggle. Add keyboard overlay preset, keyboard submenu, and osk_toggle hotkey. Use overlay caching for osk_toggle.</li>
+          <li>INPUT/OVERLAY: Overlay Caching. Adds overlay_cache_ptr to keep a disabled overlay in memory when it's expected to be shown again. Most input_overlay_deinit calls are replaced with input_overlay_unload, which caches the overlay unless initing/deiniting core or disabling overlays. Loading a cached overlay is done as a swap, intended for osk_toggle.</li>
+          <li>INPUT/OVERLAY: Add input_overlay_check_mouse_cursor() to preserve show/hide mouse behavior</li>
+          <li>INPUT/OVERLAY: Don't apply input_overlay_show_mouse_cursor in windowed mode (controlled by mouse grab only)</li>
+          <li>INPUT/REMAPPING: Stop always reseting to defaults on remap delete</li>
+          <li>INPUT/SDL: Fix rumble on PS4/PS5 controllers connected via bluetooth</li>
+          <li>INTL: Fix language detection in Canada to English</li>
+          <li>LANGEXTRA: Enable language autodetect for all builds with LANGEXTRA</li>
+          <li>LIBRETRO: Add new context hardware render enums - enables autodetection of DX12 for PS2 core</li>
+          <li>LIBRETRO: Add API to check JIT availability on iOS</li>
+          <li>LIBRETRO: Allow RETRO_ENVIRONMENT_SET_MEMORY_MAPS also after core startup. Change the comment in libretro.h about the removed limit and handle the environment call during core runtime in RetroArch.</li>
+          <li>LIBRETRO/MICROPHONE: Add new API for microphone support.</li>
+          <li>LIBRETRO: Add new API for querying the device's power state.</li>
+          <li>LIBRETRO/VFS: Rewrite retro_vfs_file_remove_impl</li>
+          <li>LINUX: Input driver fix 8+ joypads. It was reported that controllers beyond 8 worked only partially (analogs yes, but not buttons), and the found fix was also confirmed.</li>
+          <li>MIDI: Show MIDI output first</li>
+          <li>MENU: Reorganize 'Saving' menu</li>
+          <li>MENU: Start directory browsing from current value</li>
+          <li>MENU: Fix menu toggle combo hold with same 'enable_hotkey'</li>
+          <li>MENU: Add menu scroll home+end actions</li>
+          <li>MENU: Move 'systemfiles_in_content_dir' from Saving to Core</li>
+          <li>MENU: Menu navigation acceleration adjustments</li>
+          <li>MENU: Audio synchronization menu cleanup</li>
+          <li>MENU: Menu value label cleanup</li>
+          <li>MENU: Show playlist history/favorites icons by default</li>
+          <li>MENU: Remove advanced option flag from video rotation + orientation</li>
+          <li>MENU: Combine audio resampler menu with audio output menu</li>
+          <li>MENU: Microphone menu cleanup</li>
+          <li>MENU: Add missing menu visibility option for content dir override</li>
+          <li>MENU: Fix menu refresh in action_ok_network</li>
+          <li>MENU: Video settings menu cleanup</li>
+          <li>MENU: Try to declutter Quick Menu</li>
+          <li>MENU: Change network port menu options to 'allow_input' mode</li>
+          <li>MENU: Preselect current core in “Set Core Assocation” menu for more carefree usage</li>
+          <li>MENU: Focus back to “Set Core Association” item after returning from the menu instead of first item</li>
+          <li>MENU: Replaced hack fix for focusing the first item after returning from core suggestion “Run” menu after association reset</li>
+          <li>MENU: Fixed setting core association in history/favorites after resetting it and running without setting</li>
+          <li>MENU: Relocate playlist manager core association options to prevent accidental resets with Start</li>
+          <li>MENU: Fraction setting wraparound rounding correction</li>
+          <li>MENU: Add more missing sublabels</li>
+          <li>MENU: 'Updater Settings' relocation</li>
+          <li>MENU: Search box usability improvements</li>
+          <li>MENU/RGUI: Implement 'Remember Selection' option</li>
+          <li>MENU/RGUI: Fix savestate thumbnail fullscreen cancel action</li>
+          <li>MENU/RGUI: Fix and add toggle for playlist thumbnails</li>
+          <li>MENU/OZONE: Update Dracula theme</li>
+          <li>MENU/OZONE: Return to sidebar from playlist manage quick access</li>
+          <li>MENU/OZONE: Sidebar multiline scrolling</li>
+          <li>MENU/OZONE: Avoid crash if ozone sidebar_index_size is 0</li>
+          <li>MENU/OZONE: Prevent metadata and footer overlap</li>
+          <li>MENU/OZONE: Sublabel width tweak</li>
+          <li>MENU/OZONE: Mouse hover selection fix</li>
+          <li>MENU/XMB: Message/help box adjustments</li>
+          <li>MENU/XMB: XMB menu playlist index bugfix</li>
+          <li>MENU/XMB: Playlist label limit fixes</li>
+          <li>MENU/XMB: Prevent playlist label truncating long items even when right thumbnail is not enabled/visible</li>
+          <li>MENU/XMB: Prevent playlist label length resetting to full width on every item change while thumbnail is pending</li>
+          <li>MENU/XMB: Stop showing playlist entry index outside of playlists</li>
+          <li>MENU/XMB: Fix menu focus issue when returning from “Set Core Association” if playlist index is greater than the previous menu</li>
+          <li>MENU/EXPLORE: Prevent flashing when browsing fullscreen thumbnails</li>
+          <li>MENU/EXPLORE: Match label ticker length behavior with playlists</li>
+          <li>MENU/SOUNDS: Fix certain audio drivers from hanging when menu pause is enabled with menu sounds</li>
+          <li>MENU/SOUNDS: Fix menu sounds stopping after fullscreen toggle / video reinit</li>
+          <li>MENU/QT/WIMP: Cleanup Desktop Menu welcome text</li>
+          <li>MENU/OVERLAYS: Reorder overlay menu</li>
+          <li>MICROPHONE: Add support for microphones.</li>
+          <li>MICROPHONE/ALSA: Add alsa and alsathread microphone drivers.</li>
+          <li>MICROPHONE/SDL: Add sdl2 microphone driver.</li>
+          <li>MICROPHONE/WASAPI: Add wasapi microphone driver.</li>
+          <li>MOBILE: On mobile in portrait mode, don't override custom viewport</li>
+          <li>NETWORKING: Enhance netpacket interface</li>
+          <li>NETWORKING/NETPLAY: Enable core host to refuse connecting new players to limit the number of connected players</li>
+          <li>NETWORKING/NETPLAY: Enable a core to flush outgoing packets and read incoming packets without waiting for the next frame (can be used for lower latency or blocking reads)</li>
+          <li>OPENDINGUX/RG350: Enable networking for RG350</li>
+          <li>OPENGL/WAYLAND: Add frame callback after egl_swap_buffers to improve latency when max_swapchain &lt;= 2</li>
+          <li>OSD/STATISTICS: Show current video + audio drivers in statistics</li>
+          <li>OSD/STATISTICS: Ensure statistics text is aligned left</li>
+          <li>PLAYLIST: Change default playlist last played time format</li>
+          <li>RUNLOOP: Don't count frames while paused</li>
+          <li>SERENITYOS: Add SerenityOS to the list of supported operating systems</li>
+          <li>SCANNER: Improve scanner console output</li>
+          <li>SCANNER: More scanner console output coloring</li>
+          <li>SCANNER: Improve CLI scan console output</li>
+          <li>SCANNER: Add content import/scan via CLI</li>
+          <li>SCANNER/PS1: Serial extraction is now considered a failure if PSX.EXE is found, allowing CRC fallback and actually fixing the game scanning</li>
+          <li>VIDEO: Correct rotated core provided aspect ratio</li>
+          <li>VIDEO: Minor adjustments to refresh rate switch behavior</li>
+          <li>VIDEO: Fix windowed viewport with libretro rotation</li>
+          <li>VIDEO/SDL2: Use “nearest” scaling in menus</li>
+          <li>TASKS: Fix corrupt task progress percentage</li>
+          <li>XVIDEO/MENU: Add menu support to xvideo gfx driver, making it usable</li>
+          <li>VULKAN: Ignore Fast-Forward Frameskip option</li>
+          <li>VULKAN/KHR_DISPLAY: Support screen refresh rate with Vulkan KHR_Display context</li>
+          <li>WAYLAND: Remove splash screen</li>
+          <li>WAYLAND: Check for pointer before locking it</li>
+          <li>WAYLAND: Add mouse grab/lock functionality</li>
+          <li>WAYLAND: Get system wayland-protocols path via pkg-config</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.15.1" date="2023-04-27">
       <description><p>Hotfix release on top of RetroArch 1.15.0.</p></description>
     </release>
@@ -1030,19 +1171,19 @@
           <li>CORE OPTIONS: Add option to reset all core options for current core/content</li>
           <li>CORE OPTIONS: Add per-folder core options</li>
           <li>CRT/SWITCHRES: Improvements</li>
-          <li>CRT/SWITCHRES: Low resolution switch bug fix – This allows resolutions lower that 32×224 like 256×224 to work</li>
+          <li>CRT/SWITCHRES: Low resolution switch bug fix - This allows resolutions lower that 32×224 like 256×224 to work</li>
           <li>CORE DOWNLOADER: Enhanced core downloader search functionality</li>
           <li>DRM: Fix race condition in drm_surface_set_aspect</li>
           <li>DRM/KMS: add support for custom HDMI timings / modes</li>
           <li>DATABASE: Fix crash that could happen when selecting cursor</li>
-          <li>DATABASE/EXPLORE: Fix – Prevent segfault when accessing 'Explore' menu</li>
+          <li>DATABASE/EXPLORE: Fix - Prevent segfault when accessing 'Explore' menu</li>
           <li>FILEIO/PERFORMANCE: Only attempt to call dir_check_defaults once per runtime session</li>
           <li>FILEIO/PERFORMANCE/3DS: Increase file buffer size and savestate chunk size. This seems to help with saving large savestates</li>
           <li>FONTS: Improve handling of Arabic and Persian text</li>
           <li>FONTS/FREETYPE: Use fontconfig to select fonts if available</li>
           <li>INPUT: Add hold mode for turbo fire 'Single Button'</li>
           <li>INPUT MAPPING: Refresh bind list on device type change</li>
-          <li>INPUT MAPPING/REMAPPING: Minor bugfix – Remap file browsing starts navigation at input_remapping_directory even if the core-subdir (where saved files go) exists Having remaps for many different cores makes finding the active core files cumbersome, especially because remaps are not compatible between different cores (but maybe for cores emulating the same hardware)</li>
+          <li>INPUT MAPPING/REMAPPING: Minor bugfix - Remap file browsing starts navigation at input_remapping_directory even if the core-subdir (where saved files go) exists Having remaps for many different cores makes finding the active core files cumbersome, especially because remaps are not compatible between different cores (but maybe for cores emulating the same hardware)</li>
           <li>INPUT: Keyboard device mapper rework</li>
           <li>INPUT: New input bind order scan/clear fix</li>
           <li>INPUT: Duplicate key event blocking additions</li>
@@ -1064,7 +1205,7 @@
           <li>INPUT/WINDOWS/RAWINPUT: Mouse grab fixes</li>
           <li>INPUT/WINDOWS/RAWINPUT: Prevent outside window mouse clicks when grabbed</li>
           <li>INPUT/WINDOWS/RAWINPUT: Option for disabling Windows hotkeys</li>
-          <li>INPUT MAPPING/REMAPPING: Major bugfix – Remap file having a different device type requires manual intervention after loading for the core to register the type properly</li>
+          <li>INPUT MAPPING/REMAPPING: Major bugfix - Remap file having a different device type requires manual intervention after loading for the core to register the type properly</li>
           <li>JSON: New faster json parser/writer library rjson</li>
           <li>JSON/RJSON: Replace rapidjson parser/writer in discord-rpc with rjson</li>
           <li>LIBRETRO: Add API extension for cores to query the number of active inputs provided by the frontend</li>
@@ -1105,7 +1246,7 @@
           <li>MENU/DESKTOP: Fix mouse cursor limited by window range on F5 press</li>
           <li>MENU/DESKTOP: Add simple shader option</li>
           <li>MENU/DESKTOP/WINDOWS: Remove broken 'Update RetroArch' functionality for Windows. We want this to not only be system agnostic if we bring it back, but also work outside of the Qt desktop interface</li>
-          <li>MENU/OZONE: New Theme – Twilight Zone</li>
+          <li>MENU/OZONE: New Theme - Twilight Zone</li>
           <li>MENU/RGUI: Add 3:2, 5:3 and 3:2/5:3 (centered) aspects</li>
           <li>MENU/RGUI/TEXT RENDERING: Add Russian language text support</li>
           <li>MENU/RGUI/TEXT RENDERING: Add support for CJK punctuation glyphs</li>
@@ -1128,10 +1269,10 @@
           <li>OVERLAYS: New default overlays for mobile (neo-retropad)</li>
           <li>OVERLAYS: In addition to overlay scale, the user can now set an Overlay Aspect Adjustment factor. Most overlays are designed for 16:9 displays, which means they become stretched/ugly on modern wide aspect phones and suchlike. By changing the Overlay Aspect Adjustment factor, a user can scale the overlay width/height to achieve a uniform appearance regardless of display resolution</li>
           <li>OVERLAYS/FIX: The Overlay X Offset and Overlay Y Offset options have been fixed, and now work correctly</li>
-          <li>OVERLAYS/FIX: All of the above options (and Overlay Scale) are configured and saved independently for landscape and portrait display orientations – so adjusting everything for a nice landscape layout won't break the portrait display</li>
+          <li>OVERLAYS/FIX: All of the above options (and Overlay Scale) are configured and saved independently for landscape and portrait display orientations - so adjusting everything for a nice landscape layout won't break the portrait display</li>
           <li>OVERLAYS/FIX: When using the Vulkan gfx driver, memory is leaked every time an overlay is freed</li>
           <li>OVERLAYS/FIX: When threaded video is enabled, loading overlays with no images (i.e. utility-type overlays, where everything is hidden until the screen is touched) can generate segfaults due to improper usage of realloc()</li>
-          <li>OVERLAYS/FIX: When Show Inputs on Overlay is enabled, ASAN reports bit shift errors due to an incorrect range check when handling turbo inputs – essentially, there is no upper limit to the considered input id range, which means overlay hotkeys (menu toggle, etc.) are incorrectly treated as having turbo support, causing bit shifts using wildly inappropriate id indices</li>
+          <li>OVERLAYS/FIX: When Show Inputs on Overlay is enabled, ASAN reports bit shift errors due to an incorrect range check when handling turbo inputs - essentially, there is no upper limit to the considered input id range, which means overlay hotkeys (menu toggle, etc.) are incorrectly treated as having turbo support, causing bit shifts using wildly inappropriate id indices</li>
           <li>PLAYLISTS/PORTABLE: Fixed first load initialization</li>
           <li>REWIND: Prevent 'Rewind Frames' from being set to '1' incorrectly on load content</li>
           <li>RUNAHEAD: Add Run-Ahead Toggle hotkey with notifications</li>
