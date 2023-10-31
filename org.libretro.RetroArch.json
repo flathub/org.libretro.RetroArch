@@ -14,6 +14,7 @@
     "--share=network",
     "--device=all",
     "--filesystem=host",
+    "--filesystem=/run/udev",
     "--allow=multiarch",
     "--talk-name=org.freedesktop.ScreenSaver",
     "--talk-name=org.freedesktop.PowerManagement.Inhibit",
