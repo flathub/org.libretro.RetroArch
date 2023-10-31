@@ -2,3 +2,4 @@
 	path = shared-modules
 	url = https://github.com/flathub/shared-modules.git
 	ignore = dirty
+	branch = master

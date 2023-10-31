@@ -41,6 +41,13 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.16.0.3" date="2023-09-28">
+      <description>
+        <ul>
+          <li>INPUT: Prevent proceeding to next bind when single binding (#15746)</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.16.0" date="2023-09-22">
       <description>
         <ul>
