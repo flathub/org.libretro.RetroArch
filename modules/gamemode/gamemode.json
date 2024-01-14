@@ -9,7 +9,7 @@
     "sources": [
       {
         "type": "git",
-        "url": "https://github.com/FeralInteractive/gamemode/archive/refs/tags/1.8.1.tar.gz",
+        "url": "https://github.com/FeralInteractive/gamemode.git",
         "tag": "1.8.1",
         "commit": "5180d89e66830d87f69687b95fb86f622552b94b"
       }
