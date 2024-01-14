@@ -70,7 +70,7 @@
         "modules/xrandr/xrandr-1.5.1.json",
         "modules/libaio/libaio-0.3.112.json",
         "shared-modules/glu/glu-9.json",
-        "shared-modules/libdecor/libdecor-0.1.1.json",
+        "shared-modules/libdecor/libdecor-0.2.0.json",
         "modules/gamemode/gamemode-1.8.json"
       ]
     },
