@@ -4,9 +4,10 @@
   "cleanup": ["/bin", "/include", "/share", "/lib/libpng.*", "/lib/*.la", "/lib/pkgconfig"],
   "sources": [
     {
-      "type": "archive",
-      "url": "https://github.com/glennrp/libpng/archive/v1.2.59.tar.gz",
-      "sha256": "d5bc743ac338bd454e330279f70534f5a31ea4c2cd3ee3ce76fd6e7f17fd3950"
+      "type": "git",
+      "url": "https://github.com/glennrp/libpng.git",
+      "tag": "v1.6.40",
+      "commit": "f135775ad4e5d4408d2e12ffcc71bb36e6b48551"
     }
   ]
 }
