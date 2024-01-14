@@ -8,9 +8,10 @@
     ],
     "sources": [
       {
-        "type": "archive",
+        "type": "git",
         "url": "https://github.com/FeralInteractive/gamemode/archive/refs/tags/1.8.1.tar.gz",
-        "sha256": "cdb117d05d65dbd03c0bd2104df874a1f878db8f23cc4d55bfa44e832482269e"
+        "tag": "1.8.1",
+        "commit": "5180d89e66830d87f69687b95fb86f622552b94b"
       }
     ],
     "cleanup": [ "/include", "/lib/pkgconfig" ],
