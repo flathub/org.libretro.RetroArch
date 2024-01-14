@@ -67,7 +67,7 @@
         "shared-modules/libusb/libusb.json",
         "shared-modules/gudev/gudev.json",
         "modules/libbz2/libbz2-1.0.8.json",
-        "modules/xrandr/xrandr-1.5.1.json",
+        "modules/xrandr/xrandr-1.5.json",
         "modules/libaio/libaio-0.3.112.json",
         "shared-modules/glu/glu-9.json",
         "shared-modules/libdecor/libdecor-0.2.0.json",
