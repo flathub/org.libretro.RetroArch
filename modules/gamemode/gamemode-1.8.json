@@ -1,0 +1,21 @@
+{
+    "name": "Gamemode",
+    "buildsystem": "meson",
+    "config-opts": [
+      "-Dwith-examples=false",
+      "-Dwith-util=false",
+      "-Dwith-sd-bus-provider=no-daemon"
+    ],
+    "sources": [
+      {
+        "type": "git",
+        "url": "https://github.com/FeralInteractive/gamemode.git",
+        "tag": "1.8.1",
+        "commit": "5180d89e66830d87f69687b95fb86f622552b94b"
+      }
+    ],
+    "cleanup": [ "/include", "/lib/pkgconfig" ],
+    "post-install": [
+      "install -t /app/bin -Dm755 ../data/gamemoderun"
+    ]
+}
