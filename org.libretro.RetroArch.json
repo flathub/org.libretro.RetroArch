@@ -176,7 +176,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/slang-shaders.git",
-          "commit": "9266fa24b64b274fd429b73469ded3561de7b8f4"
+          "commit": "c275fa009ef9cf15eb82d5666eb59027f14cf13d"
         }
       ]
     },
@@ -189,7 +189,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/glsl-shaders.git",
-          "commit": "c26b9e1913eda8c25d6cd218818745a3b451f982"
+          "commit": "bc8df92f013a128c3a735a57d3d98c6f087cc291"
         }
       ]
     },
