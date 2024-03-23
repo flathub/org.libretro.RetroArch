@@ -41,6 +41,43 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.18.0" date="2024-03-23">
+      <description>
+      <ul>
+        <li>AI: Fix narrator language when AI translation and menu languages are different</li>
+        <li>DISK CONTROL: Add option to disable initial disk change</li>
+        <li>DISK CONTROL: Visibility option for disk control notifications</li>
+        <li>DRM: Fix mode vrefresh calculation. When using an interlaced/doublescan mode, the vertical refresh rate is mis-calculated.</li>
+        <li>INPUT: Fix input state combos including R3 and false triggers of RETROK_UNKNOWN</li>
+        <li>INPUT: Add a new turbo mode, "Classic (Toggle)"</li>
+        <li>INPUT: Fix bind hold when axis does not rest at 0</li>
+        <li>INPUT: Limit axis threshold setting to sensible values</li>
+        <li>INPUT: Add Overlay Mouse, Lightgun, and Pointer</li>
+        <li>INPUT/LINUXRAW: Fix device name and hotplug reconnect</li>
+        <li>LIBRETRO: Add Doxygen-styled comments to parts of the libretro API</li>
+        <li>LUA: Update Lua to version 5.3.6</li>
+        <li>MENU: Add sublabels for input bind common entries</li>
+        <li>MENU: Don't load history and favorites if size is 0</li>
+        <li>MENU: Don't disable fast forward when entering menu</li>
+        <li>MENU: Widget position, size, color, icon adjustments</li>
+        <li>MENU: Fix savestate slots in Qt UI</li>
+        <li>MENU: Reorder and reduce depth of User Interface menu</li>
+        <li>MENU/OZONE: Fix sidebar wraparound, visibility after config load, crash after playlist delete</li>
+        <li>MENU/OZONE: Fix sidebar and sublabel animations</li>
+        <li>REMOTE RETROPAD: add display for analog axes, indication of inputs already pressed</li>
+        <li>SAVES: Allow combining saves in content dir with save sorting</li>
+        <li>SHADER: Added rolling scan line simulation based on the shader subframe feature. This is implemented with a scrolling scissor rect rather than in the shader itself as this is more efficient although may not work for every shader pass - we may need an option to exclude certain passes. The implementation simply divides the screen up by the number of sub frames and then moves the scissor rect down over the screen over the number of sub frames</li>
+        <li>UWP: Enable HAVE_ACCESSIBILITY for UWP builds</li>
+        <li>UWP: Allow UWP build to work with a modified version of Mesa Gallium D3D12</li>
+        <li>VIDEO: Add subframe shader support for Vulkan/GLcore/DX10-11-12, enabling shaders to run at higher framerate than the content</li>
+        <li>VIDEO: Fix restoring fullscreen/windowed setting when unloading override</li>
+        <li>VIDEO/VULKAN: Fix HDR with Vulkan after reinit</li>
+        <li>VIDEO/VULKAN: Remove the use of oldSwapchain</li>
+        <li>VIDEO/GL2: Fix OpenGL ES version detection</li>
+        <li>WEBDAV: Fixed SEGFAULT in WebDav task sync + type changes</li>
+      </ul>
+      </description>
+    </release>
     <release version="1.17.0" date="2024-02-03">
       <description>
         <ul>
