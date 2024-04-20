@@ -31,7 +31,9 @@
       "make-args": [
         "GLOBAL_CONFIG_DIR=${FLATPAK_DEST}/etc",
         "HAVE_TRANSLATE=1",
-        "HAVE_ACCESSIBILITY=1"
+        "HAVE_ACCESSIBILITY=1",
+        "HAVE_UPDATE_ASSETS=0",
+        "HAVE_UPDATE_CORE_INFO=0"
       ],
       "sources": [
         {
