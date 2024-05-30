@@ -41,6 +41,48 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.19.0" date="2024-05-30">
+      <description>
+        <ul>
+          <li>AI: Revert AI translation to previous version (fix for translation not working with HW rendered cores)</li>
+          <li>AUDIO: Bring back audio toggling on menu toggle</li>
+          <li>CHEEVOS: Build a default RetroAchievements memory map when no RetroAchievements game is loaded</li>
+          <li>CHEEVOS: Update to rcheevos 11.3</li>
+          <li>CHEEVOS: fix hardcore acting as if it's enabled when it isn't</li>
+          <li>CLANG: Fix clang error incompatible-pointer-types-discards-qualifiers</li>
+          <li>CLOUDSYNC/LINUX: Enable Cloud Sync by default on Linux builds with network (#16456)</li>
+          <li>CORE: Set compute fps stats logging to debug level</li>
+          <li>FFMPEG: Add compatibility with FFMPEG 7.0</li>
+          <li>GLSLANG: Remove unneeded ENABLE_HLSL code from glslang</li>
+          <li>GENERAL: Memory leak: Dynamic allocation from msg_hash_get_help_us_enum was not freed.</li>
+          <li>INPUT/KEYBOARD: Add support for multimedia keys</li>
+          <li>INPUT/MFI: Pressure sensitive left/right triggers</li>
+          <li>INPUT/MFI: Fix Start + L1/L2/R2 combinations</li>
+          <li>INPUT/MFI: Support strong and weak rumble</li>
+          <li>INTL: Fetch translations from Crowdin</li>
+          <li>INTL: Add Galician and Norwegian to list of languages</li>
+          <li>LAKKA: Display reboot/shutdown message also when not saving config on exit</li>
+          <li>LAKKA: Provide update URL and target name at buildtime</li>
+          <li>LIBRETRO: Add a debug message for the SET_ROTATION callback</li>
+          <li>MENU: New function in Quick Menu: Add to Playlist</li>
+          <li>MENU/XMB: New theme: FlatUX, merging FlatUI and Retroactive themes</li>
+          <li>NETWORKING/RETROPAD CORE: Fix socket close method</li>
+          <li>PIXMAN: Update pixman-private.h - patch to fix build issue with musl</li>
+          <li>PLAYLIST: Cleanup Add to Playlist</li>
+          <li>SCANNING: Fix for scanning PSP ISOs (and probably few others)</li>
+          <li>SAVES: Fix core config saving</li>
+          <li>SAVES: Fix save new config name when core loaded</li>
+          <li>SAVESTATES: Increase save state chunk size for all platforms - Even a class 6 or class 10 SD card can handle reads and writes on the order of MB/s, which means a 4KB chunk size is just wasting time in syscalls.  This could maybe be fixed with a buffering reader but I don't feel comfortable tweaking libretro-common's VFS to handle that.  Instead, I thought it would be good to both remove an ifdef and increase the chunk size to 128KB.  For cores with small states this will should make state saving virtually instantaneous, and for cores with large states it should be a 32x speedup.</li>
+          <li>VIDEO: Fix crash when using threaded video - for Mesa 23.2 and later</li>
+          <li>VIDEO/GL: Fix reinitialization of the threaded gl drivers</li>
+          <li>VIDEO/VULKAN: Add support for A2R10G10B10 HDR format</li>
+          <li>VIDEO/VULKAN: Implement HDR readback - screenshot support</li>
+          <li>WAYLAND: Ignore configure events during splash (fix not remembering window size)</li>
+          <li>WAYLAND: Use frontend signal handler to quit (fix quit by window close)</li>
+          <li>WAYLAND: Commit viewport resizes (window resize is more responsive)</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.18.0" date="2024-03-23">
       <description>
       <ul>
