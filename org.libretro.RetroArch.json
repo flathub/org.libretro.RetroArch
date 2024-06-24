@@ -79,7 +79,8 @@
         "modules/libaio/libaio-0.3.112.json",
         "shared-modules/glu/glu-9.json",
         "modules/libdecor/libdecor.json",
-        "modules/gamemode/gamemode-1.8.json"
+        "modules/gamemode/gamemode-1.8.json",
+        "modules/espeak-ng/espeak-ng-1.51.1.json"
       ]
     },
     {
