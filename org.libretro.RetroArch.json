@@ -80,6 +80,7 @@
         "shared-modules/glu/glu-9.json",
         "modules/libdecor/libdecor.json",
         "modules/gamemode/gamemode-1.8.json",
+        "modules/pcaudiolib/pcaudiolib-1.2.json",
         "modules/espeak-ng/espeak-ng-1.51.1.json"
       ]
     },
