@@ -134,7 +134,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "7c8a78882f4a9d44808e2ca1ecccb2f823be9f39"
+          "commit": "10b3e4fbe7562c10c4de878ee1ffa0175b0af409"
         }
       ]
     },
