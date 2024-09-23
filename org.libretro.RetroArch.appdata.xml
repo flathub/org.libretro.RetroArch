@@ -41,6 +41,13 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.20.0" date="2024-09-23">
+      <description>
+        <ul>
+          <li>TODO: Fill in the changelog</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.19.1" date="2024-06-10">
       <description>
         <ul>
