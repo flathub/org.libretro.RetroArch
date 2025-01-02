@@ -6,8 +6,8 @@
     {
       "type": "git",
       "url": "https://github.com/glennrp/libpng.git",
-      "tag": "v1.6.40",
-      "commit": "f135775ad4e5d4408d2e12ffcc71bb36e6b48551"
+      "tag": "v1.6.44",
+      "commit": "f5e92d76973a7a53f517579bc95d61483bf108c0"
     }
   ]
 }
