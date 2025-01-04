@@ -4,8 +4,8 @@
       {
         "type": "git",
         "url": "https://gitlab.freedesktop.org/xorg/app/xrandr.git",
-        "tag": "xrandr-1.5.2",
-        "commit": "6f714830da6c8d74f024be6b0bb32c1ea39c1217"
+        "tag": "xrandr-1.5.3",
+        "commit": "0591ca56f9628d1a1a691160d79d9afb0f225c4d"
       }
     ]
 }
