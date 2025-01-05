@@ -130,7 +130,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "39208882fb261bc7966f7a95a4451f18c9bcd27a"
+          "commit": "90e8964046a81c6ecbff5d41ce36fb2d39e2a7ea"
         }
       ]
     },
