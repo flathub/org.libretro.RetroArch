@@ -15,6 +15,7 @@
     "--device=all",
     "--filesystem=host",
     "--filesystem=/run/udev:ro",
+    "--filesystem=xdg-run/pipewire-0",
     "--allow=multiarch",
     "--talk-name=org.freedesktop.ScreenSaver",
     "--talk-name=org.freedesktop.PowerManagement.Inhibit",
