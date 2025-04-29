@@ -41,6 +41,95 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
+    <release version="1.21.0" date="2025-04-29">
+      <description>
+        <ul>
+          <li>AUTOCONF: Enable alternative display name in autoconfig files</li>
+          <li>AUTOCONF: Make autoconfig failure messages optional</li>
+          <li>AUDIO: Option to mute on rewind</li>
+          <li>AUDIO/PIPEWIRE: Fix app launch when pipewire service is stopped</li>
+          <li>AUDIO/PIPEWIRE: Fix speedup with threaded video mode</li>
+          <li>AUDIO/PIPEWIRE: Fix latency setting and microphone handling</li>
+          <li>AUDIO/PIPEWIRE: Pass the new rate to the audio driver</li>
+          <li>CAMERA: Add PipeWire camera driver</li>
+          <li>CAMERA: Add ffmpeg camera driver</li>
+          <li>CHEAT: Rewrite part of cheat_manager_load_cb_second_pass()</li>
+          <li>CHEEVOS: Include achievement state in netplay states</li>
+          <li>CHEEVOS: Fix crash when entering achievements in quick menu while client is not present</li>
+          <li>CHEEVOS: Restore cheevos_badges_enable for HAVE_GFX_WIDGETS builds</li>
+          <li>CLI: Allow --entryslot to fall back to normal states</li>
+          <li>CLOUDSYNC: Workaround for duplicated requests bug</li>
+          <li>CLOUDSYNC: Workaround for 301 redirects</li>
+          <li>CLOUDSYNC: Handle ignored directories properly</li>
+          <li>GENERAL: Fix save state auto increment</li>
+          <li>GENERAL: Fix softpatching with periods/dots in the file name</li>
+          <li>GENERAL: Fix compilation with --enable-videocore</li>
+          <li>GENERAL: Allow asset directory redefinition and other directory overrides via environment variables</li>
+          <li>GENERAL: Allow override of player 1/2 input with machine learning models (needs recompilation and external library)</li>
+          <li>GENERAL: Fix performance counter option not remembered between sessions</li>
+          <li>GENERAL: Create security statement</li>
+          <li>GENERAL: Fix crash when core is not selected</li>
+          <li>GENERAL: Use core fps instead of screen refresh for calculating dropped frames</li>
+          <li>INPUT: Fix a crash when initializing illuminance sensor on Linux</li>
+          <li>INPUT: Analog-to-digital refactor, fixing behavior when analogs are assigned to keys</li>
+          <li>INPUT: Turbo fire overhaul</li>
+          <li>INPUT/COCOA: Include gravity in acceleration sensor values</li>
+          <li>INPUT/COCOA: Fix relative mouse input</li>
+          <li>INPUT/COCOA: Allow mouse input while mouse overlay is active</li>
+          <li>INPUT/WINRAW: Invert mouse index order</li>
+          <li>LAKKA: Remove bluetooth device after disconnection</li>
+          <li>LINUX/X11: Extend X11 input driver with XInput2 extensions for multi-mouse</li>
+          <li>MENU: Add SSL support to the information list</li>
+          <li>MENU: Add warning to BFI and related menu items</li>
+          <li>MENU: Fix latency statistics when using runahead</li>
+          <li>MENU: Fix opening file inside archive with core selection</li>
+          <li>MENU: Main menu unified between different menu drivers</li>
+          <li>MENU: Visibility toggle for playlist tabs</li>
+          <li>MENU: Color the notification icon by message category</li>
+          <li>MENU: Gray Dark+Light theme adjustments</li>
+          <li>MENU/GLUI: Menu back button switches tabs like in other menu drivers</li>
+          <li>MENU/GLUI: Tab selection option is honored</li>
+          <li>MENU/GLUI: Fix CD icon appearing when no icon is specified</li>
+          <li>MENU/GLUI: Allow fullscreen thumbnail browsing</li>
+          <li>MENU/GLUI: Save state thumbnails</li>
+          <li>MENU/PLAYLISTS: Random selection/shuffle function</li>
+          <li>MENU/QT: Fix desktop menu crash with Cheevos disabled</li>
+          <li>MENU/RGUI: Cleanups of certain menu items</li>
+          <li>MENU/RGUI: Thumbnail fixes</li>
+          <li>MENU/OZONE: Fix messagebox background</li>
+          <li>MENU/XMB: Fix Light theme, font shadow</li>
+          <li>MENU/XMB: Appearance menu cleanup</li>
+          <li>MENU/XMB: Icon thumbnail can be any of the existing types</li>
+          <li>MISC: Guard nanosleep prototype behind _POSIX_TIMERS</li>
+          <li>MISC: Use fabsf and intended threshold for refresh rate check</li>
+          <li>MISC: Use platform-specific checks for invalid descriptors</li>
+          <li>MIDI: Add dropdown items for midi device selection</li>
+          <li>NETWORK: Refactor of net_http, improvements for task blocking and performance</li>
+          <li>NETWORK: Follow http redirects in net_http</li>
+          <li>NETWORK: Expire failed DNS lookups much faster</li>
+          <li>NETWORK: Fix netplay when using netpacket interface with recent cheevos</li>
+          <li>NETWORK/HTTP: Fix crash in net_http_resolve() in single-thread mode</li>
+          <li>OVERLAY: Fix overlay lightgun, mouse and pointer</li>
+          <li>OVERLAY: Preferred overlay loading is now default only on mobile platforms</li>
+          <li>OVERLAY: Improve analog recentering when touching the area just outside the recentering zone</li>
+          <li>QT: Enable non-png thumbnails also for Qt interface</li>
+          <li>REPLAY: Fix issue when replaying old format input recordings in newer RetroArch</li>
+          <li>TTS: Fix initial text-to-speech on Windows</li>
+          <li>TVOS: Fix 720p display</li>
+          <li>TVOS: Fix refresh rate fetching on tvOS 13/14</li>
+          <li>TVOS: Update Top Shelf art</li>
+          <li>SAVESTATES: Reset state index when loading new content</li>
+          <li>VIDEO: Enable BFI setting for mobile platforms (mind the warnings)</li>
+          <li>VIDEO/OpenGLES: Fix FP/sRGB FBO support</li>
+          <li>VIDEO/SHADERS: Allow exact refresh rate sync with shader subframes</li>
+          <li>VIDEO/SHADERS: FIX shader wildcards</li>
+          <li>VIDEO/VULKAN: Enable adaptive vsync</li>
+          <li>VIDEO/V4L2: Added resolution picker/forcing.</li>
+          <li>VIDEO/V4L2: Rewrote logic for finding ALSA audio devices in enumerate_audio_devices function</li>
+          <li>VIDEO/V4L2: Added a skip for some of the interface queries that fail and are not required for magewell usb.</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.20.0" date="2025-01-02">
       <description>
         <ul>
