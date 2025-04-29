@@ -115,9 +115,6 @@
           <li>QT: Enable non-png thumbnails also for Qt interface</li>
           <li>REPLAY: Fix issue when replaying old format input recordings in newer RetroArch</li>
           <li>TTS: Fix initial text-to-speech on Windows</li>
-          <li>TVOS: Fix 720p display</li>
-          <li>TVOS: Fix refresh rate fetching on tvOS 13/14</li>
-          <li>TVOS: Update Top Shelf art</li>
           <li>SAVESTATES: Reset state index when loading new content</li>
           <li>VIDEO: Enable BFI setting for mobile platforms (mind the warnings)</li>
           <li>VIDEO/OpenGLES: Fix FP/sRGB FBO support</li>
