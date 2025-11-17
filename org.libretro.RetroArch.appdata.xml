@@ -41,7 +41,16 @@
   <project_license>GPL-3.0</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
-    <release version="1.22.0" date="2025-10-10">
+    <release version="1.22.1" date="2025-11-16">
+      <description>
+        <ul>
+          <li>XMB: Fix null pointer crash in xmb when scrolling</li>
+          <li>LIBRETRO: Build fix for stb_vorbis</li>
+          <li>LIBRETRO: Slim down stb_rect_pack/stb_truetype/dr_flac</li>
+        </ul>
+      </description>
+    </release>
+    <release version="1.22.0" date="2025-11-10">
       <description>
         <ul>
           <li>AUTOCONF: Autoconfig match extended with a physical identifier</li>
