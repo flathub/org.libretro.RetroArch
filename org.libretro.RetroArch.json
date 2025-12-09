@@ -21,6 +21,7 @@
     "--talk-name=org.freedesktop.PowerManagement.Inhibit",
     "--talk-name=org.freedesktop.login1",
     "--filesystem=xdg-run/app/com.discordapp.Discord:create",
+    "--filesystem=xdg-run/discord-ipc-0:create",
     "--filesystem=xdg-run/gamescope-0:ro"
   ],
   "modules": [
