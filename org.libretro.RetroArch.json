@@ -28,8 +28,7 @@
     {
       "name": "retroarch",
       "config-opts": [
-        "--enable-dbus",
-        "--with-libpng=system"
+        "--enable-dbus"
       ],
       "make-args": [
         "GLOBAL_CONFIG_DIR=${FLATPAK_DEST}/etc",
