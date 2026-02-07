@@ -69,7 +69,6 @@
       ],
       "modules": [
         "modules/nvidia-cg-toolkit/nvidia-cg-toolkit-3.1.0013.json",
-        "shared-modules/gudev/gudev.json",
         "modules/libbz2/libbz2-1.0.8.json",
         "modules/xrandr/xrandr-1.5.json",
         "modules/libaio/libaio-0.3.112.json",
