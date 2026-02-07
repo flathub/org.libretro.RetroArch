@@ -7,6 +7,7 @@
   <summary>Frontend for emulators, game engines and media players</summary>
   <developer_name>libretro</developer_name>
   <url type="homepage">https://www.retroarch.com</url>
+  <url type="vcs-browser">https://github.com/libretro/RetroArch</url>
   <url type="bugtracker">https://github.com/libretro/RetroArch/issues</url>
   <url type="help">https://docs.libretro.com</url>
   <url type="faq">https://retroarch.com/?page=faq</url>
