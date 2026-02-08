@@ -53,7 +53,7 @@
         },
         {
           "type": "file",
-          "path": "VkLayer_FROG_gamescope_wsi.x86_64.json"
+          "path": "modules/gamescope/VkLayer_FROG_gamescope_wsi.x86_64.json"
         }
       ],
       "post-install": [
@@ -63,7 +63,7 @@
         "mkdir -p ${FLATPAK_DEST}/etc",
         "sed s:@prefix@:${FLATPAK_DEST}:g retroarch.cfg > ${FLATPAK_DEST}/etc/retroarch.cfg",
         "mkdir -p ${FLATPAK_DEST}/share/vulkan/implicit_layer.d",
-        "install VkLayer_FROG_gamescope_wsi.x86_64.json /app/share/vulkan/implicit_layer.d/VkLayer_FROG_gamescope_wsi.x86_64.json",
+        "install modules/gamescope/VkLayer_FROG_gamescope_wsi.x86_64.json /app/share/vulkan/implicit_layer.d/VkLayer_FROG_gamescope_wsi.x86_64.json",
         "mkdir -p ${FLATPAK_DEST}/share/appdata",
         "cp org.libretro.RetroArch.appdata.xml ${FLATPAK_DEST}/share/appdata"
       ],
