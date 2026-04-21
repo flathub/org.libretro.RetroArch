@@ -3,7 +3,8 @@
   "buildsystem": "meson",
   "config-opts": [
     "-Ddemo=false",
-    "-Dgtk=disabled"
+    "-Dgtk=disabled",
+    "-Dgtk+3=disabled"
   ],
   "sources": [
     {
