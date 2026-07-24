@@ -53,7 +53,8 @@
         },
         {
           "type": "file",
-          "path": "modules/gamescope/VkLayer_FROG_gamescope_wsi.x86_64.json"
+          "path": "modules/gamescope/VkLayer_FROG_gamescope_wsi.x86_64.json",
+          "dest": "modules/gamescope"
         }
       ],
       "post-install": [
