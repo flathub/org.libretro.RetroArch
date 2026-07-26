@@ -1,5 +1,8 @@
 {
   "name": "nvidia-cg-toolkit",
+  "only-arches": [
+    "x86_64"
+  ],
   "buildsystem": "simple",
   "build-commands": [
     "mkdir -p ${FLATPAK_DEST}/lib",
