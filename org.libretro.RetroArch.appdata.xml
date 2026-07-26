@@ -13,6 +13,10 @@
   <url type="faq">https://retroarch.com/?page=faq</url>
   <url type="donation">https://retroarch.com/index.php?page=donate</url>
   <content_rating type="oars-1.0" />
+  <branding>
+    <color type="primary" scheme_preference="light">#cfd8dc</color>
+    <color type="primary" scheme_preference="dark">#37474f</color>
+  </branding>
   <screenshots>
     <screenshot type="default">
       <caption>RetroArch main menu</caption>
