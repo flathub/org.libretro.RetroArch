@@ -77,7 +77,7 @@ To push up a newer version of RetroArch to Flathub, take on the following:
 
 1. Edit [org.libretro.RetroArch.json](https://github.com/flathub/org.libretro.RetroArch/blob/master/org.libretro.RetroArch.json)
 2. Change all commit hashes to the latest tag, and commit hashes for each repository
-3. Edit [org.libretro.RetroArch.appdata.xml](https://github.com/flathub/org.libretro.RetroArch/blob/master/org.libretro.RetroArch.appdata.xml)
+3. Edit [org.libretro.RetroArch.metainfo.xml](https://github.com/flathub/org.libretro.RetroArch/blob/master/org.libretro.RetroArch.metainfo.xml)
 4. Create a new `<release>` element and list the latest [RetroArch CHANGES.md](https://github.com/libretro/RetroArch/blob/master/CHANGES.md) that apply to the Linux build
 5. Push up a Pull Request with the new changes
 6. Wait to see if Flathub bot approves the changes
