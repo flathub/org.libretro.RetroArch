@@ -159,6 +159,9 @@
     },
     {
       "name": "common-shaders",
+      "only-arches": [
+        "x86_64"
+      ],
       "make-install-args": [
         "PREFIX=${FLATPAK_DEST}"
       ],
