@@ -50,11 +50,6 @@
         {
           "type": "file",
           "path": "retroarch.cfg"
-        },
-        {
-          "type": "file",
-          "path": "modules/gamescope/VkLayer_FROG_gamescope_wsi.x86_64.json",
-          "dest": "modules/gamescope"
         }
       ],
       "post-install": [
@@ -63,8 +58,6 @@
         "rmdir ${FLATPAK_DEST}/share/pixmaps/",
         "mkdir -p ${FLATPAK_DEST}/etc",
         "sed s:@prefix@:${FLATPAK_DEST}:g retroarch.cfg > ${FLATPAK_DEST}/etc/retroarch.cfg",
-        "mkdir -p ${FLATPAK_DEST}/share/vulkan/implicit_layer.d",
-        "install modules/gamescope/VkLayer_FROG_gamescope_wsi.x86_64.json ${FLATPAK_DEST}/share/vulkan/implicit_layer.d/VkLayer_FROG_gamescope_wsi.x86_64.json",
         "mkdir -p ${FLATPAK_DEST}/share/metainfo",
         "cp org.libretro.RetroArch.metainfo.xml ${FLATPAK_DEST}/share/metainfo"
       ],
@@ -74,7 +67,8 @@
         "shared-modules/glu/glu-9.json",
         "modules/libdecor/libdecor.json",
         "modules/pcaudiolib/pcaudiolib-1.3.json",
-        "modules/espeak-ng/espeak-ng-1.52.json"
+        "modules/espeak-ng/espeak-ng-1.52.json",
+        "modules/gamescope/gamescope-wsi-layer.json"
       ]
     },
     {
