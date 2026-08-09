@@ -13,7 +13,7 @@
     "--share=ipc",
     "--share=network",
     "--device=all",
-    "--filesystem=host",
+    "--filesystem=host:ro",
     "--filesystem=/run/udev:ro",
     "--filesystem=xdg-run/pipewire-0",
     "--allow=multiarch",
