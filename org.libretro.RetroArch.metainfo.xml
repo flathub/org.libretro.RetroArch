@@ -5,14 +5,23 @@
   <launchable type="desktop-id">org.libretro.RetroArch.desktop</launchable>
   <name>RetroArch</name>
   <summary>Frontend for emulators, game engines and media players</summary>
-  <developer_name>libretro</developer_name>
+  <developer id="org.libretro">
+    <name>libretro</name>
+  </developer>
   <url type="homepage">https://www.retroarch.com</url>
   <url type="vcs-browser">https://github.com/libretro/RetroArch</url>
   <url type="bugtracker">https://github.com/libretro/RetroArch/issues</url>
   <url type="help">https://docs.libretro.com</url>
   <url type="faq">https://retroarch.com/?page=faq</url>
   <url type="donation">https://retroarch.com/index.php?page=donate</url>
-  <content_rating type="oars-1.0" />
+  <content_rating type="oars-1.1" />
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+  <supports>
+    <control>gamepad</control>
+  </supports>
   <branding>
     <color type="primary" scheme_preference="light">#cfd8dc</color>
     <color type="primary" scheme_preference="dark">#37474f</color>
@@ -43,7 +52,7 @@
       It enables you to run classic games on a wide range of computers and consoles through its slick graphical interface. Settings are also unified so configuration is done once and for all. RetroArch has advanced features like shaders, netplay, rewinding, next-frame response times, runahead, and more!
     </p>
   </description>
-  <project_license>GPL-3.0</project_license>
+  <project_license>GPL-3.0-or-later</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <releases>
     <release version="1.22.2" date="2025-11-22">
