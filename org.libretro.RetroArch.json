@@ -72,7 +72,7 @@
       ]
     },
     {
-      "name": "retroarch-filers-video",
+      "name": "retroarch-filters-video",
       "subdir": "gfx/video_filters",
       "make-install-args": [
         "PREFIX=${FLATPAK_DEST}"
@@ -86,7 +86,7 @@
       ]
     },
     {
-      "name": "retroarch-filers-audio",
+      "name": "retroarch-filters-audio",
       "subdir": "libretro-common/audio/dsp_filters",
       "make-install-args": [
         "PREFIX=${FLATPAK_DEST}"
