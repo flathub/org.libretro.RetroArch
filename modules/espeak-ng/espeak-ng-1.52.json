@@ -1,6 +1,6 @@
 {
     "name": "espeak-ng",
-    "cleanup": [ "*.la" ],
+    "cleanup": [ "*.la", "*.a", "/include" ],
     "no-parallel-make": true,
     "build-options": {
         "ldflags": "-Wl,--allow-multiple-definition"
@@ -14,7 +14,6 @@
         }
     ],
     "post-install": [
-        "ln -s /app/lib/libespeak-ng.so /app/lib/libespeak.so",
-        "ln -s /app/lib/libespeak-ng.a /app/lib/libespeak.a"
+        "ln -s libespeak-ng.so ${FLATPAK_DEST}/lib/libespeak.so"
     ]
 }
