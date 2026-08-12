@@ -1,8 +1,8 @@
 # RetroArch on Flathub
 
-[Flathub](https://flathub.org/) is the central place for building and hosting [Flatpak](http://flatpak.org/) builds. Go to https://flathub.org/builds/ to see Flathub in action.
+[Flathub](https://flathub.org/) is the central place for building and hosting [Flatpak](https://flatpak.org/) builds.
 
-[RetroArch](http://retroarch.com) is a frontend for emulators, game engines and media players.
+[RetroArch](https://www.retroarch.com) is a frontend for emulators, game engines and media players.
 
 ## Installation
 
@@ -49,7 +49,7 @@ flatpak update --user org.libretro.RetroArch
 
 ### Options
 
-Through the [Flatpak command line arguments](http://flatpak.org/flatpak/flatpak-docs.html), it is possible to change how RetroArch is used.
+Through the [Flatpak command line arguments](https://docs.flatpak.org/en/latest/flatpak-command-reference.html), it is possible to change how RetroArch is used.
 
 #### Mounted Directories
 
@@ -60,7 +60,7 @@ flatpak run --filesystem=host --filesystem=/media/NAS/roms org.libretro.RetroArc
 
 ## Development
 
-To test the application locally, use [flatpak-builder](http://docs.flatpak.org/en/latest/flatpak-builder.html) with:
+To test the application locally, use [flatpak-builder](https://docs.flatpak.org/en/latest/flatpak-builder.html) with:
 
 ```
 git clone https://github.com/flathub/org.libretro.RetroArch.git

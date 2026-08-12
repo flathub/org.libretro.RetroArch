@@ -1,0 +1,16 @@
+{
+  "name": "gamescope-wsi-layer",
+  "only-arches": [
+    "x86_64"
+  ],
+  "buildsystem": "simple",
+  "build-commands": [
+    "install -Dm644 VkLayer_FROG_gamescope_wsi.x86_64.json ${FLATPAK_DEST}/share/vulkan/implicit_layer.d/VkLayer_FROG_gamescope_wsi.x86_64.json"
+  ],
+  "sources": [
+    {
+      "type": "file",
+      "path": "VkLayer_FROG_gamescope_wsi.x86_64.json"
+    }
+  ]
+}
