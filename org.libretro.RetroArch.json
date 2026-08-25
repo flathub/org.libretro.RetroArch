@@ -108,7 +108,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-assets.git",
-          "commit": "76cc6cf03507429c5a136cb50d83a14e05430fcd"
+          "commit": "73106363e14e34c08a5854b4cfbc29f184e3b783"
         }
       ]
     },
@@ -121,7 +121,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-database.git",
-          "commit": "fbcc8c1c24d8b20b6aaca95b4da6a2f39ad85f05"
+          "commit": "4de37d2c8042d9d0f608c43006c9b35438c536ce"
         }
       ]
     },
@@ -134,7 +134,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/libretro-core-info.git",
-          "commit": "20e7d555f911f5aa6712d5937f7b9b834015d88d"
+          "commit": "b03bfc451381e1a5eb92fda9e56a1e81bfeb92c9"
         }
       ]
     },
@@ -147,7 +147,7 @@
         {
           "type": "git",
           "url": "https://github.com/libretro/retroarch-joypad-autoconfig.git",
-          "commit": "38cf938bba0adbde375972053068f10d955a9d14"
+          "commit": "033151045d378b64e712a92592467800d7924227"
         }
       ]
     },
