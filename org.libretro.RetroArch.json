@@ -67,8 +67,7 @@
         "shared-modules/glu/glu-9.json",
         "modules/libdecor/libdecor.json",
         "modules/pcaudiolib/pcaudiolib-1.3.json",
-        "modules/espeak-ng/espeak-ng-1.52.json",
-        "modules/gamescope/gamescope-wsi-layer.json"
+        "modules/espeak-ng/espeak-ng-1.52.json"
       ]
     },
     {
