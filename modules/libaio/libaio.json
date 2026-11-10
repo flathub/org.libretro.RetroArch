@@ -1,0 +1,24 @@
+{
+  "name": "libaio",
+  "no-autogen": true,
+  "make-install-args": [
+    "prefix=${FLATPAK_DEST}"
+  ],
+  "sources": [
+    {
+      "type": "archive",
+      "url": "https://codeberg.org/jmoyer/libaio/releases/download/libaio-0.3.113/libaio-0.3.113.tar.gz",
+      "sha256": "2c44d1c5fd0d43752287c9ae1eb9c023f04ef848ea8d4aafa46e9aedb678200b",
+      "x-checker-data": {
+        "type": "anitya",
+        "project-id": 1557,
+        "stable-only": true,
+        "url-template": "https://codeberg.org/jmoyer/libaio/releases/download/libaio-$version/libaio-$version.tar.gz"
+      }
+    }
+  ],
+  "cleanup": [
+    "/include",
+    "/lib/*.a"
+  ]
+}
