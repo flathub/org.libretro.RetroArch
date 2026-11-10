@@ -40,6 +40,13 @@ Upstream udev support for Flatpak isn't quite there yet. Because of this, the Fl
 
 There are a few libretro cores that have been been compiled with dependencies on libraries that are not currently deployed with Flatpak. If you find one, you are invited to [create an issue](https://github.com/flathub/org.libretro.RetroArch/issues) detailing what's missing so that we can ship it in the sandboxed Flatpak.
 
+### HDR in Gamescope
+
+HDR within Gamescope, like on the Steam Deck OLED, requires the Gamescope Vulkan layer:
+```
+flatpak install --user flathub org.freedesktop.Platform.VulkanLayer.gamescope//25.08
+```
+
 ## Update
 
 To update RetroArch through Flathub, use the follow command:
