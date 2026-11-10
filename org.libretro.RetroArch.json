@@ -27,6 +27,11 @@
   "modules": [
     {
       "name": "retroarch",
+      "build-options": {
+        "env": {
+          "SOURCE_DATE_EPOCH": "1763597828"
+        }
+      },
       "config-opts": [
         "--enable-dbus"
       ],
