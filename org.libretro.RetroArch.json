@@ -59,7 +59,11 @@
         "mkdir -p ${FLATPAK_DEST}/etc",
         "sed s:@prefix@:${FLATPAK_DEST}:g retroarch.cfg > ${FLATPAK_DEST}/etc/retroarch.cfg",
         "mkdir -p ${FLATPAK_DEST}/share/metainfo",
-        "cp org.libretro.RetroArch.metainfo.xml ${FLATPAK_DEST}/share/metainfo"
+        "cp org.libretro.RetroArch.metainfo.xml ${FLATPAK_DEST}/share/metainfo",
+        "make -C gfx/video_filters -j${FLATPAK_BUILDER_N_JOBS}",
+        "make -C gfx/video_filters install PREFIX=${FLATPAK_DEST}",
+        "make -C libretro-common/audio/dsp_filters -j${FLATPAK_BUILDER_N_JOBS}",
+        "make -C libretro-common/audio/dsp_filters install PREFIX=${FLATPAK_DEST}"
       ],
       "modules": [
         "modules/nvidia-cg-toolkit/nvidia-cg-toolkit-3.1.0013.json",
@@ -69,34 +73,6 @@
         "modules/pcaudiolib/pcaudiolib-1.3.json",
         "modules/espeak-ng/espeak-ng-1.52.json",
         "modules/gamescope/gamescope-wsi-layer.json"
-      ]
-    },
-    {
-      "name": "retroarch-filters-video",
-      "subdir": "gfx/video_filters",
-      "make-install-args": [
-        "PREFIX=${FLATPAK_DEST}"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "69a4f0ea1e8aaf442ae4858f2e7f2b31a1776576"
-        }
-      ]
-    },
-    {
-      "name": "retroarch-filters-audio",
-      "subdir": "libretro-common/audio/dsp_filters",
-      "make-install-args": [
-        "PREFIX=${FLATPAK_DEST}"
-      ],
-      "sources": [
-        {
-          "type": "git",
-          "url": "https://github.com/libretro/RetroArch.git",
-          "commit": "69a4f0ea1e8aaf442ae4858f2e7f2b31a1776576"
-        }
       ]
     },
     {
